@@ -1,0 +1,24 @@
+site_name: Moje projekty
+site_author: Maciej Sobczak
+site_description: >-
+    Portfolio moich wspaniałych projektów z Data Science i AI!
+
+theme:
+  name: material
+  palette:
+    primary: deep purple
+
+nav:
+- Strona Domowa: index.md
+- Obecny projekt:
+  - "Pomocnik językowy": language_helper/index.md
+ 
+- Poprzednie projekty:
+  - "Iris": iris/index.md
+  - "Titanic": titanic/index.md
+
+markdown_extensions: 
+- attr_list
+- md_in_html
+- tables
+
