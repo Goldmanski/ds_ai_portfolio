@@ -1,7 +1,8 @@
 site_name: Moje projekty
-site_author: Maciej Sobczak
+site_author: Eliasz Nowicki
+site_url: https://goldmanski.github.io/ds_ai_portfolio
 site_description: >-
-    Portfolio moich wspaniałych projektów z Data Science i AI!
+    Projekty z obszaru Data Science i AI
 
 repo_name: Goldmanski/ds_ai_portfolio
 repo_url: https://github.com/Goldmanski/ds_ai_portfolio
@@ -9,19 +10,12 @@ repo_url: https://github.com/Goldmanski/ds_ai_portfolio
 theme:
   name: material
   palette:
-    primary: deep purple
+    primary: yellow
 
 nav:
 - Strona Domowa: index.md
 - Obecny projekt:
-  - "Pomocnik językowy": language_helper/index.md
- 
+  - "Titanic": titanic/index.md
 - Poprzednie projekty:
   - "Iris": iris/index.md
-  - "Titanic": titanic/index.md
-
-markdown_extensions: 
-- attr_list
-- md_in_html
-- tables
 
