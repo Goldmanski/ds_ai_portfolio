@@ -4,7 +4,13 @@
 
 Projekt przedstawia eksploracyjną analizę danych (EDA) zbioru Iris. Analiza obejmuje charakterystykę danych, rozkłady cech oraz zależności pomiędzy nimi, z wykorzystaniem tabel i wizualizacji. Celem projektu jest lepsze zrozumienie struktury zbioru oraz identyfikacja wzorców pozwalających odróżnić poszczególne gatunki irysów.
 
-<a href="my_project_iris.ipynb" class="md-button md-button--primary">Pobierz Notebook</a>
+<a href="https://github.com/Goldmanski/ds_ai_portfolio/blob/main/docs/iris/my_project_iris.ipynb?download=1" class="md-button md-button--primary">
+    Pobierz Notebook
+</a>
+
+<a href="https://github.com/Goldmanski/ds_ai_portfolio/blob/main/docs/iris/my_project_iris.ipynb" class="md-button">
+    Zobacz na GitHub
+</a>
 
 <iframe
     id="content"
