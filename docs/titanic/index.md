@@ -4,18 +4,18 @@
 
 Eksploracyjna analiza danych pasażerów Titanica. Projekt skupia się na analizie czynników związanych z przeżyciem katastrofy, takich jak wiek, płeć, klasa biletu czy liczba członków rodziny na pokładzie. W ramach analizy wykorzystano statystyki opisowe, filtrowanie i grupowanie danych oraz wizualizacje pozwalające odkryć najważniejsze zależności w zbiorze.
 
-<a href="my_project_titanic.ipynb" download class="md-button md-button--primary">
+<a href="titanic_analysis.ipynb" download class="md-button md-button--primary">
     Pobierz Notebook
 </a>
 
-<a href="https://github.com/Goldmanski/ds_ai_portfolio/blob/main/docs/titanic/my_project_titanic.ipynb"
+<a href="https://github.com/Goldmanski/ds_ai_portfolio/blob/main/docs/titanic/titanic_analysis.ipynb"
    class="md-button">
     Zobacz na GitHub
 </a>
 
 <iframe
     id="content"
-    src="my_project_titanic_as_report.html"
+    src="titanic_report.html"
     width="100%"
     style="border:1px solid black;overflow:hidden;"
 ></iframe>
