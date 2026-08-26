@@ -1,21 +1,54 @@
-site_name: Moje projekty
+site_name: Data Science & AI Portfolio
 site_author: Eliasz Nowicki
 site_url: https://goldmanski.github.io/ds_ai_portfolio
-site_description: >-
-    Projekty z obszaru Data Science i AI
+site_description: >
+  Portfolio projektów z obszaru Data Science, Machine Learning, AI i Software Engineering.
 
 repo_name: Goldmanski/ds_ai_portfolio
 repo_url: https://github.com/Goldmanski/ds_ai_portfolio
 
 theme:
   name: material
+
   palette:
     primary: yellow
+    accent: amber
+
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - content.code.copy
+
+  font:
+    text: Inter
+    code: Roboto Mono
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
-- Strona Domowa: index.md
-- Obecny projekt:
-  - "Titanic": titanic/index.md
-- Poprzednie projekty:
-  - "Iris": iris/index.md
+  - Home: index.md
+
+  - AI & LLM:
+      - Half Marathon Predictor: half_marathon_predictor/index.md
+      - Voice Recall: voice_recall/index.md
+      - CVTailor: cv_tailor/index.md
+      - ChatLab: chatlab/index.md
+
+  - Machine Learning:
+      - Find Friends: find_friends/index.md
+
+  - Data Analysis:
+      - Titanic — Exploratory Data Analysis: titanic/index.md
+      - Iris — Exploratory Data Analysis: iris/index.md
+
+  - Software Engineering:
+      - Offer Generator: offer_generator/index.md
+
+  - About: about.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
 
