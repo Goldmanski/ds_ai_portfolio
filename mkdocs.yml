@@ -68,7 +68,7 @@ plugins:
           build: true
           nav_translations:
             Home: Strona główna
-            AI & LLM: AI & LLM
+            AI Engineering: AI Engineering
             Machine Learning: Machine Learning
             Data Analysis: Analiza danych
             Software Engineering: Software Engineering
