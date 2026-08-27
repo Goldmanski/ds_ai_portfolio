@@ -116,7 +116,7 @@ Kolejny służy do tworzenia ofert biznesowych.
 
 Mimo tych różnic wszystkie opierają się na podobnym podejściu:
 
-**chcę brać chaotyczny lub trudny problem biznesowy i zamieniać go w rozwiązanie, które upraszcza pipeline, oszczędza czas i ułatwia zrozumienie procesu**
+**chcę brać chaotyczny lub trudny problem biznesowy i zamieniać go w rozwiązanie, które upraszcza pipeline, oszczędza czas i ułatwia zrozumienie procesu.**
 
 To kierunek, w którym chcę się dalej rozwijać — od analizy danych, przez Machine Learning i AI, aż po budowanie kompletnych aplikacji wykorzystujących te technologie.
 
