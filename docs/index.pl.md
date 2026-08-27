@@ -108,17 +108,18 @@ Sposób organizacji kodu, miejsce przechowywania reguł biznesowych oraz sposób
 
 ## Co łączy te projekty?
 
-Projekty mogą wyglądać zupełnie inaczej na pierwszy rzut oka.
+Projekty te mogą wyglądać zupełnie różnie na pierwszy rzut oka.
 
-Jeden pracuje z biegaczami.  
-Inny z notatkami głosowymi.  
-Jeszcze inny generuje oferty biznesowe.
+Jeden dotyczy biegania.  
+Drugi pomaga porządkować notatki głosowe.  
+Kolejny służy do tworzenia ofert biznesowych.
 
-Wszystkie jednak sprowadzają się do tej samej idei:
+Mimo tych różnic wszystkie opierają się na podobnym podejściu:
 
-**wziąć coś chaotycznego lub trudnego w obsłudze i zbudować system, który ułatwia zrozumienie lub wykorzystanie tego.**
+****chcę brać chaotyczny lub trudny problem biznesowy i zamieniać go w rozwiązanie, które upraszcza pipeline, oszczędza czas i ułatwia zrozumienie procesu**
+**
 
-To kierunek, który chcę dalej rozwijać — od analizy danych, przez Machine Learning i AI, aż po budowanie kompletnych aplikacji wykorzystujących te technologie.
+To kierunek, w którym chcę się dalej rozwijać — od analizy danych, przez Machine Learning i AI, aż po budowanie kompletnych aplikacji wykorzystujących te technologie.
 
 ---
 

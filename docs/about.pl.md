@@ -1,14 +1,20 @@
 # O mnie
 
-## Od ciekawości technologii do tworzenia z jej wykorzystaniem
+## Od fascynacji przyszłością do budowania jej technologii
 
-Moja droga do technologii nie zaczęła się od tradycyjnego wykształcenia informatycznego.
+Moja fascynacja technologią zaczęła się od pytania, dokąd może nas zaprowadzić sztuczna inteligencja.
 
-Zaczęła się od ciekawości.
+Kilka lat temu, grając w **Cyberpunk 2077**, trafiłem na historię Projektu Cynosure — fikcyjnego programu Militech, którego celem było wykorzystanie potencjału sztucznej inteligencji w sposób, który wtedy wydawał się czystym science fiction.
 
-Chciałem zrozumieć, jak działa oprogramowanie, jak dane można przekształcać w użyteczne informacje, a z czasem także jak AI może stać się częścią rzeczywistych aplikacji.
+Pamiętam, że zaciekawiło mnie wtedy, do czego naprawdę będą zdolne modele AI, gdy granica między **science fiction a rzeczywistością** zacznie się zacierać.
 
-Ta ciekawość stopniowo przerodziła się w bardziej uporządkowany kierunek: **Data Science, AI i Software Engineering.**
+Dziś jestem po drugiej stronie tego pytania.
+
+Kiedyś fascynowały mnie możliwości, jakie AI może osiągnąć. Dziś z takim samym zafascynowaniem uczę się ją tworzyć i sprawdzać, co naprawdę potrafi.
+
+Ta ciekawość z czasem przerodziła się w konkretny kierunek: **Data Science, AI Engineering i Software Engineering.**
+
+To portfolio jest zapisem tej drogi — od pierwszych pytań o możliwości AI do własnych projektów, eksperymentów i rozwiązań.
 
 ---
 
@@ -62,7 +68,7 @@ Oznacza to rozumienie nie tylko tego, jak pracować z modelem, ale również wsz
 
 To portfolio jest migawką trwającego procesu nauki.
 
-Projekty tutaj nie mają sugerować, że zakończyłem naukę.
+Powyższe projekty nie mają sugerować, że zakończyłem naukę.
 
 Wręcz przeciwnie.
 

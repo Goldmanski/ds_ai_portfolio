@@ -1,16 +1,16 @@
 # CVTailor
 
-## Czy AI może dopasować CV bez przejmowania nad nim kontroli?
+## Czy AI może dopasować CV, jednocześnie pozostawiając Ci nad nim kontrolę?
 
 Aplikacja o pracę rzadko zaczyna się od pustej kartki.
 
 Większość z nas ma już doświadczenie, projekty i umiejętności. Trudniejszą częścią jest zdecydowanie, **które elementy są najważniejsze dla konkretnej oferty** i jak przedstawić je w przejrzysty sposób.
 
-CVTailor powstał z prostego pomysłu: pozwolić AI pomóc właśnie w tej części.
+CVTailor powstał z prostego pomysłu: pozwolić AI pomóc Ci właśnie w tej części.
 
 Ale chciałem zachować ważną granicę.
 
-Model językowy może pomóc zdecydować **co powiedzieć** — ale nie powinien decydować **jak zbudowany jest końcowy dokument**.
+Model językowy może pomóc Ci zdecydować **co powiedzieć** — ale nie powinien decydować **jak zbudowany jest końcowy dokument**.
 
 ---
 

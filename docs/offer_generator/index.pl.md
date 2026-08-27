@@ -1,6 +1,6 @@
 # Offer Generator
 
-## Co się dzieje, gdy tworzenie oferty biznesowej staje się problemem programistycznym?
+## Co zrobić, gdy tworzenie ofert biznesowych zajmuje zbyt dużo czasu?
 
 Klient prosi o ofertę.
 
@@ -55,7 +55,7 @@ To, co wygląda jak prosta lista zakupów, staje się więc niewielkim procesem 
 
 ---
 
-## Moment, w którym zaczynają mieć znaczenie reguły
+## Moment, w którym reguły zaczynają mieć znaczenie
 
 Wyobraź sobie, że dodajesz ten sam produkt do oferty dwa razy.
 

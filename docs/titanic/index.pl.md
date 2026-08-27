@@ -1,12 +1,12 @@
 # Titanic — Eksploracyjna analiza danych
 
-## Czego zbiór danych może nas nauczyć o tym, kto przeżył?
+## Co możemy wyczytać z danych o pasażerach Titanica?
 
 Zbiór danych Titanic jest jednym z najbardziej rozpoznawalnych zbiorów danych w Data Science.
 
 Jest również zaskakująco dobrym przypomnieniem, że zbiór danych to coś więcej niż kolekcja liczb.
 
-Za każdym wierszem znajdowała się osoba — z określonym wiekiem, płcią, klasą biletu i powiązaniami rodzinnymi. Cechy te różniły się między pasażerami, a analiza pozwala zbadać, jak wiążą się one z przeżyciem katastrofy.
+Za każdym wierszem znajdowała się osoba — z określonym wiekiem, płcią, klasą biletu i członkami rodziny. Cechy te różniły się między pasażerami, a analiza pozwala zbadać, jak wiążą się one z przeżyciem katastrofy.
 
 Ten projekt rozpoczął się od prostego pytania:
 

@@ -8,7 +8,7 @@ Kiedy jednak zaczynasz korzystać z nich w praktyce, pojawia się proste pytanie
 
 > **Który model zapewnia odpowiednią równowagę pomiędzy jakością a kosztem?**
 
-Najbardziej zaawansowany model nie zawsze jest najlepszym wyborem do każdego zadania. Czasami tańszy model jest w zupełności wystarczający. Innym razem warto zapłacić za bardziej zaawansowany model.
+Najbardziej zaawansowany model nie zawsze jest najlepszym wyborem do każdego zadania. Czasami tańszy model jest w zupełności wystarczający. Innym razem warto zapłacić za ten bardziej zaawansowany.
 
 ChatLab powstał jako sposób na praktyczne zbadanie tego kompromisu — poprzez umieszczenie różnych modeli w tym samym środowisku i pokazanie ich odpowiedzi oraz kosztów.
 
@@ -32,7 +32,7 @@ ChatLab powstał jako sposób na praktyczne zbadanie tego kompromisu — poprzez
 
 W praktyce to pytanie nie jest zbyt użyteczne.
 
-Model świetny w trudnym zadaniu może być niepotrzebny przy prostym zadaniu. Wyższa cena nie oznacza automatycznie, że każda odpowiedź będzie bardziej wartościowa.
+Model świetny w trudnym zadaniu może być niepotrzebny przy zadaniu znacznie prostszym. Wyższa cena nie oznacza automatycznie, że każda odpowiedź będzie bardziej wartościowa.
 
 ChatLab pozwala eksperymentować z różnymi modelami OpenAI i obserwować, jak odpowiadają na Twoje prompty.
 
@@ -46,11 +46,11 @@ Zamiast polegać wyłącznie na porównaniach modeli znalezionych gdzie indziej,
 
 ## Kiedy rozmowa staje się aplikacją?
 
-Pojedynczy prompt i odpowiedź są proste.
+Pojedynczy prompt i odpowiedź są banalnie proste.
 
 Ale użyteczny chatbot szybko potrzebuje czegoś więcej.
 
-Co dzieje się, gdy rozpoczynasz kolejną rozmowę? Czy możesz wrócić do wcześniejszej? Czy chatbot może zachowywać się inaczej w zależności od tego, co próbujesz osiągnąć?
+Co dzieje się, gdy rozpoczynasz kolejną rozmowę? Czy możesz wrócić do wcześniejszej konwersacji? Czy chatbot może zachowywać się inaczej w zależności od tego, co próbujesz osiągnąć?
 
 ChatLab traktuje te elementy jako odpowiedzialność aplikacji, a nie coś, czym model językowy powinien magicznie się zajmować.
 

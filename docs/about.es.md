@@ -1,14 +1,20 @@
 # Sobre mí
 
-## De la curiosidad por la tecnología a construir con ella
+## De la fascinación por el futuro a construir su tecnología
 
-Mi camino hacia la tecnología no comenzó con una formación tradicional en Computer Science.
+Mi fascinación por la tecnología comenzó con una pregunta: ¿hasta dónde podría llevarnos la inteligencia artificial?
 
-Comenzó con curiosidad.
+Hace unos años, mientras jugaba a **Cyberpunk 2077**, descubrí la historia del Proyecto Cynosure — un programa ficticio de Militech creado para aprovechar el potencial de la inteligencia artificial de una forma que, por aquel entonces, parecía pura ciencia ficción.
 
-Quería entender cómo funciona el software, cómo los datos pueden convertirse en información útil y, con el tiempo, cómo la AI puede formar parte de aplicaciones reales.
+Recuerdo que me fascinaba pensar en lo que los modelos de IA podrían llegar a hacer a medida que la frontera entre la **ciencia ficción y la realidad** empezara a difuminarse.
 
-Esa curiosidad se fue convirtiendo gradualmente en una dirección más estructurada: **Data Science, AI y Software Engineering.**
+Hoy estoy al otro lado de esa pregunta.
+
+Antes me fascinaban las posibilidades que podía alcanzar la IA. Hoy, con la misma fascinación, estoy aprendiendo a crearla y a explorar de qué es realmente capaz.
+
+Con el tiempo, esa curiosidad se convirtió en una dirección clara: **Data Science, AI Engineering y Software Engineering.**
+
+Este portfolio es un reflejo de ese camino — desde mis primeras preguntas sobre las posibilidades de la IA hasta mis propios proyectos, experimentos y soluciones.
 
 ---
 

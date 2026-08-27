@@ -1,6 +1,6 @@
 # Voice Recall
 
-## Co, gdyby można było przeszukiwać notatki według znaczenia?
+## Co, gdyby można było przeszukiwać notatki według ich znaczenia?
 
 Często pamiętamy **o czym myśleliśmy**, ale nie pamiętamy dokładnych słów, których użyliśmy.
 
@@ -40,11 +40,11 @@ Ciekawa część pojawia się, gdy próbujesz coś znaleźć.
 
 Wyobraź sobie, że jedna z Twoich notatek brzmi:
 
-> Powinienem stopniowo zwiększać tygodniowy kilometraż przed półmaratonem.
+> Powinienem co tydzień stopniowo zwiększać dystans przed półmaratonem.
 
 Kilka miesięcy później możesz wyszukać:
 
-> plany treningowe biegowe
+> plany treningowe
 
 Nie ma potrzeby, aby te dokładne słowa występowały w oryginalnej notatce.
 
@@ -64,9 +64,9 @@ Voice Recall zadaje inne pytanie:
 
 To rozróżnienie jest sednem projektu.
 
-Tekst jest przekształcany w reprezentacje liczbowe zwane **embeddings**. Notatki o podobnym znaczeniu mają tendencję do znajdowania się bliżej siebie w tej reprezentacji.
+Tekst zamieniany jest na liczbową reprezentację zwaną **embeddings**. Dzięki temu system może porównywać znaczenie notatek i znajdować te, które są do siebie najbardziej podobne.
 
-Dzięki temu można przeszukiwać notatki za pomocą pojęć, a nie dokładnych fraz.
+W praktyce oznacza to, że wyszukiwanie nie musi opierać się na dokładnym dopasowaniu słów — może uwzględniać również znaczenie całego zapytania.
 
 ---
 

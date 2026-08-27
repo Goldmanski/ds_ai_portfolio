@@ -1,6 +1,6 @@
 # Find Friends
 
-## Czy model Machine Learning może znaleźć osoby podobne do Ciebie?
+## Czy model Machine Learning może pomóc Ci znaleźć podobne do Ciebie osoby?
 
 Co sprawia, że dwie osoby są do siebie podobne?
 

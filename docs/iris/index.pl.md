@@ -1,6 +1,6 @@
 # Iris — Eksploracyjna analiza danych
 
-## Czy cztery pomiary mogą powiedzieć nam, na jaki gatunek irysa patrzymy?
+## Czy cztery pomiary wystarczą, żeby rozpoznać gatunek irysa?
 
 Zbiór danych Iris jest na tyle mały, że można go zrozumieć na pierwszy rzut oka.
 
