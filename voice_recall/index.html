@@ -13,13 +13,13 @@
         <meta name="author" content="Eliasz Nowicki">
       
       
-        <link rel="canonical" href="https://goldmanski.github.io/ds_ai_portfolio/titanic/">
+        <link rel="canonical" href="https://goldmanski.github.io/ds_ai_portfolio/voice_recall/">
       
       
-        <link rel="prev" href="../find_friends/">
+        <link rel="prev" href="../half_marathon_predictor/">
       
       
-        <link rel="next" href="../iris/">
+        <link rel="next" href="../cv_tailor/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Titanic — Exploratory Data Analysis - Data Science & AI Portfolio</title>
+        <title>Voice Recall - Data Science & AI Portfolio</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eksploracyjna-analiza-danych-pasazerow-titanica" class="md-skip">
+        <a href="#voice-recall" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Titanic — Exploratory Data Analysis
+              Voice Recall
             
           </span>
         </div>
@@ -215,10 +215,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../half_marathon_predictor/" class="md-tabs__link">
           
   
@@ -255,13 +257,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../titanic/" class="md-tabs__link">
           
   
   
@@ -383,26 +383,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -415,7 +420,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             AI & LLM
@@ -449,10 +454,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../voice_recall/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Voice Recall
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -463,6 +490,158 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speech-to-text-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speech-to-Text Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedding-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedding Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-search-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Search Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semantic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-project-demonstrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      What This Project Demonstrates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possible-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possible Improvements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -598,31 +777,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -635,7 +809,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Data Analysis
@@ -646,19 +820,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../titanic/" class="md-nav__link">
         
   
   
@@ -669,7 +834,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -820,6 +984,146 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speech-to-text-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speech-to-Text Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedding-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedding Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector-search-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vector Search Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semantic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-project-demonstrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      What This Project Demonstrates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possible-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possible Improvements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -837,36 +1141,188 @@
   
 
 
-<h1 id="eksploracyjna-analiza-danych-pasazerow-titanica">Eksploracyjna analiza danych pasażerów Titanica</h1>
-<p><strong>Utworzone: 2026-08-15</strong></p>
-<p>Eksploracyjna analiza danych pasażerów Titanica. Projekt skupia się na analizie czynników związanych z przeżyciem katastrofy, takich jak wiek, płeć, klasa biletu czy liczba członków rodziny na pokładzie. W ramach analizy wykorzystano statystyki opisowe, filtrowanie i grupowanie danych oraz wizualizacje pozwalające odkryć najważniejsze zależności w zbiorze.</p>
-<p><a href="titanic_analysis.ipynb" download class="md-button md-button--primary">
-    Pobierz Notebook
-</a></p>
-<p><a href="https://github.com/Goldmanski/ds_ai_portfolio/blob/main/docs/titanic/titanic_analysis.ipynb"
-   class="md-button">
-    Zobacz na GitHub
-</a></p>
-<p><iframe
-    id="content"
-    src="titanic_report.html"
-    width="100%"
-    style="border:1px solid black;overflow:hidden;"
-></iframe></p>
-<script>
-function resizeIframeToFitContent(iframe) {
-    iframe.style.height = (iframe.contentWindow.document.documentElement.scrollHeight + 50) + "px";
-    iframe.contentDocument.body.style["overflow"] = 'hidden';
-}
-window.addEventListener('load', function() {
-    var iframe = document.getElementById('content');
-    resizeIframeToFitContent(iframe);
-});
-window.addEventListener('resize', function() {
-    var iframe = document.getElementById('content');
-    resizeIframeToFitContent(iframe);
-});
-</script>
+<h1 id="voice-recall">Voice Recall</h1>
+<h2 id="overview">Overview</h2>
+<p>Voice Recall is a voice-first note-taking application that allows users to record notes, convert speech to text, and search their notes using semantic similarity.</p>
+<p>Instead of relying only on exact keyword matching, the application uses embeddings to search for notes based on their meaning.</p>
+<div class="hero-buttons">
+
+<a href="https://voice-recall.streamlit.app" class="md-button md-button--primary">Live Demo</a>
+
+<a href="https://github.com/Goldmanski/voice-recall" class="md-button">GitHub</a>
+
+</div>
+
+<hr />
+<h2 id="problem">Problem</h2>
+<p>Traditional note search usually relies on keywords.</p>
+<p>This creates a limitation: a search only works well when the query contains words that also appear in the original note.</p>
+<p>Voice Recall explores a semantic approach.</p>
+<p>Instead of asking:</p>
+<blockquote>
+<p>Does this note contain the exact words from my query?</p>
+</blockquote>
+<p>the application asks:</p>
+<blockquote>
+<p>Which saved notes have a meaning most similar to my query?</p>
+</blockquote>
+<hr />
+<h2 id="solution">Solution</h2>
+<p>Voice Recall combines speech-to-text, embeddings and vector search into one workflow:</p>
+<pre><code class="language-text">User
+  │
+  ▼
+Record Voice Note
+  │
+  ▼
+Audio
+  │
+  ▼
+OpenAI Whisper
+  │
+  ▼
+Transcribed Text
+  │
+  ▼
+User Edits Note
+  │
+  ▼
+OpenAI Embeddings
+  │
+  ▼
+Qdrant
+  │
+  ▼
+Vector Storage
+</code></pre>
+<p>For searching saved notes:</p>
+<pre><code class="language-text">Search Query
+  │
+  ▼
+OpenAI Embeddings
+  │
+  ▼
+Qdrant Similarity Search
+  │
+  ▼
+Ranked Notes
+</code></pre>
+<p>The application therefore uses the same embedding space for both stored notes and search queries.</p>
+<hr />
+<h2 id="architecture">Architecture</h2>
+<p>The application is built around three main AI components.</p>
+<h3 id="speech-to-text-layer">Speech-to-Text Layer</h3>
+<p><strong>OpenAI Whisper</strong> converts recorded audio into text.</p>
+<p>The transcription can then be reviewed and edited by the user before the note is saved.</p>
+<h3 id="embedding-layer">Embedding Layer</h3>
+<p><strong>OpenAI Embeddings</strong> convert both notes and search queries into numerical vector representations.</p>
+<p>These vectors represent the semantic meaning of the text and allow the application to compare notes based on similarity rather than exact keyword matches.</p>
+<h3 id="vector-search-layer">Vector Search Layer</h3>
+<p><strong>Qdrant</strong> stores the generated embeddings and performs vector similarity search.</p>
+<p>The application uses cosine similarity to rank stored notes according to their semantic similarity to the user's query.</p>
+<hr />
+<h2 id="how-it-works">How It Works</h2>
+<p>The complete note-taking workflow consists of the following steps:</p>
+<ol>
+<li>The user records a voice note.</li>
+<li>The audio is processed using OpenAI Whisper.</li>
+<li>The generated transcription is displayed to the user.</li>
+<li>The user can review and edit the transcription.</li>
+<li>The note is converted into an embedding.</li>
+<li>The embedding is stored in Qdrant.</li>
+<li>The user enters a natural-language search query.</li>
+<li>The query is converted into an embedding.</li>
+<li>Qdrant performs a similarity search.</li>
+<li>Notes are returned ranked by semantic similarity.</li>
+</ol>
+<hr />
+<h2 id="semantic-search">Semantic Search</h2>
+<p>The main idea behind the project is semantic search.</p>
+<p>For example, a stored note might contain information about:</p>
+<blockquote>
+<p>preparing for a half marathon and increasing weekly mileage.</p>
+</blockquote>
+<p>A user could search for:</p>
+<blockquote>
+<p>running training plans</p>
+</blockquote>
+<p>without using the exact words from the original note.</p>
+<p>The embedding representation allows the system to compare the meaning of the query with the meaning of stored notes.</p>
+<p>The results are ranked according to their semantic similarity.</p>
+<hr />
+<h2 id="technology-stack">Technology Stack</h2>
+<div class="tech-list">
+
+<span>Python</span>
+<span>Streamlit</span>
+<span>OpenAI Whisper</span>
+<span>OpenAI Embeddings</span>
+<span>Qdrant</span>
+<span>Pydub</span>
+<span>python-dotenv</span>
+
+</div>
+
+<hr />
+<h2 id="project-structure">Project Structure</h2>
+<pre><code class="language-text">voice-recall/
+│
+├── app.py
+├── packages.txt
+├── requirements.txt
+├── .gitignore
+├── README.md
+│
+└── screenshots/
+    ├── main-application.png
+    ├── voice-transcription.png
+    └── semantic-search.png
+</code></pre>
+<p>The application logic is currently implemented in <code>app.py</code>.</p>
+<hr />
+<h2 id="deployment">Deployment</h2>
+<p>The application is deployed using <strong>Streamlit</strong>.</p>
+<p>Audio processing requires FFmpeg, which is specified through <code>packages.txt</code> for the deployment environment.</p>
+<p>API credentials are provided through environment variables locally and Streamlit Secrets in the deployed application.</p>
+<hr />
+<h2 id="what-this-project-demonstrates">What This Project Demonstrates</h2>
+<p>This project demonstrates how several AI components can be combined into a practical application.</p>
+<p>The main concepts demonstrated are:</p>
+<ul>
+<li>speech-to-text processing,</li>
+<li>embeddings,</li>
+<li>semantic search,</li>
+<li>vector databases,</li>
+<li>cosine similarity,</li>
+<li>integration with external AI services,</li>
+<li>Streamlit application development,</li>
+<li>cloud deployment.</li>
+</ul>
+<p>The central idea is:</p>
+<blockquote>
+<p><strong>Convert human language into vector representations and use those representations to search for meaning rather than exact words.</strong></p>
+</blockquote>
+<hr />
+<h2 id="possible-improvements">Possible Improvements</h2>
+<p>Potential future improvements include:</p>
+<ul>
+<li>note timestamps and metadata,</li>
+<li>user authentication,</li>
+<li>private note collections,</li>
+<li>persistent audio storage,</li>
+<li>search result filtering,</li>
+<li>configurable number of search results,</li>
+<li>improved note management,</li>
+<li>support for multiple languages.</li>
+</ul>
+<hr />
+<div class="hero-buttons">
+
+<a href="https://voice-recall.streamlit.app" class="md-button md-button--primary">Open Live Demo</a>
+
+<a href="https://github.com/Goldmanski/voice-recall" class="md-button">View Source Code</a>
+
+</div>
 
 
 

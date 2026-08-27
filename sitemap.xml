@@ -2,18 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://goldmanski.github.io/ds_ai_portfolio/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://goldmanski.github.io/ds_ai_portfolio/chatlab/</loc>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://goldmanski.github.io/ds_ai_portfolio/cv_tailor/</loc>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://goldmanski.github.io/ds_ai_portfolio/find_friends/</loc>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://goldmanski.github.io/ds_ai_portfolio/half_marathon_predictor/</loc>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://goldmanski.github.io/ds_ai_portfolio/iris/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
-         <loc>https://goldmanski.github.io/ds_ai_portfolio/language_helper/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <loc>https://goldmanski.github.io/ds_ai_portfolio/offer_generator/</loc>
+         <lastmod>2026-08-27</lastmod>
     </url>
     <url>
          <loc>https://goldmanski.github.io/ds_ai_portfolio/titanic/</loc>
-         <lastmod>2026-08-16</lastmod>
+         <lastmod>2026-08-27</lastmod>
+    </url>
+    <url>
+         <loc>https://goldmanski.github.io/ds_ai_portfolio/voice_recall/</loc>
+         <lastmod>2026-08-27</lastmod>
     </url>
 </urlset>

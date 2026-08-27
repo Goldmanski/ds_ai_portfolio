@@ -13,13 +13,13 @@
         <meta name="author" content="Eliasz Nowicki">
       
       
-        <link rel="canonical" href="https://goldmanski.github.io/ds_ai_portfolio/titanic/">
+        <link rel="canonical" href="https://goldmanski.github.io/ds_ai_portfolio/cv_tailor/">
       
       
-        <link rel="prev" href="../find_friends/">
+        <link rel="prev" href="../voice_recall/">
       
       
-        <link rel="next" href="../iris/">
+        <link rel="next" href="../chatlab/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Titanic — Exploratory Data Analysis - Data Science & AI Portfolio</title>
+        <title>CVTailor - Data Science & AI Portfolio</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eksploracyjna-analiza-danych-pasazerow-titanica" class="md-skip">
+        <a href="#cvtailor" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Titanic — Exploratory Data Analysis
+              CVTailor
             
           </span>
         </div>
@@ -215,10 +215,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../half_marathon_predictor/" class="md-tabs__link">
           
   
@@ -255,13 +257,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../titanic/" class="md-tabs__link">
           
   
   
@@ -383,26 +383,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -415,7 +420,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             AI & LLM
@@ -472,10 +477,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../cv_tailor/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    CVTailor
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -486,6 +513,185 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-and-ui-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input and UI Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cv-factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      CV Factory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdf-generation-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      PDF Generation Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-pdf-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic PDF Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generated Documents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-project-demonstrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      What This Project Demonstrates
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -598,31 +804,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -635,7 +836,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Data Analysis
@@ -646,19 +847,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../titanic/" class="md-nav__link">
         
   
   
@@ -669,7 +861,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -820,6 +1011,173 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-and-ui-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input and UI Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cv-factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      CV Factory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdf-generation-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      PDF Generation Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-pdf-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic PDF Generation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generated Documents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-project-demonstrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      What This Project Demonstrates
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -837,36 +1195,250 @@
   
 
 
-<h1 id="eksploracyjna-analiza-danych-pasazerow-titanica">Eksploracyjna analiza danych pasażerów Titanica</h1>
-<p><strong>Utworzone: 2026-08-15</strong></p>
-<p>Eksploracyjna analiza danych pasażerów Titanica. Projekt skupia się na analizie czynników związanych z przeżyciem katastrofy, takich jak wiek, płeć, klasa biletu czy liczba członków rodziny na pokładzie. W ramach analizy wykorzystano statystyki opisowe, filtrowanie i grupowanie danych oraz wizualizacje pozwalające odkryć najważniejsze zależności w zbiorze.</p>
-<p><a href="titanic_analysis.ipynb" download class="md-button md-button--primary">
-    Pobierz Notebook
-</a></p>
-<p><a href="https://github.com/Goldmanski/ds_ai_portfolio/blob/main/docs/titanic/titanic_analysis.ipynb"
-   class="md-button">
-    Zobacz na GitHub
-</a></p>
-<p><iframe
-    id="content"
-    src="titanic_report.html"
-    width="100%"
-    style="border:1px solid black;overflow:hidden;"
-></iframe></p>
-<script>
-function resizeIframeToFitContent(iframe) {
-    iframe.style.height = (iframe.contentWindow.document.documentElement.scrollHeight + 50) + "px";
-    iframe.contentDocument.body.style["overflow"] = 'hidden';
-}
-window.addEventListener('load', function() {
-    var iframe = document.getElementById('content');
-    resizeIframeToFitContent(iframe);
-});
-window.addEventListener('resize', function() {
-    var iframe = document.getElementById('content');
-    resizeIframeToFitContent(iframe);
-});
-</script>
+<h1 id="cvtailor">CVTailor</h1>
+<h2 id="overview">Overview</h2>
+<p>CVTailor is an AI-powered Streamlit application for creating professional, job-tailored CVs and generating one-page PDF documents.</p>
+<p>The application allows users to provide their professional information, target job offer and company details, and generate a tailored professional profile using the OpenAI API.</p>
+<p>The project combines AI-generated content with deterministic PDF generation, input validation and dynamic document layout.</p>
+<div class="hero-buttons">
+
+<a href="https://cv-tailor-ai.streamlit.app" class="md-button md-button--primary">Live Demo</a>
+
+<a href="https://github.com/Goldmanski/cv-tailor" class="md-button">GitHub</a>
+
+</div>
+
+<hr />
+<h2 id="problem">Problem</h2>
+<p>Creating a CV for each individual job opportunity can require repeatedly adapting the same professional information to a specific role and employer.</p>
+<p>CVTailor explores an AI-assisted approach where the candidate provides their professional background together with a target job offer and employer information.</p>
+<p>The application uses that context to generate a tailored professional profile while keeping the final document generation deterministic.</p>
+<hr />
+<h2 id="solution">Solution</h2>
+<p>The application combines structured user input, validation, AI-generated content and deterministic PDF generation:</p>
+<pre><code class="language-text">User
+  │
+  ├── Personal Information
+  ├── Professional Experience
+  ├── Projects
+  ├── Education
+  ├── Skills
+  └── Additional Information
+  │
+  ▼
+Streamlit
+  │
+  ▼
+Input Validation
+  │
+  ├── Missing Required Fields
+  └── Invalid Input
+  │
+  ▼
+OpenAI API
+  │
+  ▼
+Tailored Professional Profile
+  │
+  ▼
+CV Factory
+  │
+  ▼
+PDF Generator
+  │
+  ├── Dynamic Layout
+  ├── Custom Fonts
+  └── One-Page Validation
+  │
+  ▼
+Generated CV
+  │
+  ▼
+PDF Download
+</code></pre>
+<p>The LLM is used for generating tailored professional content.</p>
+<p>The final PDF is generated separately using deterministic application logic.</p>
+<hr />
+<h2 id="architecture">Architecture</h2>
+<p>The project is divided into several logical components.</p>
+<h3 id="input-and-ui-layer">Input and UI Layer</h3>
+<p><strong>Streamlit</strong> provides:</p>
+<ul>
+<li>the user interface,</li>
+<li>form handling,</li>
+<li>validation feedback,</li>
+<li>CV preview,</li>
+<li>PDF download functionality.</li>
+</ul>
+<p>Users can provide required information and optionally add:</p>
+<ul>
+<li>experience,</li>
+<li>education,</li>
+<li>courses,</li>
+<li>projects,</li>
+<li>skills,</li>
+<li>languages,</li>
+<li>portfolio information,</li>
+<li>additional activities.</li>
+</ul>
+<h3 id="validation-layer">Validation Layer</h3>
+<p>The application validates the provided information before generating the CV.</p>
+<p>Validation covers:</p>
+<ul>
+<li>missing required fields,</li>
+<li>invalid email addresses,</li>
+<li>invalid phone numbers,</li>
+<li>invalid URLs,</li>
+<li>incomplete dynamic sections,</li>
+<li>generated CV length.</li>
+</ul>
+<p>CV generation is prevented when required information is missing or invalid.</p>
+<h3 id="ai-layer">AI Layer</h3>
+<p>The application uses the <strong>OpenAI API</strong> to generate a short professional profile tailored to the candidate's background and target job offer.</p>
+<p>The AI therefore focuses on generating and adapting content rather than directly constructing the PDF document.</p>
+<h3 id="cv-factory">CV Factory</h3>
+<p><code>cv_factory.py</code> is responsible for constructing the CV content and organizing individual sections.</p>
+<p>It provides templates and helpers for sections such as:</p>
+<ul>
+<li>professional profile,</li>
+<li>projects,</li>
+<li>experience,</li>
+<li>education,</li>
+<li>courses,</li>
+<li>languages,</li>
+<li>additional information.</li>
+</ul>
+<h3 id="pdf-generation-layer">PDF Generation Layer</h3>
+<p><code>pdf_generator.py</code> generates the final PDF document using <strong>ReportLab</strong>.</p>
+<p>The generator handles:</p>
+<ul>
+<li>document layout,</li>
+<li>custom fonts,</li>
+<li>section formatting,</li>
+<li>dynamic spacing,</li>
+<li>one-page layout validation.</li>
+</ul>
+<p>This separation keeps AI-generated content independent from deterministic document generation.</p>
+<hr />
+<h2 id="how-it-works">How It Works</h2>
+<p>The complete workflow consists of the following steps:</p>
+<ol>
+<li>The user enters their personal and professional information.</li>
+<li>The user provides the target job offer.</li>
+<li>The user can optionally describe the employer and role.</li>
+<li>Additional professional information can be added.</li>
+<li>The application validates the provided data.</li>
+<li>The OpenAI API generates a tailored professional profile.</li>
+<li>CV Factory assembles the CV content.</li>
+<li>The PDF Generator builds the final document.</li>
+<li>The layout is adjusted to fit the available page space.</li>
+<li>The generated CV is presented to the user.</li>
+<li>The final PDF can be downloaded directly from the application.</li>
+</ol>
+<hr />
+<h2 id="dynamic-pdf-generation">Dynamic PDF Generation</h2>
+<p>One of the main engineering aspects of the project is that the PDF is not generated from a static template with fixed content.</p>
+<p>The amount of information in a CV can vary considerably between users.</p>
+<p>The PDF generator therefore dynamically handles:</p>
+<ul>
+<li>content length,</li>
+<li>section spacing,</li>
+<li>text wrapping,</li>
+<li>page margins,</li>
+<li>section layout,</li>
+<li>available page space.</li>
+</ul>
+<p>The application also validates whether the generated CV can fit into the intended one-page layout.</p>
+<hr />
+<h2 id="generated-documents">Generated Documents</h2>
+<p>CVTailor can generate different CV structures depending on the candidate's background and the information provided.</p>
+<p>The repository contains several examples of generated CVs:</p>
+<pre><code class="language-text">cv1.PNG
+cv2.PNG
+cv3.PNG
+</code></pre>
+<p>The generated document is available directly from the application as a PDF download.</p>
+<hr />
+<h2 id="technology-stack">Technology Stack</h2>
+<div class="tech-list">
+
+<span>Python</span>
+<span>Streamlit</span>
+<span>OpenAI</span>
+<span>ReportLab</span>
+<span>python-dotenv</span>
+
+</div>
+
+<hr />
+<h2 id="project-structure">Project Structure</h2>
+<pre><code class="language-text">cv-tailor/
+│
+├── app.py
+├── cv_factory.py
+├── pdf_generator.py
+├── requirements.txt
+├── .gitignore
+├── README.md
+│
+├── fonts/
+│   ├── DejaVuSans.ttf
+│   └── DejaVuSans-Bold.ttf
+│
+└── screenshots/
+    ├── cv1.PNG
+    ├── cv2.PNG
+    ├── cv3.PNG
+    ├── workflow1.PNG
+    ├── workflow2.PNG
+    └── workflow3.PNG
+</code></pre>
+<hr />
+<h2 id="example-workflow">Example Workflow</h2>
+<ol>
+<li>Enter personal information.</li>
+<li>Add a short professional description.</li>
+<li>Provide the target job offer.</li>
+<li>Add information about the employer and role.</li>
+<li>Optionally add experience, education, skills, projects, languages and portfolio information.</li>
+<li>Validate the provided data.</li>
+<li>Generate the tailored CV.</li>
+<li>Review the generated document.</li>
+<li>Download the final PDF.</li>
+</ol>
+<hr />
+<h2 id="deployment">Deployment</h2>
+<p>The application is deployed using <strong>Streamlit</strong>.</p>
+<p>API credentials are provided through environment variables locally and Streamlit Secrets in the deployed application.</p>
+<p>The OpenAI API key is not intended to be stored directly in the repository.</p>
+<hr />
+<h2 id="what-this-project-demonstrates">What This Project Demonstrates</h2>
+<p>This project demonstrates how an LLM can be integrated into a practical document-generation workflow without making the document-generation process itself dependent on the model.</p>
+<p>The main concepts demonstrated are:</p>
+<ul>
+<li>LLM integration,</li>
+<li>structured user input,</li>
+<li>input validation,</li>
+<li>AI-assisted content generation,</li>
+<li>separation of AI logic from deterministic processing,</li>
+<li>automated PDF generation,</li>
+<li>dynamic document layout,</li>
+<li>one-page document validation,</li>
+<li>Streamlit application development,</li>
+<li>cloud deployment.</li>
+</ul>
+<p>The central design idea is:</p>
+<blockquote>
+<p><strong>Use AI to adapt the content, and deterministic software to control the final document.</strong></p>
+</blockquote>
+<hr />
+<div class="hero-buttons">
+
+<a href="https://cv-tailor-ai.streamlit.app" class="md-button md-button--primary">Open Live Demo</a>
+
+<a href="https://github.com/Goldmanski/cv-tailor" class="md-button">View Source Code</a>
+
+</div>
 
 
 

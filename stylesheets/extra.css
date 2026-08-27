@@ -1,0 +1,72 @@
+/* Global */
+
+.md-main__inner {
+    max-width: 1200px;
+}
+
+.md-content {
+    max-width: 100%;
+}
+
+/* Home */
+
+.hero-buttons {
+    margin: 2rem 0 3rem;
+}
+
+.hero-buttons .md-button {
+    margin-right: 0.5rem;
+}
+
+
+/* Project cards */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.project-card {
+    padding: 1.75rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 12px;
+    background: var(--md-default-bg-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+
+/* Technologies */
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.5rem 0 3rem;
+}
+
+.tech-list span {
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    background: var(--md-code-bg-color);
+    font-size: 0.9rem;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -13,13 +13,13 @@
         <meta name="author" content="Eliasz Nowicki">
       
       
-        <link rel="canonical" href="https://goldmanski.github.io/ds_ai_portfolio/titanic/">
+        <link rel="canonical" href="https://goldmanski.github.io/ds_ai_portfolio/half_marathon_predictor/">
       
       
-        <link rel="prev" href="../find_friends/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../iris/">
+        <link rel="next" href="../voice_recall/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Titanic — Exploratory Data Analysis - Data Science & AI Portfolio</title>
+        <title>Half Marathon Predictor - Data Science & AI Portfolio</title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eksploracyjna-analiza-danych-pasazerow-titanica" class="md-skip">
+        <a href="#half-marathon-predictor" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Titanic — Exploratory Data Analysis
+              Half Marathon Predictor
             
           </span>
         </div>
@@ -215,11 +215,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../half_marathon_predictor/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -255,13 +257,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../titanic/" class="md-tabs__link">
           
   
   
@@ -383,26 +383,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -415,7 +420,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             AI & LLM
@@ -426,10 +431,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../half_marathon_predictor/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Half Marathon Predictor
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -440,6 +467,200 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ui-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llm-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-learning-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observability-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observability Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Information
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-project-demonstrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      What This Project Demonstrates
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -598,31 +819,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -635,7 +851,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Data Analysis
@@ -646,19 +862,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../titanic/" class="md-nav__link">
         
   
   
@@ -669,7 +876,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -820,6 +1026,188 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ui-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llm-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-learning-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning Layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observability-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observability Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Missing Information
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Stack
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-project-demonstrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      What This Project Demonstrates
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -837,36 +1225,217 @@
   
 
 
-<h1 id="eksploracyjna-analiza-danych-pasazerow-titanica">Eksploracyjna analiza danych pasażerów Titanica</h1>
-<p><strong>Utworzone: 2026-08-15</strong></p>
-<p>Eksploracyjna analiza danych pasażerów Titanica. Projekt skupia się na analizie czynników związanych z przeżyciem katastrofy, takich jak wiek, płeć, klasa biletu czy liczba członków rodziny na pokładzie. W ramach analizy wykorzystano statystyki opisowe, filtrowanie i grupowanie danych oraz wizualizacje pozwalające odkryć najważniejsze zależności w zbiorze.</p>
-<p><a href="titanic_analysis.ipynb" download class="md-button md-button--primary">
-    Pobierz Notebook
-</a></p>
-<p><a href="https://github.com/Goldmanski/ds_ai_portfolio/blob/main/docs/titanic/titanic_analysis.ipynb"
-   class="md-button">
-    Zobacz na GitHub
-</a></p>
-<p><iframe
-    id="content"
-    src="titanic_report.html"
-    width="100%"
-    style="border:1px solid black;overflow:hidden;"
-></iframe></p>
-<script>
-function resizeIframeToFitContent(iframe) {
-    iframe.style.height = (iframe.contentWindow.document.documentElement.scrollHeight + 50) + "px";
-    iframe.contentDocument.body.style["overflow"] = 'hidden';
-}
-window.addEventListener('load', function() {
-    var iframe = document.getElementById('content');
-    resizeIframeToFitContent(iframe);
-});
-window.addEventListener('resize', function() {
-    var iframe = document.getElementById('content');
-    resizeIframeToFitContent(iframe);
-});
-</script>
+<h1 id="half-marathon-predictor">Half Marathon Predictor</h1>
+<h2 id="overview">Overview</h2>
+<p>Half Marathon Predictor is an AI-powered application that predicts a runner's expected half marathon finish time.</p>
+<p>The application combines a Large Language Model with a Machine Learning regression model. Instead of filling out a structured form, the user describes the runner in natural language.</p>
+<p>The system then extracts the required information, validates it and passes the structured data to the prediction model.</p>
+<div class="hero-buttons">
+
+<a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Live Demo</a>
+
+<a href="https://github.com/Goldmanski/half_marathon_predictor" class="md-button">GitHub</a>
+
+</div>
+
+<hr />
+<h2 id="problem">Problem</h2>
+<p>Traditional prediction applications usually require users to provide data through predefined input fields.</p>
+<p>This project explores a different approach:</p>
+<blockquote>
+<p>Can a Large Language Model act as a natural-language interface for a traditional Machine Learning model?</p>
+</blockquote>
+<p>The user can describe a runner in a natural way, for example:</p>
+<blockquote>
+<p>I am a 28-year-old male and my 5 km time is 22 minutes.</p>
+</blockquote>
+<p>The application extracts the required information automatically and uses it as input for the prediction model.</p>
+<hr />
+<h2 id="solution">Solution</h2>
+<p>The application combines several components into one end-to-end workflow:</p>
+<pre><code class="language-text">User
+  │
+  ▼
+Natural Language Input
+  │
+  ▼
+GPT-4.1 Mini
+  +
+Instructor
+  │
+  ▼
+Structured Runner Data
+  │
+  ▼
+Pydantic Validation
+  │
+  ▼
+Regression Model
+  │
+  ▼
+Half Marathon Prediction
+  │
+  ▼
+Streamlit UI
+</code></pre>
+<p>The LLM is therefore not responsible for making the prediction itself.</p>
+<p>Its role is to act as a <strong>structured data extraction layer</strong> between the user and the Machine Learning model.</p>
+<hr />
+<h2 id="architecture">Architecture</h2>
+<p>The application is divided into several logical components.</p>
+<h3 id="ui-layer">UI Layer</h3>
+<p><strong>Streamlit</strong> provides the user interface and handles:</p>
+<ul>
+<li>natural-language input,</li>
+<li>validation messages,</li>
+<li>prediction requests,</li>
+<li>displaying the final result.</li>
+</ul>
+<h3 id="llm-layer">LLM Layer</h3>
+<p><strong>OpenAI GPT-4.1 Mini</strong> extracts the required runner information from natural language.</p>
+<p>The extracted fields are:</p>
+<ul>
+<li>gender,</li>
+<li>age,</li>
+<li>5 km time.</li>
+</ul>
+<p><strong>Instructor</strong> is used together with <strong>Pydantic</strong> to produce structured and validated output.</p>
+<h3 id="machine-learning-layer">Machine Learning Layer</h3>
+<p>The structured runner data is passed to a trained regression model.</p>
+<p>The model predicts the expected half marathon finish time.</p>
+<p>The trained model is stored as:</p>
+<pre><code class="language-text">models/halfmarathon_linear_regression.pkl
+</code></pre>
+<p>It is loaded with <strong>Joblib</strong> and cached using Streamlit's <code>st.cache_resource</code>.</p>
+<h3 id="observability-layer">Observability Layer</h3>
+<p><strong>Langfuse</strong> provides observability for the LLM component.</p>
+<p>It allows individual LLM interactions to be traced and inspected independently from the Machine Learning prediction layer.</p>
+<hr />
+<h2 id="how-it-works">How It Works</h2>
+<p>The complete workflow consists of the following steps:</p>
+<ol>
+<li>The user enters a natural-language description of a runner.</li>
+<li>The application sends the input to GPT-4.1 Mini.</li>
+<li>Instructor converts the response into the structured <code>RunnerData</code> Pydantic model.</li>
+<li>The application checks whether any required information is missing.</li>
+<li>The structured runner data is passed to the regression model.</li>
+<li>The model predicts the expected half marathon finish time.</li>
+<li>The result is converted into a readable time format.</li>
+<li>The prediction is displayed in the Streamlit application.</li>
+<li>The LLM interaction is monitored through Langfuse.</li>
+</ol>
+<hr />
+<h2 id="example">Example</h2>
+<h3 id="complete-input">Complete Input</h3>
+<p>I am a 28-year-old male and my 5 km time is 22 minutes.</p>
+<p>The LLM extracts:</p>
+<p>Gender: M<br />
+Age: 28<br />
+5 km time: 1320 seconds</p>
+<p>The structured data is then passed to the regression model.</p>
+<h3 id="missing-information">Missing Information</h3>
+<p>The application also handles incomplete input.</p>
+<p>For example:</p>
+<p>I am a 28-year-old male.</p>
+<p>The application identifies that the 5 km time is missing and asks the user to provide it.</p>
+<p>No prediction is performed until all required information is available.</p>
+<hr />
+<h2 id="machine-learning">Machine Learning</h2>
+<p>The application uses a trained regression model to estimate the half marathon finish time.</p>
+<p>The model receives structured runner information extracted from the natural-language input.</p>
+<p>The prediction model is stored as a serialized artifact:</p>
+<pre><code class="language-text">halfmarathon_linear_regression.pkl
+</code></pre>
+<p>The project also contains the Machine Learning development notebook:</p>
+<pre><code class="language-text">half_marathon_predictor.ipynb
+</code></pre>
+<p>This separates the model development process from the application layer responsible for serving predictions.</p>
+<hr />
+<h2 id="observability">Observability</h2>
+<p>One of the goals of the project was to make the LLM component observable.</p>
+<p>Langfuse is integrated into the application to provide visibility into individual LLM interactions.</p>
+<p>The monitoring layer records information such as:</p>
+<ul>
+<li>input messages,</li>
+<li>LLM generations,</li>
+<li>model information,</li>
+<li>execution traces.</li>
+</ul>
+<p>This makes it possible to inspect the LLM extraction layer independently from the Machine Learning prediction layer.</p>
+<hr />
+<h2 id="technology-stack">Technology Stack</h2>
+<div class="tech-list">
+
+<span>Python</span>
+<span>Streamlit</span>
+<span>Scikit-learn</span>
+<span>OpenAI</span>
+<span>Instructor</span>
+<span>Pydantic</span>
+<span>Langfuse</span>
+<span>Pandas</span>
+<span>NumPy</span>
+<span>Joblib</span>
+
+</div>
+
+<hr />
+<h2 id="project-structure">Project Structure</h2>
+<pre><code class="language-text">half_marathon_predictor/
+│
+├── app.py
+├── llm.py
+├── predictor.py
+├── utils.py
+├── langfuse_client.py
+├── requirements.txt
+│
+├── data/
+│   ├── halfmarathon_wroclaw_2023_final.csv
+│   └── halfmarathon_wroclaw_2024_final.csv
+│
+├── models/
+│   └── halfmarathon_linear_regression.pkl
+│
+├── screenshots/
+│   ├── app.png
+│   └── langfuse.png
+│
+├── half_marathon_predictor.ipynb
+├── .gitignore
+└── README.md
+</code></pre>
+<hr />
+<h2 id="deployment">Deployment</h2>
+<p>The application is deployed using <strong>Streamlit Community Cloud</strong>.</p>
+<p>The trained Machine Learning model is included in the project repository and loaded locally by the application.</p>
+<p>Sensitive API configuration is provided through environment variables or Streamlit Secrets rather than being stored in the repository.</p>
+<hr />
+<h2 id="what-this-project-demonstrates">What This Project Demonstrates</h2>
+<p>This project demonstrates how a traditional Machine Learning model can be integrated into an AI-powered application.</p>
+<p>The main concepts demonstrated are:</p>
+<ul>
+<li>natural-language interfaces,</li>
+<li>structured LLM outputs,</li>
+<li>Pydantic validation,</li>
+<li>Machine Learning inference,</li>
+<li>model serving,</li>
+<li>LLM observability,</li>
+<li>Streamlit application development,</li>
+<li>cloud deployment.</li>
+</ul>
+<p>The central design idea is:</p>
+<blockquote>
+<p><strong>Use the LLM to understand the user, and use the Machine Learning model to make the prediction.</strong></p>
+</blockquote>
+<hr />
+<div class="hero-buttons">
+
+<a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Open Live Demo</a>
+
+<a href="https://github.com/Goldmanski/half_marathon_predictor" class="md-button">View Source Code</a>
+
+</div>
 
 
 
