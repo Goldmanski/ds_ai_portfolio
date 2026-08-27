@@ -124,6 +124,32 @@
     
     
     
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../pl/half_marathon_predictor/" hreflang="pl" class="md-select__link">
+              Polski
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
     
       
       
@@ -299,7 +325,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../about.md" class="md-tabs__link">
+      <a href="../about/" class="md-tabs__link">
         
   
   
@@ -484,129 +510,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#a-prediction-model-with-a-natural-language-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      A prediction model with a natural-language interface
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#from-running-data-to-a-prediction" class="md-nav__link">
     <span class="md-ellipsis">
-      Problem
+      From running data to a prediction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#solution" class="md-nav__link">
+  <a href="#why-use-an-llm-at-all" class="md-nav__link">
     <span class="md-ellipsis">
-      Solution
+      Why use an LLM at all?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#handling-incomplete-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Architecture
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Architecture">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ui-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      UI Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#llm-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      LLM Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-learning-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Learning Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#observability-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Observability Layer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How It Works
+      Handling incomplete information
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#what-i-found-interesting" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#complete-input" class="md-nav__link">
-    <span class="md-ellipsis">
-      Complete Input
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#missing-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Missing Information
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#machine-learning" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Learning
+      What I found interesting
     </span>
   </a>
   
@@ -622,36 +564,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#technology-stack" class="md-nav__link">
+  <a href="#what-this-project-taught-me" class="md-nav__link">
     <span class="md-ellipsis">
-      Technology Stack
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-this-project-demonstrates" class="md-nav__link">
-    <span class="md-ellipsis">
-      What This Project Demonstrates
+      What this project taught me
     </span>
   </a>
   
@@ -991,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about.md" class="md-nav__link">
+      <a href="../about/" class="md-nav__link">
         
   
   
@@ -1033,129 +948,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#a-prediction-model-with-a-natural-language-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      A prediction model with a natural-language interface
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#from-running-data-to-a-prediction" class="md-nav__link">
     <span class="md-ellipsis">
-      Problem
+      From running data to a prediction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#solution" class="md-nav__link">
+  <a href="#why-use-an-llm-at-all" class="md-nav__link">
     <span class="md-ellipsis">
-      Solution
+      Why use an LLM at all?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
+  <a href="#handling-incomplete-information" class="md-nav__link">
     <span class="md-ellipsis">
-      Architecture
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Architecture">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ui-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      UI Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#llm-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      LLM Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#machine-learning-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Learning Layer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#observability-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Observability Layer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-it-works" class="md-nav__link">
-    <span class="md-ellipsis">
-      How It Works
+      Handling incomplete information
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#what-i-found-interesting" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#complete-input" class="md-nav__link">
-    <span class="md-ellipsis">
-      Complete Input
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#missing-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Missing Information
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#machine-learning" class="md-nav__link">
-    <span class="md-ellipsis">
-      Machine Learning
+      What I found interesting
     </span>
   </a>
   
@@ -1171,36 +1002,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#technology-stack" class="md-nav__link">
+  <a href="#what-this-project-taught-me" class="md-nav__link">
     <span class="md-ellipsis">
-      Technology Stack
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project Structure
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-this-project-demonstrates" class="md-nav__link">
-    <span class="md-ellipsis">
-      What This Project Demonstrates
+      What this project taught me
     </span>
   </a>
   
@@ -1226,10 +1030,14 @@
 
 
 <h1 id="half-marathon-predictor">Half Marathon Predictor</h1>
-<h2 id="overview">Overview</h2>
-<p>Half Marathon Predictor is an AI-powered application that predicts a runner's expected half marathon finish time.</p>
-<p>The application combines a Large Language Model with a Machine Learning regression model. Instead of filling out a structured form, the user describes the runner in natural language.</p>
-<p>The system then extracts the required information, validates it and passes the structured data to the prediction model.</p>
+<h2 id="a-prediction-model-with-a-natural-language-interface">A prediction model with a natural-language interface</h2>
+<p>What if you could ask a Machine Learning model for a prediction without filling in a form?</p>
+<p>That was the idea behind Half Marathon Predictor.</p>
+<p>Instead of asking the user to enter their age, gender and 5 km time into separate fields, the application lets them describe themselves naturally:</p>
+<blockquote>
+<p>I am a 28-year-old male and my 5 km time is 22 minutes.</p>
+</blockquote>
+<p>The application extracts the relevant information from the message and uses it as input for a traditional Machine Learning regression model.</p>
 <div class="hero-buttons">
 
 <a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Live Demo</a>
@@ -1239,201 +1047,94 @@
 </div>
 
 <hr />
-<h2 id="problem">Problem</h2>
-<p>Traditional prediction applications usually require users to provide data through predefined input fields.</p>
-<p>This project explores a different approach:</p>
-<blockquote>
-<p>Can a Large Language Model act as a natural-language interface for a traditional Machine Learning model?</p>
-</blockquote>
-<p>The user can describe a runner in a natural way, for example:</p>
-<blockquote>
-<p>I am a 28-year-old male and my 5 km time is 22 minutes.</p>
-</blockquote>
-<p>The application extracts the required information automatically and uses it as input for the prediction model.</p>
+<h2 id="from-running-data-to-a-prediction">From running data to a prediction</h2>
+<p>The Machine Learning part of the project is based on race data from the Wrocław Half Marathon.</p>
+<p>The model learns the relationship between a runner's <strong>age, gender and 5 km performance</strong> and their expected half marathon finish time.</p>
+<p>The interesting part of the project came afterwards.</p>
+<p>I wanted the final application to feel less like a Machine Learning form and more like a conversation.</p>
+<p>This created a simple but useful separation:</p>
+<p><strong>LLM understands the runner.</strong></p>
+<p><strong>Machine Learning makes the prediction.</strong></p>
+<p>The language model does not predict the race time itself. It only turns an informal description into structured data that the prediction model can understand.</p>
 <hr />
-<h2 id="solution">Solution</h2>
-<p>The application combines several components into one end-to-end workflow:</p>
-<pre><code class="language-text">User
-  │
-  ▼
-Natural Language Input
-  │
-  ▼
-GPT-4.1 Mini
-  +
-Instructor
-  │
-  ▼
-Structured Runner Data
-  │
-  ▼
-Pydantic Validation
-  │
-  ▼
-Regression Model
-  │
-  ▼
-Half Marathon Prediction
-  │
-  ▼
-Streamlit UI
+<h2 id="why-use-an-llm-at-all">Why use an LLM at all?</h2>
+<p>A traditional prediction application might look like this:</p>
+<pre><code class="language-text">Age:        [ 28 ]
+
+Gender:     [ M ]
+
+5 km time:  [ 22:00 ]
+
+            ↓
+
+        Prediction
 </code></pre>
-<p>The LLM is therefore not responsible for making the prediction itself.</p>
-<p>Its role is to act as a <strong>structured data extraction layer</strong> between the user and the Machine Learning model.</p>
-<hr />
-<h2 id="architecture">Architecture</h2>
-<p>The application is divided into several logical components.</p>
-<h3 id="ui-layer">UI Layer</h3>
-<p><strong>Streamlit</strong> provides the user interface and handles:</p>
-<ul>
-<li>natural-language input,</li>
-<li>validation messages,</li>
-<li>prediction requests,</li>
-<li>displaying the final result.</li>
-</ul>
-<h3 id="llm-layer">LLM Layer</h3>
-<p><strong>OpenAI GPT-4.1 Mini</strong> extracts the required runner information from natural language.</p>
-<p>The extracted fields are:</p>
-<ul>
-<li>gender,</li>
-<li>age,</li>
-<li>5 km time.</li>
-</ul>
-<p><strong>Instructor</strong> is used together with <strong>Pydantic</strong> to produce structured and validated output.</p>
-<h3 id="machine-learning-layer">Machine Learning Layer</h3>
-<p>The structured runner data is passed to a trained regression model.</p>
-<p>The model predicts the expected half marathon finish time.</p>
-<p>The trained model is stored as:</p>
-<pre><code class="language-text">models/halfmarathon_linear_regression.pkl
+<p>Half Marathon Predictor takes a different approach:</p>
+<pre><code class="language-text">&quot;I am 28, male and run 5 km in 22 minutes.&quot;
+
+                    ↓
+
+              GPT-4.1 Mini
+
+                    ↓
+
+        Structured runner data
+
+                    ↓
+
+          Regression model
+
+                    ↓
+
+        Half marathon estimate
 </code></pre>
-<p>It is loaded with <strong>Joblib</strong> and cached using Streamlit's <code>st.cache_resource</code>.</p>
-<h3 id="observability-layer">Observability Layer</h3>
-<p><strong>Langfuse</strong> provides observability for the LLM component.</p>
-<p>It allows individual LLM interactions to be traced and inspected independently from the Machine Learning prediction layer.</p>
+<p>This makes the LLM a <strong>natural-language interface</strong>, rather than the prediction engine.</p>
+<p>That distinction is one of the main ideas behind the project.</p>
 <hr />
-<h2 id="how-it-works">How It Works</h2>
-<p>The complete workflow consists of the following steps:</p>
-<ol>
-<li>The user enters a natural-language description of a runner.</li>
-<li>The application sends the input to GPT-4.1 Mini.</li>
-<li>Instructor converts the response into the structured <code>RunnerData</code> Pydantic model.</li>
-<li>The application checks whether any required information is missing.</li>
-<li>The structured runner data is passed to the regression model.</li>
-<li>The model predicts the expected half marathon finish time.</li>
-<li>The result is converted into a readable time format.</li>
-<li>The prediction is displayed in the Streamlit application.</li>
-<li>The LLM interaction is monitored through Langfuse.</li>
-</ol>
-<hr />
-<h2 id="example">Example</h2>
-<h3 id="complete-input">Complete Input</h3>
-<p>I am a 28-year-old male and my 5 km time is 22 minutes.</p>
-<p>The LLM extracts:</p>
-<p>Gender: M<br />
-Age: 28<br />
-5 km time: 1320 seconds</p>
-<p>The structured data is then passed to the regression model.</p>
-<h3 id="missing-information">Missing Information</h3>
-<p>The application also handles incomplete input.</p>
+<h2 id="handling-incomplete-information">Handling incomplete information</h2>
+<p>Natural language also introduces a new problem: users do not always provide everything the model needs.</p>
 <p>For example:</p>
+<blockquote>
 <p>I am a 28-year-old male.</p>
-<p>The application identifies that the 5 km time is missing and asks the user to provide it.</p>
-<p>No prediction is performed until all required information is available.</p>
+</blockquote>
+<p>The application can recognise that the runner's <strong>5 km time is missing</strong> and ask for it before attempting the prediction.</p>
+<p>This means the LLM is not simply extracting values — it is helping the application understand whether it has enough information to continue.</p>
 <hr />
-<h2 id="machine-learning">Machine Learning</h2>
-<p>The application uses a trained regression model to estimate the half marathon finish time.</p>
-<p>The model receives structured runner information extracted from the natural-language input.</p>
-<p>The prediction model is stored as a serialized artifact:</p>
-<pre><code class="language-text">halfmarathon_linear_regression.pkl
-</code></pre>
-<p>The project also contains the Machine Learning development notebook:</p>
-<pre><code class="language-text">half_marathon_predictor.ipynb
-</code></pre>
-<p>This separates the model development process from the application layer responsible for serving predictions.</p>
+<h2 id="what-i-found-interesting">What I found interesting</h2>
+<p>The project combines two approaches that are often presented separately:</p>
+<p><strong>Machine Learning</strong> is responsible for the numerical prediction.</p>
+<p><strong>LLM technology</strong> is responsible for making the interaction with that model more natural.</p>
+<p>Neither component replaces the other.</p>
+<p>The LLM provides flexibility at the interface level, while the regression model remains responsible for the actual prediction.</p>
+<p>This was a useful example of how an LLM can be added to an existing Machine Learning workflow without turning the entire system into an LLM application.</p>
 <hr />
 <h2 id="observability">Observability</h2>
-<p>One of the goals of the project was to make the LLM component observable.</p>
-<p>Langfuse is integrated into the application to provide visibility into individual LLM interactions.</p>
-<p>The monitoring layer records information such as:</p>
+<p>Because the application relies on an LLM, I also wanted to be able to see what was happening inside that part of the system.</p>
+<p>The project uses <strong>Langfuse</strong> to trace the LLM interactions and inspect the extraction process.</p>
+<p>This makes it possible to distinguish between problems occurring in the language-processing layer and problems related to the Machine Learning prediction itself.</p>
+<hr />
+<h2 id="what-this-project-taught-me">What this project taught me</h2>
+<p>The most important lesson was not the prediction model itself.</p>
+<p>It was learning how different components can have clearly defined responsibilities within one application.</p>
+<p>The project brought together:</p>
 <ul>
-<li>input messages,</li>
-<li>LLM generations,</li>
-<li>model information,</li>
-<li>execution traces.</li>
+<li>Machine Learning</li>
+<li>natural-language processing</li>
+<li>structured data validation</li>
+<li>application development</li>
+<li>observability</li>
+<li>deployment</li>
 </ul>
-<p>This makes it possible to inspect the LLM extraction layer independently from the Machine Learning prediction layer.</p>
-<hr />
-<h2 id="technology-stack">Technology Stack</h2>
-<div class="tech-list">
-
-<span>Python</span>
-<span>Streamlit</span>
-<span>Scikit-learn</span>
-<span>OpenAI</span>
-<span>Instructor</span>
-<span>Pydantic</span>
-<span>Langfuse</span>
-<span>Pandas</span>
-<span>NumPy</span>
-<span>Joblib</span>
-
-</div>
-
-<hr />
-<h2 id="project-structure">Project Structure</h2>
-<pre><code class="language-text">half_marathon_predictor/
-│
-├── app.py
-├── llm.py
-├── predictor.py
-├── utils.py
-├── langfuse_client.py
-├── requirements.txt
-│
-├── data/
-│   ├── halfmarathon_wroclaw_2023_final.csv
-│   └── halfmarathon_wroclaw_2024_final.csv
-│
-├── models/
-│   └── halfmarathon_linear_regression.pkl
-│
-├── screenshots/
-│   ├── app.png
-│   └── langfuse.png
-│
-├── half_marathon_predictor.ipynb
-├── .gitignore
-└── README.md
-</code></pre>
-<hr />
-<h2 id="deployment">Deployment</h2>
-<p>The application is deployed using <strong>Streamlit Community Cloud</strong>.</p>
-<p>The trained Machine Learning model is included in the project repository and loaded locally by the application.</p>
-<p>Sensitive API configuration is provided through environment variables or Streamlit Secrets rather than being stored in the repository.</p>
-<hr />
-<h2 id="what-this-project-demonstrates">What This Project Demonstrates</h2>
-<p>This project demonstrates how a traditional Machine Learning model can be integrated into an AI-powered application.</p>
-<p>The main concepts demonstrated are:</p>
-<ul>
-<li>natural-language interfaces,</li>
-<li>structured LLM outputs,</li>
-<li>Pydantic validation,</li>
-<li>Machine Learning inference,</li>
-<li>model serving,</li>
-<li>LLM observability,</li>
-<li>Streamlit application development,</li>
-<li>cloud deployment.</li>
-</ul>
-<p>The central design idea is:</p>
+<p>The result is a small example of a broader idea:</p>
 <blockquote>
-<p><strong>Use the LLM to understand the user, and use the Machine Learning model to make the prediction.</strong></p>
+<p><strong>AI does not always need to replace an existing model. Sometimes it can make that model easier for people to use.</strong></p>
 </blockquote>
 <hr />
 <div class="hero-buttons">
 
-<a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Open Live Demo</a>
+<a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Live Demo</a>
 
-<a href="https://github.com/Goldmanski/half_marathon_predictor" class="md-button">View Source Code</a>
+<a href="https://github.com/Goldmanski/half_marathon_predictor" class="md-button">GitHub</a>
 
 </div>
 
