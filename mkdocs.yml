@@ -82,6 +82,25 @@ plugins:
             Iris — Exploratory Data Analysis: Iris — Eksploracyjna analiza danych
             Offer Generator: Generator ofert
 
+        - locale: es
+          name: Español
+          build: true
+          nav_translations:
+            Home: Inicio
+            AI Engineering: AI Engineering
+            Machine Learning: Machine Learning
+            Data Analysis: Análisis de datos
+            Software Engineering: Ingeniería de software
+            About: Sobre mí
+            Half Marathon Predictor: Half Marathon Predictor
+            Voice Recall: Voice Recall
+            CVTailor: CVTailor
+            ChatLab: ChatLab
+            Find Friends: Find Friends
+            Titanic — Exploratory Data Analysis: Titanic — Análisis exploratorio de datos
+            Iris — Exploratory Data Analysis: Iris — Análisis exploratorio de datos
+            Offer Generator: Generador de ofertas
+
 markdown_extensions:
   - attr_list
   - md_in_html
