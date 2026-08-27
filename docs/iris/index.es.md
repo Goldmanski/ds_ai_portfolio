@@ -188,7 +188,7 @@ Antes de pedirle a un modelo que encuentre patrones, merece la pena dedicar tiem
 ## Informe interactivo
 
 <iframe
-    src="iris_report.html"
+    src="../../iris/iris_report.html"
     width="100%"
     height="1200"
     style="border:1px solid black;">

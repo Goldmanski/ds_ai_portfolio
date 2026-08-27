@@ -184,7 +184,7 @@ A przede wszystkim uważaj na to, co dane rzeczywiście pozwalają Ci stwierdzi�
 
 <a href="../../titanic/titanic_report.html" class="md-button md-button--primary">Interaktywny raport</a>
 
-<a href="titanic_presentation.html" class="md-button">Prezentacja</a>
+<a href="../../titanic/titanic_presentation.html" class="md-button">Prezentacja</a>
 
 <a href="../../titanic/titanic_report.pdf" download class="md-button">Raport PDF</a>
 
@@ -199,7 +199,7 @@ A przede wszystkim uważaj na to, co dane rzeczywiście pozwalają Ci stwierdzi�
 ## Interaktywny raport
 
 <iframe
-    src="titanic_report.html"
+    src="../../titanic/titanic_report.html"
     width="100%"
     height="1200"
     style="border:1px solid black;">

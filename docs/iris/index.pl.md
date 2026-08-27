@@ -188,7 +188,7 @@ Zanim poprosimy model o znalezienie wzorców, warto poświęcić czas na ich sam
 ## Interaktywny raport
 
 <iframe
-    src="iris_report.html"
+    src="../../iris/iris_report.html"
     width="100%"
     height="1200"
     style="border:1px solid black;">

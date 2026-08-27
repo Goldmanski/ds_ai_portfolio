@@ -18,7 +18,7 @@ Este portfolio reúne esos experimentos.
 
 ---
 
-## Proyectos destacados {#featured-projects}
+## Proyectos destacados {#proyectos-destacados}
 
 ### Half Marathon Predictor
 

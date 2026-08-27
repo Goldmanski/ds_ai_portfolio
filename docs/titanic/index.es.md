@@ -199,7 +199,7 @@ Y, sobre todo, tener cuidado con lo que los datos realmente permiten concluir.
 ## Informe interactivo
 
 <iframe
-    src="titanic_report.html"
+    src="../../titanic/titanic_report.html"
     width="100%"
     height="1200"
     style="border:1px solid black;">
