@@ -1,12 +1,16 @@
 # Data Science & AI
 
-## Portfolio projektów
+## Building by exploring
 
-Buduję projekty na styku **Data Science, Machine Learning, AI i Software Engineering** — od analizy danych po aplikacje wykorzystujące modele językowe, embeddings i systemy AI.
+I'm developing my skills in **Data Science, Machine Learning, AI and Software Engineering** by turning questions and ideas into working projects.
+
+I like projects that start with a simple question and gradually become something more interesting — whether that means discovering unexpected patterns in a dataset, teaching an application to understand natural language, or finding a better way for people to interact with a model.
+
+This portfolio is a collection of those experiments.
 
 <div class="hero-buttons">
 
-<a href="#featured-projects" class="md-button md-button--primary">Zobacz projekty</a>
+<a href="#featured-projects" class="md-button md-button--primary">Explore the projects</a>
 
 <a href="https://github.com/Goldmanski/ds_ai_portfolio" class="md-button">GitHub</a>
 
@@ -16,120 +20,110 @@ Buduję projekty na styku **Data Science, Machine Learning, AI i Software Engine
 
 ## Featured Projects
 
-<div class="project-grid">
+### Half Marathon Predictor
 
-<div class="project-card">
+**Can a Machine Learning model understand a runner without a traditional form?**
 
-<h3>Half Marathon Predictor</h3>
+This project started with a simple idea: instead of asking someone to fill in several fields, let them describe themselves naturally.
 
-<p><strong>LLM · Machine Learning · Observability</strong></p>
+The interesting part is what happens next. An LLM interprets the description, while a separate Machine Learning model is responsible for the actual prediction.
 
-<p>
-Aplikacja łącząca modele językowe z predykcją ML — od danych wejściowych w języku naturalnym po przewidywany czas półmaratonu.
-</p>
-
-<p><strong>Technologie:</strong></p>
-
-<p>Python · OpenAI · Pydantic · Scikit-learn · Langfuse · Streamlit</p>
-
-<a href="half_marathon_predictor/" class="md-button">Zobacz projekt →</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>Voice Recall</h3>
-
-<p><strong>Speech-to-Text · Embeddings · Vector Search</strong></p>
-
-<p>
-System zamieniający notatki głosowe w przeszukiwalną bazę wiedzy z wykorzystaniem transkrypcji, embeddings i wyszukiwania semantycznego.
-</p>
-
-<p><strong>Technologie:</strong></p>
-
-<p>Python · Whisper · OpenAI Embeddings · Qdrant · Streamlit</p>
-
-<a href="voice_recall/" class="md-button">Zobacz projekt →</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>Offer Generator</h3>
-
-<p><strong>Python · Domain Modeling · Testing</strong></p>
-
-<p>
-Aplikacja biznesowa zaprojektowana z wykorzystaniem warstwowej architektury, modelu domenowego i testów logiki biznesowej.
-</p>
-
-<p><strong>Technologie:</strong></p>
-
-<p>Python · Streamlit · ReportLab · Pytest</p>
-
-<a href="offer_generator/" class="md-button">Zobacz projekt →</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>CVTailor</h3>
-
-<p><strong>LLM · Document Generation · Streamlit</strong></p>
-
-<p>
-Aplikacja wykorzystująca AI do przygotowania dopasowanego CV oraz deterministycznego generowania dokumentu PDF.
-</p>
-
-<p><strong>Technologie:</strong></p>
-
-<p>Python · OpenAI · Streamlit · ReportLab</p>
-
-<a href="cv_tailor/" class="md-button">Zobacz projekt →</a>
-
-</div>
-
-</div>
+[Explore project →](half_marathon_predictor/)
 
 ---
 
-## Technologies
+### Voice Recall
 
-<div class="tech-list">
+**What if your notes could be searched by what you meant, rather than by the exact words you used?**
 
-<span>Python</span>
-<span>Scikit-learn</span>
-<span>OpenAI</span>
-<span>PyCaret</span>
-<span>Qdrant</span>
-<span>Langfuse</span>
-<span>Streamlit</span>
-<span>Pandas</span>
-<span>NumPy</span>
-<span>ReportLab</span>
+Voice Recall turns spoken notes into a searchable knowledge base.
 
-</div>
+The project explores a different way of interacting with personal information: instead of remembering the exact sentence you wrote, you can search for the idea behind it.
+
+[Explore project →](voice_recall/)
 
 ---
 
-## Explore the portfolio
+### Offer Generator
 
-### AI & LLM
+**What does a small business application look like when the business logic becomes the centre of the design?**
 
-**Half Marathon Predictor** · **Voice Recall** · **CVTailor** · **ChatLab**
+Offer Generator began as a practical problem: creating customer offers should be simple for the user, but the rules behind those offers should remain clear and reliable.
 
-### Machine Learning
+The project became an opportunity to explore how software structure can reflect the way a real business process works.
 
-**Find Friends**
+[Explore project →](offer_generator/)
+
+---
+
+### CVTailor
+
+**Can AI help tailor a CV without giving an LLM complete control over the final document?**
+
+CVTailor explores the boundary between generative AI and deterministic software.
+
+AI helps prepare the content, while the application remains responsible for how the final document is constructed.
+
+[Explore project →](cv_tailor/)
+
+---
+
+## More projects, more questions
+
+The featured projects show where I'm currently heading, but the earlier projects are an important part of the story too.
 
 ### Data Analysis
 
+Before asking a model to find patterns, you first need to learn how to find them yourself.
+
+The **Titanic** and **Iris** projects were exercises in looking at data from different angles — asking questions, visualising relationships and learning to turn observations into conclusions.
+
 **Titanic** · **Iris**
+
+### Machine Learning
+
+**Find Friends** explores how Machine Learning can group people based on similarities that are not immediately obvious.
+
+It was one of my steps from analysing data towards building models that can discover structure within it.
+
+**Find Friends**
+
+### AI & LLM
+
+**ChatLab** explores another side of AI applications: what happens when a language model becomes part of a complete application rather than just a chatbot window?
+
+Together with Half Marathon Predictor, Voice Recall and CVTailor, it represents my growing interest in building useful systems around AI.
+
+**Half Marathon Predictor** · **Voice Recall** · **CVTailor** · **ChatLab**
 
 ### Software Engineering
 
+**Offer Generator** represents another part of the same journey: learning that a working application is more than a model or a user interface.
+
+How the code is organised, where business rules live and how behaviour is tested can be just as important as the feature itself.
+
 **Offer Generator**
+
+---
+
+## What connects these projects?
+
+The projects may look different on the surface.
+
+One works with runners.  
+Another works with voice notes.  
+Another generates business offers.
+
+But they all come back to the same idea:
+
+**take something messy or difficult to interact with and build a system that makes it easier to understand or use.**
+
+That's the direction I'm continuing to explore — moving from analysing data, through Machine Learning and AI, towards building complete applications around them.
+
+---
+
+<div class="hero-buttons">
+
+<a href="#featured-projects" class="md-button md-button--primary">Explore the projects</a>
+
+</div>

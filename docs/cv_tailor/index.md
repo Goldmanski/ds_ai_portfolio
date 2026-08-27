@@ -1,12 +1,16 @@
 # CVTailor
 
-## Overview
+## Can AI tailor your CV without taking control of it?
 
-CVTailor is an AI-powered Streamlit application for creating professional, job-tailored CVs and generating one-page PDF documents.
+A job application rarely starts with a blank page.
 
-The application allows users to provide their professional information, target job offer and company details, and generate a tailored professional profile using the OpenAI API.
+Most of us already have the experience, projects and skills. The difficult part is deciding **which parts matter most for a particular opportunity** and how to present them clearly.
 
-The project combines AI-generated content with deterministic PDF generation, input validation and dynamic document layout.
+CVTailor started with a simple idea: let AI help with that part.
+
+But there was an important boundary I wanted to keep.
+
+The language model could help decide **what to say** — but it shouldn't decide **how the final document is built**.
 
 <div class="hero-buttons">
 
@@ -18,282 +22,123 @@ The project combines AI-generated content with deterministic PDF generation, inp
 
 ---
 
-## Problem
+## One CV, different opportunities
 
-Creating a CV for each individual job opportunity can require repeatedly adapting the same professional information to a specific role and employer.
+The same experience can be relevant in very different ways depending on the role.
 
-CVTailor explores an AI-assisted approach where the candidate provides their professional background together with a target job offer and employer information.
+A project that is important for a Data Science position might be much less important for a Software Engineering position.
 
-The application uses that context to generate a tailored professional profile while keeping the final document generation deterministic.
+Instead of manually rewriting the professional profile every time, CVTailor takes the candidate's information together with a target job offer and uses that context to create a more relevant version of the profile.
 
----
+The goal isn't to invent experience.
 
-## Solution
-
-The application combines structured user input, validation, AI-generated content and deterministic PDF generation:
-
-```text
-User
-  │
-  ├── Personal Information
-  ├── Professional Experience
-  ├── Projects
-  ├── Education
-  ├── Skills
-  └── Additional Information
-  │
-  ▼
-Streamlit
-  │
-  ▼
-Input Validation
-  │
-  ├── Missing Required Fields
-  └── Invalid Input
-  │
-  ▼
-OpenAI API
-  │
-  ▼
-Tailored Professional Profile
-  │
-  ▼
-CV Factory
-  │
-  ▼
-PDF Generator
-  │
-  ├── Dynamic Layout
-  ├── Custom Fonts
-  └── One-Page Validation
-  │
-  ▼
-Generated CV
-  │
-  ▼
-PDF Download
-```
-
-The LLM is used for generating tailored professional content.
-
-The final PDF is generated separately using deterministic application logic.
+It is to **change the emphasis**.
 
 ---
 
-## Architecture
+## Where should AI stop?
 
-The project is divided into several logical components.
+This became one of the most interesting parts of the project.
 
-### Input and UI Layer
+It would be possible to ask an LLM to generate the entire CV — including the structure and formatting.
 
-**Streamlit** provides:
+But that would also mean giving a probabilistic system control over something that should behave predictably.
 
-- the user interface,
-- form handling,
-- validation feedback,
-- CV preview,
-- PDF download functionality.
+So I deliberately split the responsibilities.
 
-Users can provide required information and optionally add:
+**AI generates and adapts the content.**
 
-- experience,
-- education,
-- courses,
-- projects,
-- skills,
-- languages,
-- portfolio information,
-- additional activities.
+**The application controls the document.**
 
-### Validation Layer
+The final PDF is produced by deterministic application logic rather than by the language model.
 
-The application validates the provided information before generating the CV.
-
-Validation covers:
-
-- missing required fields,
-- invalid email addresses,
-- invalid phone numbers,
-- invalid URLs,
-- incomplete dynamic sections,
-- generated CV length.
-
-CV generation is prevented when required information is missing or invalid.
-
-### AI Layer
-
-The application uses the **OpenAI API** to generate a short professional profile tailored to the candidate's background and target job offer.
-
-The AI therefore focuses on generating and adapting content rather than directly constructing the PDF document.
-
-### CV Factory
-
-`cv_factory.py` is responsible for constructing the CV content and organizing individual sections.
-
-It provides templates and helpers for sections such as:
-
-- professional profile,
-- projects,
-- experience,
-- education,
-- courses,
-- languages,
-- additional information.
-
-### PDF Generation Layer
-
-`pdf_generator.py` generates the final PDF document using **ReportLab**.
-
-The generator handles:
-
-- document layout,
-- custom fonts,
-- section formatting,
-- dynamic spacing,
-- one-page layout validation.
-
-This separation keeps AI-generated content independent from deterministic document generation.
+That means the same input should result in a document that follows the same rules every time.
 
 ---
 
-## How It Works
+## The one-page problem
 
-The complete workflow consists of the following steps:
+Keeping a CV to one page sounds simple until the amount of information starts changing.
 
-1. The user enters their personal and professional information.
-2. The user provides the target job offer.
-3. The user can optionally describe the employer and role.
-4. Additional professional information can be added.
-5. The application validates the provided data.
-6. The OpenAI API generates a tailored professional profile.
-7. CV Factory assembles the CV content.
-8. The PDF Generator builds the final document.
-9. The layout is adjusted to fit the available page space.
-10. The generated CV is presented to the user.
-11. The final PDF can be downloaded directly from the application.
+One person might have two projects and little professional experience.
 
----
+Another might have several years of experience, multiple courses, projects, languages and additional activities.
 
-## Dynamic PDF Generation
+The document still needs to fit.
 
-One of the main engineering aspects of the project is that the PDF is not generated from a static template with fixed content.
+This turned PDF generation into an interesting problem of its own.
 
-The amount of information in a CV can vary considerably between users.
+The application has to deal with changing amounts of text, wrapping, spacing and available page space while keeping the final document readable.
 
-The PDF generator therefore dynamically handles:
+The result is not just a static template with text inserted into predefined boxes.
 
-- content length,
-- section spacing,
-- text wrapping,
-- page margins,
-- section layout,
-- available page space.
-
-The application also validates whether the generated CV can fit into the intended one-page layout.
+It is a document that **adjusts to the content it receives**.
 
 ---
 
-## Generated Documents
+## What happens when the input is incomplete?
 
-CVTailor can generate different CV structures depending on the candidate's background and the information provided.
+There is another practical problem with automating CV creation.
 
-The repository contains several examples of generated CVs:
+The application cannot create a meaningful document if important information is missing.
 
-```text
-cv1.PNG
-cv2.PNG
-cv3.PNG
-```
+CVTailor therefore validates the information before generation.
 
-The generated document is available directly from the application as a PDF download.
+This includes things such as contact details and the completeness of dynamically added sections.
 
----
+The idea is simple:
 
-## Technology Stack
+> **Don't let the automation hide a problem that should be fixed first.**
 
-<div class="tech-list">
-
-<span>Python</span>
-<span>Streamlit</span>
-<span>OpenAI</span>
-<span>ReportLab</span>
-<span>python-dotenv</span>
-
-</div>
+Instead of producing a polished-looking but incomplete CV, the application stops and tells the user what needs attention.
 
 ---
 
-## Project Structure
+## A small example of human + AI collaboration
 
-```text
-cv-tailor/
-│
-├── app.py
-├── cv_factory.py
-├── pdf_generator.py
-├── requirements.txt
-├── .gitignore
-├── README.md
-│
-├── fonts/
-│   ├── DejaVuSans.ttf
-│   └── DejaVuSans-Bold.ttf
-│
-└── screenshots/
-    ├── cv1.PNG
-    ├── cv2.PNG
-    ├── cv3.PNG
-    ├── workflow1.PNG
-    ├── workflow2.PNG
-    └── workflow3.PNG
-```
+The workflow can be thought of as three different responsibilities:
+
+**The user** provides the experience and decides what is true.
+
+**AI** helps adapt the message to the opportunity.
+
+**The application** makes sure the final document follows predictable rules.
+
+That division is more interesting to me than simply asking an LLM to "write a CV".
+
+It shows how generative AI can be useful **inside a larger deterministic workflow** without having to control everything around it.
 
 ---
 
-## Example Workflow
+## What I found interesting
 
-1. Enter personal information.
-2. Add a short professional description.
-3. Provide the target job offer.
-4. Add information about the employer and role.
-5. Optionally add experience, education, skills, projects, languages and portfolio information.
-6. Validate the provided data.
-7. Generate the tailored CV.
-8. Review the generated document.
-9. Download the final PDF.
+The project made me think about where AI actually adds value.
 
----
+The obvious answer would be:
 
-## Deployment
+> "Let AI generate the CV."
 
-The application is deployed using **Streamlit**.
+But the more interesting answer turned out to be:
 
-API credentials are provided through environment variables locally and Streamlit Secrets in the deployed application.
+> **"Let AI handle the part that requires interpretation, and keep the predictable parts under normal software control."**
 
-The OpenAI API key is not intended to be stored directly in the repository.
+The distinction is small, but it changes how the whole application is designed.
 
 ---
 
-## What This Project Demonstrates
+## What this project taught me
 
-This project demonstrates how an LLM can be integrated into a practical document-generation workflow without making the document-generation process itself dependent on the model.
+CVTailor was an exercise in combining two very different types of software behaviour.
 
-The main concepts demonstrated are:
+Generative AI is flexible and probabilistic.
 
-- LLM integration,
-- structured user input,
-- input validation,
-- AI-assisted content generation,
-- separation of AI logic from deterministic processing,
-- automated PDF generation,
-- dynamic document layout,
-- one-page document validation,
-- Streamlit application development,
-- cloud deployment.
+Document generation needs to be structured and predictable.
 
-The central design idea is:
+Instead of treating those characteristics as a problem, I used them to divide the application into responsibilities.
 
-> **Use AI to adapt the content, and deterministic software to control the final document.**
+The project therefore became less about generating a CV and more about exploring a broader question:
+
+**Where should AI make decisions, and where should conventional software take over?**
 
 ---
 

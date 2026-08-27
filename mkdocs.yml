@@ -48,6 +48,40 @@ nav:
 
   - About: about.md
 
+plugins:
+  - search
+
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+
+        - locale: pl
+          name: Polski
+          build: true
+          nav_translations:
+            Home: Strona główna
+            AI & LLM: AI & LLM
+            Machine Learning: Machine Learning
+            Data Analysis: Analiza danych
+            Software Engineering: Software Engineering
+            About: O mnie
+            Half Marathon Predictor: Half Marathon Predictor
+            Voice Recall: Voice Recall
+            CVTailor: CVTailor
+            ChatLab: ChatLab
+            Find Friends: Find Friends
+            Titanic — Exploratory Data Analysis: Titanic — Eksploracyjna analiza danych
+            Iris — Exploratory Data Analysis: Iris — Eksploracyjna analiza danych
+            Offer Generator: Generator ofert
+
 markdown_extensions:
   - attr_list
   - md_in_html

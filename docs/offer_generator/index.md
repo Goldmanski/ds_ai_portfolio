@@ -1,265 +1,209 @@
-# PDF Offer Generator
+# Offer Generator
 
-## Overview
+## What happens when creating a business offer becomes a software problem?
 
-PDF Offer Generator is a web application for creating professional customer quotations and generating ready-to-send PDF documents.
+A customer asks for an offer.
 
-The application combines an interactive **Streamlit** interface with a layered architecture inspired by **Domain-Driven Design (DDD)**.
+At first, the process sounds simple:
 
-The project focuses on separating user interface, application logic, domain logic and infrastructure responsibilities.
+Choose some products.  
+Add quantities.  
+Calculate the total.  
+Generate a PDF.
 
-[Live Demo](https://offer-generator-app.streamlit.app){ .md-button .md-button--primary }
-[GitHub](https://github.com/Goldmanski/offer-generator){ .md-button }
+But once you start turning that process into an application, small details quickly become important.
 
----
+What happens when the same product is added twice?
 
-## Problem
+What if required customer information is missing?
 
-Preparing customer quotations involves several repetitive operations:
+When should the total be calculated?
 
-- entering customer information,
-- selecting products,
-- managing quantities,
-- calculating the quotation value,
-- validating required information,
-- preparing the final document.
+Can the PDF be generated before the offer is complete?
 
-The goal of the application is to bring these operations into a single workflow and automatically generate a professional PDF quotation.
+And perhaps most importantly:
 
----
+> **Where should the rules of the business actually live?**
 
-## Solution
-
-The application provides an interactive interface where the user can:
-
-- enter offer details,
-- provide customer information,
-- browse products grouped by category,
-- add products to the quotation,
-- modify product quantities,
-- remove products,
-- review the calculated total,
-- validate the quotation,
-- generate the PDF document,
-- download the finished quotation.
-
-The application also automatically merges duplicate products added to the quotation.
+That was the problem behind Offer Generator.
 
 ---
 
-## Architecture
+## Explore the application
 
-The project follows a layered architecture inspired by **Domain-Driven Design**.
+<div class="hero-buttons">
 
-```text
-UI
-│
-├── Application
-│
-├── Domain
-│
-└── Infrastructure
-```
+<a href="https://offer-generator-app.streamlit.app" class="md-button md-button--primary">Live Demo</a>
 
-### UI
+<a href="https://github.com/Goldmanski/offer-generator" class="md-button">GitHub</a>
 
-The UI layer is responsible for user interaction.
-
-It contains components such as:
-
-- Customer Form
-- Product Selector
-- Offer Table
-- Validation Panel
-
-### Application
-
-The Application layer coordinates business operations and communication between the UI and the domain layer.
-
-Examples include:
-
-- `QuoteService`
-- `ProductService`
-- `PdfService`
-
-### Domain
-
-The Domain layer contains the core business logic and domain models.
-
-Examples include:
-
-- `Quote`
-- `QuoteItem`
-- `Product`
-- `Customer`
-- `OfferDetails`
-
-### Infrastructure
-
-The Infrastructure layer is responsible for external resources used by the application, such as loading product data.
+</div>
 
 ---
 
-## Core Workflow
+## From a shopping list to a real offer
 
-The application follows a quotation workflow from entering customer information to generating the final document.
+The application lets the user prepare a customer quotation through an interactive interface.
 
-```text
-Customer & Offer Details
-          │
-          ▼
-     Product Selection
-          │
-          ▼
-   Quantity Management
-          │
-          ▼
-   Automatic Calculation
-          │
-          ▼
-       Validation
-          │
-          ▼
-     PDF Generation
-          │
-          ▼
-      Final Offer
-```
+Customer information and offer details are entered first.
+
+Products can then be selected from a catalogue, grouped by category, with quantities adjusted before the final offer is reviewed.
+
+The application keeps track of the quotation and calculates its total value automatically.
+
+What looks like a simple shopping list therefore becomes a small business workflow.
 
 ---
 
-## Key Features
+## The moment the rules start to matter
 
-### Customer & Offer Management
+Imagine adding the same product to an offer twice.
 
-The user can enter the information required to prepare a customer quotation.
+Should the application create two separate lines?
 
-### Product Management
+Or should it recognise that it is the same product and simply increase its quantity?
 
-Products are grouped by category and can be added to the quotation.
+Offer Generator handles this as part of the business logic.
 
-The application supports:
+The same idea applies to quantities, totals and validation.
 
-- adding products,
-- changing quantities,
-- removing products,
-- merging duplicate products.
+These are not just interface decisions.
 
-### Automatic Calculation
+They are **business rules**.
 
-The quotation value is calculated automatically based on the selected products and quantities.
-
-### Validation
-
-Required information is validated before generating the final document.
-
-### PDF Generation
-
-The application generates a professional PDF quotation using **ReportLab**.
-
-The generated document can then be downloaded and sent to the customer.
+And that distinction became one of the most interesting parts of the project.
 
 ---
 
-## Screenshots
+## What belongs in the interface?
 
-### Main Application
+One of the design decisions was to avoid putting all of the logic directly into the Streamlit interface.
 
-The main interface allows the user to enter offer details and customer information.
+The interface should let the user:
 
-![Main Application](https://raw.githubusercontent.com/Goldmanski/offer-generator/main/data/screenshots/app-main.png)
+- enter information
+- select products
+- review the offer
+- see validation messages
+- download the finished document
 
-### Product Selection
+But it should not be responsible for deciding what makes an offer valid or how its business rules work.
 
-Products are grouped by category and can be added to the quotation. Quantities can then be adjusted before generating the final document.
+That responsibility belongs somewhere else.
 
-![Product Selection](https://raw.githubusercontent.com/Goldmanski/offer-generator/main/data/screenshots/products.png)
-
-### Generated PDF
-
-The final quotation is generated as a ready-to-send PDF document.
-
-![Generated PDF](https://raw.githubusercontent.com/Goldmanski/offer-generator/main/data/screenshots/pdf-preview.png)
+This led to a layered structure where different parts of the application have different jobs.
 
 ---
 
-## Testing
+## Thinking in terms of the business domain
 
-The project includes unit tests for business logic using **Pytest**.
+Instead of treating the application as a collection of screens and buttons, the project models concepts that exist in the business itself.
 
-Tests can be executed with:
+There is a **Customer**.
 
-```bash
-pytest
-```
+There is a **Product**.
 
----
+There is a **Quote**.
 
-## Technology Stack
+And there are **Quote Items** connecting the products with the quotation.
 
-- Python 3.11
-- Streamlit
-- ReportLab
-- Pytest
+This way of thinking is inspired by **Domain-Driven Design** — an approach that starts by modelling the important concepts and rules of the business rather than starting with the user interface.
 
----
+For a small application, this might seem like extra structure.
 
-## Project Structure
-
-```text
-offer-generator/
-│
-├── application/
-├── data/
-│   ├── fonts/
-│   ├── images/
-│   ├── screenshots/
-│   └── products.csv
-├── domain/
-├── infrastructure/
-├── tests/
-├── ui/
-├── utils/
-├── app.py
-└── requirements.txt
-```
+But it makes the underlying logic much easier to reason about.
 
 ---
 
-## Deployment
+## The PDF is the final step
 
-The application is deployed using **Streamlit Community Cloud**.
+The PDF is what the user ultimately wants.
 
-[Open the live application](https://offer-generator-app.streamlit.app){ .md-button .md-button--primary }
+But generating it is deliberately not the first thing the application does.
 
----
+The offer needs to be complete and valid first.
 
-## What This Project Demonstrates
+Only after the required information has been confirmed and the quotation can be generated does the application create the final document.
 
-This project demonstrates practical experience with:
+That gives the workflow a clear direction:
 
-- layered application architecture,
-- Domain-Driven Design principles,
-- separation of responsibilities,
-- domain modelling,
-- encapsulation of business logic,
-- testable components,
-- PDF document generation,
-- interactive Streamlit applications.
+**Input → Business rules → Validation → PDF**
 
-The project focuses on applying software engineering principles to a business-oriented Python application.
+The PDF is therefore not where the business logic lives.
+
+It is the final representation of an already prepared offer.
 
 ---
 
-## Possible Improvements
+## What I found interesting
 
-Potential future improvements include:
+The project started from something that sounds almost trivial:
 
-- database integration,
-- customer management,
-- offer history,
-- authentication and user accounts,
-- product search and filtering,
-- additional export formats,
-- REST API,
-- ERP integration.
+> *Create a quotation and turn it into a PDF.*
+
+But implementing that idea exposed a much bigger software-engineering question.
+
+Where should each responsibility live?
+
+The interface should handle interaction.
+
+The application layer should coordinate operations.
+
+The domain should contain the business rules.
+
+And the PDF generation should focus on producing the document.
+
+Once those responsibilities are separated, the application becomes much easier to understand.
+
+---
+
+## Testing the rules
+
+Business logic is especially valuable when it can be tested independently from the interface.
+
+Offer Generator therefore includes unit tests for its business logic.
+
+This matters because the important question is not only:
+
+> *Does the application display the right thing?*
+
+It is also:
+
+> **Does the application behave correctly when the rules are applied?**
+
+That distinction becomes increasingly important as a simple prototype grows into a real business application.
+
+---
+
+## What this project taught me
+
+Offer Generator changed the way I think about software applications.
+
+A business application is not just a user interface connected to a few functions.
+
+Even a relatively small workflow can contain its own concepts, rules and constraints.
+
+The project gave me practical experience with:
+
+- domain modelling
+- separation of responsibilities
+- layered architecture
+- validation
+- automated testing
+- PDF generation
+
+More importantly, it showed me why software architecture exists in the first place.
+
+> **Good architecture is not about adding more layers. It is about giving each part of the system a clear responsibility.**
+
+---
+
+## Explore the application
+
+<div class="hero-buttons">
+
+<a href="https://offer-generator-app.streamlit.app" class="md-button md-button--primary">Live Demo</a>
+
+<a href="https://github.com/Goldmanski/offer-generator" class="md-button">GitHub</a>
+
+</div>

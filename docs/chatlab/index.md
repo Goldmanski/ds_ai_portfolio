@@ -1,12 +1,16 @@
 # ChatLab
 
-## Overview
+## Which model is worth the price?
 
-ChatLab is an LLM-powered chatbot application built with Streamlit.
+There are more and more language models to choose from.
 
-The application allows users to interact with different OpenAI language models, manage multiple conversations, customize chatbot behavior and monitor LLM interactions with Langfuse.
+But once you start using them in practice, a simple question appears:
 
-It also tracks token usage and estimates conversation costs based on the selected model.
+> **Which model gives me the right balance between quality and cost?**
+
+The most powerful model is not necessarily the best choice for every task. Sometimes a cheaper model is more than enough. Sometimes a more capable model is worth paying for.
+
+ChatLab started as a way to explore that trade-off in practice — by putting different models in the same environment and making their responses and costs visible.
 
 <div class="hero-buttons">
 
@@ -18,282 +22,123 @@ It also tracks token usage and estimates conversation costs based on the selecte
 
 ---
 
-## Problem
+## Experiment instead of guessing
 
-Building a useful chatbot application involves more than sending a message to an LLM.
+It is easy to ask which language model is "the best".
 
-A user-facing application needs to handle:
+In practice, that question is not very useful.
 
-- conversation context,
-- multiple conversations,
-- model selection,
-- persistent state,
-- usage tracking,
-- cost visibility,
-- observability.
+A model that is excellent at a difficult task may be unnecessary for a simple one. Paying more does not automatically make every answer more valuable.
 
-ChatLab explores how these components can be combined into one interactive application.
+ChatLab lets you experiment with different OpenAI models and observe how they respond to your prompts.
 
----
+The idea is simple:
 
-## Solution
+**same kind of task → different model → different response → different cost**
 
-The application combines the Streamlit user interface with OpenAI language models, local conversation storage, cost tracking and Langfuse observability.
-
-```text
-User
-  │
-  ▼
-Streamlit Application
-  │
-  ├── Model Selection
-  ├── Chatbot Personality
-  └── Conversation Management
-           │
-           ▼
-     Chatbot Logic
-           │
-      ┌────┴────┐
-      ▼         ▼
-   OpenAI    Langfuse
-     API    Observability
-      │
-      ▼
- Model Response
-      │
-      ├── Token Usage
-      ├── Cost Calculation
-      └── Conversation Storage
-                    │
-                    ▼
-                 JSON Files
-```
-
-The application therefore combines the LLM itself with the state and monitoring components required by a practical chatbot application.
+Instead of relying only on model comparisons found elsewhere, you can see the trade-off in the context of your own conversations.
 
 ---
 
-## Architecture
+## When does a conversation become an application?
 
-### UI Layer
+A single prompt and response is easy.
 
-**Streamlit** provides the user interface for:
+But a useful chatbot quickly needs more.
 
-- chatting with the selected model,
-- selecting models,
-- configuring chatbot personality,
-- creating conversations,
-- switching between conversations,
-- renaming conversations,
-- displaying usage and estimated costs.
+What happens when you start another conversation? Can you come back to an earlier one? Can the chatbot behave differently depending on what you are trying to do?
 
-### LLM Layer
+ChatLab treats these as responsibilities of the application rather than something the language model should magically handle.
 
-The application uses **OpenAI language models** to generate chatbot responses.
+You can create separate conversations, switch between them, rename them and continue where you left off.
 
-The selected model processes:
-
-- chatbot personality,
-- recent conversation history,
-- current user message.
-
-The application also retrieves token usage information from the API response.
-
-### Conversation Management
-
-ChatLab supports multiple independent conversations.
-
-Each conversation stores:
-
-- conversation ID,
-- conversation name,
-- chatbot personality,
-- message history.
-
-Conversation data is stored locally as JSON files.
-
-### Cost Tracking
-
-The application uses token usage returned by the OpenAI API to estimate the cost of the current conversation.
-
-Each available model has its own input and output token pricing.
-
-The estimated cost is displayed in:
-
-- USD,
-- PLN.
-
-### Observability
-
-**Langfuse** is integrated into the application to monitor LLM interactions.
-
-This provides visibility into model calls and makes it possible to inspect the interaction between the application and the selected OpenAI model.
+The chat window may look simple, but there is a surprising amount happening behind it.
 
 ---
 
-## How It Works
+## The hidden cost of a conversation
 
-The complete workflow consists of the following steps:
+Once you start comparing models, another question becomes impossible to ignore:
 
-1. The user selects an available OpenAI language model.
-2. The user enters a message in the chat interface.
-3. The application builds the conversation context using the chatbot personality and recent messages.
-4. The request is sent to the selected OpenAI model.
-5. Langfuse records the LLM interaction.
-6. The model returns the response together with token usage information.
-7. The response is displayed in the chat interface.
-8. The conversation is saved locally.
-9. Token usage is used to calculate the estimated conversation cost.
+> **How much did that answer actually cost?**
 
----
+ChatLab tracks the token usage returned by the API and uses it to estimate the cost of a conversation.
 
-## Conversation Management
+The estimate is shown in both USD and PLN.
 
-ChatLab supports multiple independent conversations.
+This makes the difference between models more tangible. A response is no longer just something that appears on the screen — it also has a measurable cost.
 
-Users can:
+That makes model selection a more practical decision.
 
-- create new conversations,
-- switch between saved conversations,
-- rename conversations,
-- continue existing conversations.
+The question is no longer simply:
 
-Local conversation data is stored in JSON files:
+> *Which model is better?*
 
-```text
-db/
-├── current.json
-└── conversations/
-    ├── 1.json
-    ├── 2.json
-    └── ...
-```
+but:
 
-The `db/` directory is excluded from the Git repository because it contains local application data.
+> **Which model is good enough for what I need, at a cost that makes sense?**
 
 ---
 
-## Cost Tracking
+## What about context?
 
-The application tracks token usage returned by the OpenAI API.
+Comparing individual answers is only part of the story.
 
-Each model has separate input and output token pricing.
+A model response rarely exists in isolation. In a real conversation, every new message can depend on what came before it.
 
-The application uses this information to estimate the current conversation cost.
+ChatLab keeps track of that context and allows multiple independent conversations to be continued over time.
 
-The estimated cost is presented in both USD and PLN.
+It also lets the user customise the chatbot's personality, making the interaction more than a sequence of unrelated prompts.
 
-This makes the cost of using different models visible directly from the chatbot interface.
-
----
-
-## Langfuse Observability
-
-Langfuse is integrated into the application to monitor LLM interactions.
-
-The integration records model calls and provides visibility into interactions with OpenAI models.
-
-This allows the LLM layer to be inspected independently from the rest of the application.
+This was an important lesson in building with LLMs: **the model is only one part of the conversation.**
 
 ---
 
-## Example Workflow
+## Looking behind the conversation
 
-### User Input
+Once an LLM becomes part of an application, another question appears:
 
-The user selects a model and enters a message such as:
+> **What is actually happening behind the chat window?**
 
-```text
-Model: GPT-5.6
+ChatLab uses Langfuse to observe interactions with the language model.
 
-Message:
-Explain how Python decorators work.
-```
+This makes it possible to look beyond the final answer and understand the model interaction from the application's perspective.
 
-The application combines the current message with the selected chatbot personality and recent conversation history.
+It also reinforces an idea that became increasingly important while building the project:
 
-The request is then sent to the selected OpenAI model.
-
-### Result
-
-The application receives:
-
-- generated response,
-- token usage,
-- estimated conversation cost,
-- recorded LLM interaction in Langfuse.
-
-The conversation is then saved locally and can be continued later.
+> **If you want to build useful AI applications, you need to understand what happens when the model is not behaving as expected.**
 
 ---
 
-## Technology Stack
+## What I found interesting
 
-<div class="tech-list">
+ChatLab changed the way I think about choosing language models.
 
-<span>Python</span>
-<span>Streamlit</span>
-<span>OpenAI API</span>
-<span>Langfuse</span>
-<span>python-dotenv</span>
-<span>JSON</span>
+There is a natural tendency to look for the model with the highest capability and treat it as the obvious choice.
 
-</div>
+But real applications have constraints.
 
----
+Sometimes the difference in quality matters. Sometimes it doesn't. Sometimes a faster or cheaper model is the more sensible option.
 
-## Project Structure
+That makes model selection less about finding **the best model** and more about finding **the right model for the job**.
 
-```text
-chatlab/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
-
-The main application logic is contained in `app.py`, including:
-
-- Streamlit interface,
-- chatbot logic,
-- conversation management,
-- model selection,
-- cost tracking,
-- Langfuse integration.
-
-Local conversation data is stored in the `db/` directory and excluded from Git.
+ChatLab became a small environment for exploring that idea firsthand.
 
 ---
 
-## Deployment
+## What this project taught me
 
-The application is deployed using **Streamlit Community Cloud**.
+The project started with a chatbot, but the more interesting lessons were around the chatbot itself.
 
-API and Langfuse credentials are provided through environment variables or deployment secrets.
+I learned that an LLM application needs to think about more than generating a good answer.
 
-Local conversation data remains outside the Git repository.
+It needs to manage context, give the user control over conversations, make usage visible and provide a way to understand what happens behind the scenes.
 
----
+Most importantly, it showed me that working with multiple models is not simply a race to find the most capable one.
 
-## What This Project Demonstrates
+It is about understanding the trade-offs and making a deliberate choice.
 
-ChatLab demonstrates how an LLM can be integrated into a user-facing application while maintaining conversation state and providing basic monitoring and cost visibility.
-
-The main concepts demonstrated are:
-
-- Large Language Model integration,
-- conversational context management,
-- multiple model support,
-- conversation persistence,
-- token usage tracking,
-- cost estimation,
-- LLM observability,
-- Streamlit application development.
-
-The central idea is:
-
-> **An LLM application needs more than model calls — it also needs state, usage visibility and operational context.**
+> **The right model is not necessarily the most powerful one. It is the one that gives you the quality you need at a cost that makes sense.**
 
 ---
 

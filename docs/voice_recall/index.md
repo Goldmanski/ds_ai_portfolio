@@ -1,10 +1,18 @@
 # Voice Recall
 
-## Overview
+## What if you could search your notes by meaning?
 
-Voice Recall is a voice-first note-taking application that allows users to record notes, convert speech to text, and search their notes using semantic similarity.
+We often remember **what we were thinking about**, but not the exact words we used.
 
-Instead of relying only on exact keyword matching, the application uses embeddings to search for notes based on their meaning.
+That becomes a problem when your notes start to grow.
+
+You might remember writing something about preparing for a race, but searching for the exact sentence you wrote is another story.
+
+Voice Recall explores a simple idea:
+
+> **What if searching your notes worked more like remembering, and less like looking for keywords?**
+
+The application lets you record a voice note, turn it into text, and later search your notes using natural language.
 
 <div class="hero-buttons">
 
@@ -16,216 +24,120 @@ Instead of relying only on exact keyword matching, the application uses embeddin
 
 ---
 
-## Problem
+## From voice to searchable memory
 
-Traditional note search usually relies on keywords.
+The project starts with something very natural: speaking.
 
-This creates a limitation: a search only works well when the query contains words that also appear in the original note.
+You record a note instead of typing it.
 
-Voice Recall explores a semantic approach.
+The application transcribes your voice and lets you review the result before saving it. The note is then transformed into a representation of its meaning and stored so it can be searched later.
 
-Instead of asking:
+The interesting part comes when you try to find something.
 
-> Does this note contain the exact words from my query?
+Imagine that one of your notes says:
 
-the application asks:
+> I should gradually increase my weekly mileage before the half marathon.
 
-> Which saved notes have a meaning most similar to my query?
-
----
-
-## Solution
-
-Voice Recall combines speech-to-text, embeddings and vector search into one workflow:
-
-```text
-User
-  │
-  ▼
-Record Voice Note
-  │
-  ▼
-Audio
-  │
-  ▼
-OpenAI Whisper
-  │
-  ▼
-Transcribed Text
-  │
-  ▼
-User Edits Note
-  │
-  ▼
-OpenAI Embeddings
-  │
-  ▼
-Qdrant
-  │
-  ▼
-Vector Storage
-```
-
-For searching saved notes:
-
-```text
-Search Query
-  │
-  ▼
-OpenAI Embeddings
-  │
-  ▼
-Qdrant Similarity Search
-  │
-  ▼
-Ranked Notes
-```
-
-The application therefore uses the same embedding space for both stored notes and search queries.
-
----
-
-## Architecture
-
-The application is built around three main AI components.
-
-### Speech-to-Text Layer
-
-**OpenAI Whisper** converts recorded audio into text.
-
-The transcription can then be reviewed and edited by the user before the note is saved.
-
-### Embedding Layer
-
-**OpenAI Embeddings** convert both notes and search queries into numerical vector representations.
-
-These vectors represent the semantic meaning of the text and allow the application to compare notes based on similarity rather than exact keyword matches.
-
-### Vector Search Layer
-
-**Qdrant** stores the generated embeddings and performs vector similarity search.
-
-The application uses cosine similarity to rank stored notes according to their semantic similarity to the user's query.
-
----
-
-## How It Works
-
-The complete note-taking workflow consists of the following steps:
-
-1. The user records a voice note.
-2. The audio is processed using OpenAI Whisper.
-3. The generated transcription is displayed to the user.
-4. The user can review and edit the transcription.
-5. The note is converted into an embedding.
-6. The embedding is stored in Qdrant.
-7. The user enters a natural-language search query.
-8. The query is converted into an embedding.
-9. Qdrant performs a similarity search.
-10. Notes are returned ranked by semantic similarity.
-
----
-
-## Semantic Search
-
-The main idea behind the project is semantic search.
-
-For example, a stored note might contain information about:
-
-> preparing for a half marathon and increasing weekly mileage.
-
-A user could search for:
+Months later, you might search for:
 
 > running training plans
 
-without using the exact words from the original note.
+There is no need for those exact words to appear in the original note.
 
-The embedding representation allows the system to compare the meaning of the query with the meaning of stored notes.
-
-The results are ranked according to their semantic similarity.
+The system is looking for **similar meaning**, not identical vocabulary.
 
 ---
 
-## Technology Stack
+## The difference between words and meaning
 
-<div class="tech-list">
+Traditional keyword search might ask:
 
-<span>Python</span>
-<span>Streamlit</span>
-<span>OpenAI Whisper</span>
-<span>OpenAI Embeddings</span>
-<span>Qdrant</span>
-<span>Pydub</span>
-<span>python-dotenv</span>
+> Does this note contain the word "training"?
 
-</div>
+Voice Recall asks a different question:
 
----
+> Which of my notes is most closely related to "running training plans"?
 
-## Project Structure
+This distinction is the heart of the project.
 
-```text
-voice-recall/
-│
-├── app.py
-├── packages.txt
-├── requirements.txt
-├── .gitignore
-├── README.md
-│
-└── screenshots/
-    ├── main-application.png
-    ├── voice-transcription.png
-    └── semantic-search.png
-```
+Text is converted into numerical representations called **embeddings**. Notes with similar meanings tend to end up closer together in this representation.
 
-The application logic is currently implemented in `app.py`.
+That makes it possible to search through notes using concepts rather than exact phrases.
 
 ---
 
-## Deployment
+## A small experiment in human memory
 
-The application is deployed using **Streamlit**.
+There is something interesting about this approach.
 
-Audio processing requires FFmpeg, which is specified through `packages.txt` for the deployment environment.
+People rarely remember information word for word.
 
-API credentials are provided through environment variables locally and Streamlit Secrets in the deployed application.
+We usually remember the **idea**.
 
----
+You might remember that you had a note about increasing your running distance, even if the note itself never used the words you are currently searching for.
 
-## What This Project Demonstrates
+Voice Recall tries to make the computer work in a similar way.
 
-This project demonstrates how several AI components can be combined into a practical application.
-
-The main concepts demonstrated are:
-
-- speech-to-text processing,
-- embeddings,
-- semantic search,
-- vector databases,
-- cosine similarity,
-- integration with external AI services,
-- Streamlit application development,
-- cloud deployment.
-
-The central idea is:
-
-> **Convert human language into vector representations and use those representations to search for meaning rather than exact words.**
+Instead of forcing the user to remember how something was written, the application lets them search for what they remember it being **about**.
 
 ---
 
-## Possible Improvements
+## Why voice?
 
-Potential future improvements include:
+The project also explores a different way of creating information.
 
-- note timestamps and metadata,
-- user authentication,
-- private note collections,
-- persistent audio storage,
-- search result filtering,
-- configurable number of search results,
-- improved note management,
-- support for multiple languages.
+Typing a note introduces friction.
+
+Speaking is often faster — especially when the idea appears suddenly and you don't want to stop what you're doing to write it down.
+
+That creates a simple workflow:
+
+**speak → transcribe → review → remember → search**
+
+The voice interface is therefore not just a different input method. It is part of the idea behind the project: **capturing thoughts with as little friction as possible.**
+
+---
+
+## What happens behind the scenes?
+
+There are several steps between saying something and finding it again.
+
+First, the recorded audio is converted into text.
+
+The user can then correct or edit the transcription before saving it.
+
+The final text is converted into an embedding and stored in a vector database.
+
+When a search is performed, the query goes through the same process.
+
+The system then compares the query with the stored notes and returns the most semantically similar ones.
+
+The important idea is that **the note and the search query are represented in the same semantic space**.
+
+---
+
+## What I found interesting
+
+The project made the idea of semantic search much more tangible.
+
+It is easy to describe embeddings as numbers representing meaning. It becomes much more interesting when you can actually write one sentence, search for a completely different sentence, and still retrieve the original note because the two ideas are related.
+
+That shift — from matching words to comparing meaning — is what makes this project particularly interesting to me.
+
+---
+
+## What this project taught me
+
+Voice Recall brought together several ideas that are becoming increasingly important in AI applications:
+
+- turning unstructured human input into usable data,
+- representing text by its semantic meaning,
+- searching information by similarity,
+- combining several AI components into one workflow.
+
+More importantly, it showed me that an AI application does not necessarily have to generate something new.
+
+Sometimes the most useful thing it can do is help you **find something you already knew.**
 
 ---
 

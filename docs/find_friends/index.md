@@ -1,451 +1,187 @@
-# 👥 Find Friends App
+# Find Friends
 
-A Machine Learning application that groups users with similar profiles using unsupervised learning and presents statistics describing the resulting group.
+## Can a Machine Learning model find people who are similar to you?
 
-The project combines a clustering model developed with PyCaret with an interactive Streamlit application.
+What makes two people similar?
 
-## 🚀 Live Demo
+Is it their age?
+Their education?
+The things they like?
 
-[https://find-friends-app-goldmanski.streamlit.app](https://find-friends-app-goldmanski.streamlit.app)
+Or is it some combination of characteristics that is difficult to notice at first glance?
 
-The application allows users to complete a short survey and find the group that is most similar to their profile.
+Find Friends explores this question using a simple welcome survey.
 
----
+Instead of telling the model what the "right" groups of people should look like, I let Machine Learning discover them.
 
-## 📸 Screenshots
+<div class="hero-buttons">
 
-### Main Application
+<a href="https://find-friends-app-goldmanski.streamlit.app" class="md-button md-button--primary">Live Demo</a>
 
-The main screen allows users to provide information about themselves and receive a cluster assignment together with information describing the group.
+<a href="https://github.com/Goldmanski/find_friends_app" class="md-button">GitHub</a>
 
-![Main Application](screenshots/screenshot_main.png)
-
-### Group Statistics
-
-The application presents interactive visualizations showing the age and education distribution of users belonging to the assigned cluster.
-
-![Group Statistics](screenshots/screenshot_statistics.png)
-
-### Additional Group Statistics
-
-Additional visualizations show the distribution of favorite animals, favorite places, and gender within the assigned cluster.
-
-![Additional Group Statistics](screenshots/screenshot_statistics_2.png)
+</div>
 
 ---
 
-## 🎯 Project Goal
+## Let the data decide
 
-The goal of the project is to demonstrate how an unsupervised Machine Learning model can be developed, analysed, saved and integrated into an interactive application.
+The dataset contains 140 survey responses.
 
-The project follows the complete workflow:
-
-```text
-Survey Data
-    │
-    ▼
-Data Preparation
-    │
-    ▼
-Clustering Model
-    │
-    ▼
-Cluster Analysis
-    │
-    ▼
-Model Persistence
-    │
-    ▼
-Streamlit Application
-    │
-    ▼
-New User
-    │
-    ▼
-Cluster Prediction
-    │
-    ▼
-Group Statistics
-```
-
-The clustering model does not predict a predefined target.
-
-Instead, it discovers groups of users with similar characteristics based on their survey responses.
-
----
-
-## 📊 Dataset
-
-The project uses a welcome survey dataset containing information about:
+Each person is described by just five things:
 
 - age
-- education level
+- education
 - favorite animals
 - favorite place
 - gender
 
-The dataset contains **140 observations and 5 original features**.
+At first glance, these questions might not seem like enough to tell us much about a person.
 
-The clustering workflow transforms the original categorical variables into a feature representation used by the Machine Learning model.
+But together they create patterns.
 
-The resulting transformed dataset contains **21 features**.
+The interesting part is that I did not define those patterns beforehand.
 
-The dataset also contains missing values, which are handled during the preprocessing stage.
-
----
-
-## 🤖 Machine Learning
-
-### Clustering
-
-The project uses **K-Means clustering** implemented through **PyCaret**.
-
-The model groups users based on similarities in the transformed feature space.
-
-The clustering experiment uses:
-
-- 8 clusters
-- preprocessing enabled
-- numerical missing-value imputation using the mean
-- categorical missing-value imputation using the mode
-- categorical feature transformation
-
-The trained clustering pipeline is saved as:
-
-```text
-welcome_survey_clustering_pipeline_v1.pkl
-```
+Instead, the Machine Learning model was asked to find groups of people who look similar based on their answers.
 
 ---
 
-## 🔬 Model Development
+## No correct answer — just patterns
 
-The Machine Learning development process is documented in:
+This is what makes the project different from a typical prediction problem.
 
-```text
-find_friends_clustering.ipynb
-```
+There is no column saying:
 
-The notebook contains the complete development workflow:
+> "This person belongs to Group A."
 
-```text
-Data Loading
-     ↓
-Data Preparation
-     ↓
-Clustering Model
-     ↓
-Cluster Analysis
-     ↓
-Cluster Visualization
-     ↓
-Model Persistence
-     ↓
-Prediction on New Data
-```
+There is no predefined correct answer for the model to learn.
 
-The notebook demonstrates both the training process and the use of the saved clustering pipeline for inference on new user data.
+The model has to discover its own structure in the data.
+
+This is the idea behind **unsupervised learning**.
+
+In this project, K-Means clustering divides the participants into groups based on similarities between their profiles.
+
+The result is not a prediction of something that already has a known answer.
+
+It is an attempt to answer a more open question:
+
+> **What groups naturally exist in this data?**
 
 ---
 
-## 📈 Cluster Analysis
+## So... who are you most similar to?
 
-After training the clustering model, the observations are assigned to clusters and analysed.
+Once the groups have been discovered, the model can be used with a new person.
 
-The resulting clusters are examined using:
+You answer the same five questions.
 
-- cluster sizes
-- cluster distributions
-- visualizations
-- characteristics of users belonging to each cluster
+The application then finds the group whose characteristics are most similar to your profile.
 
-The project uses the resulting cluster assignments as the basis for the user-facing application.
+But it doesn't stop at giving you a cluster number.
 
-Each cluster is given a human-readable name and description stored in:
+It also shows you what that group looks like.
 
-```text
-welcome_survey_cluster_names_and_descriptions_v1.json
-```
+You can see things such as:
 
-This allows the application to present the Machine Learning result in a more understandable form.
+- how many people belong to the group,
+- what percentage of participants they represent,
+- their age distribution,
+- education,
+- favorite animals,
+- favorite places,
+- and gender distribution.
 
----
-
-## 🏗️ Architecture
-
-The application combines a Streamlit user interface with the trained clustering pipeline.
-
-```text
-User
-  │
-  ▼
-Streamlit Application
-  │
-  ▼
-Survey Responses
-  │
-  ▼
-Pandas DataFrame
-  │
-  ▼
-Trained PyCaret Pipeline
-  │
-  ▼
-Predicted Cluster
-  │
-  ├──► Cluster Name & Description
-  │
-  └──► Users from the Same Cluster
-                 │
-                 ▼
-           Group Statistics
-                 │
-                 ▼
-        Plotly Visualizations
-```
-
-The application uses the saved model for inference rather than retraining the model when a user interacts with the application.
+Suddenly, a Machine Learning result becomes something you can actually explore.
 
 ---
 
-## ⚙️ How It Works
+## When Machine Learning finds a group, what do you call it?
 
-1. The user completes the survey in the Streamlit sidebar.
-2. The responses are converted into a Pandas DataFrame.
-3. The saved clustering pipeline predicts the user's cluster.
-4. The application retrieves the corresponding cluster name and description.
-5. The complete dataset is processed using the same clustering pipeline.
-6. Users belonging to the predicted cluster are selected.
-7. The application calculates the number of users in the same cluster.
-8. The percentage of participants belonging to the cluster is calculated.
-9. The total number of participants is displayed.
-10. Plotly visualizations present the characteristics of the group.
-11. The user can optionally save their survey responses to the dataset.
+A cluster number is useful to a model, but not particularly meaningful to a person.
 
----
+Cluster 0 doesn't tell you much.
 
-## 💾 Model Persistence
+So the project adds another step after the clustering process.
 
-The trained clustering pipeline is stored directly in the repository:
+The characteristics of each discovered group are passed to an LLM, which generates a human-readable name and description for the cluster.
 
-```text
-welcome_survey_clustering_pipeline_v1.pkl
-```
+This creates an interesting division of responsibilities:
 
-The application loads the saved pipeline using PyCaret:
+**Machine Learning discovers the groups.**
 
-```python
-load_model()
-```
+**The LLM helps explain what those groups look like.**
 
-The loaded model is cached with Streamlit's `st.cache_data` to avoid repeatedly loading the model during application execution.
+The application can then present the result as something a person can actually understand, rather than simply showing a cluster number.
 
-The same saved pipeline is also used in the Machine Learning notebook to demonstrate prediction on new data.
+It is a small example of two different AI approaches working together: one finds structure in the data, while the other helps turn that structure into a human-readable explanation.
 
 ---
 
-## 💡 User Experience
+## From a notebook to an application
 
-The user provides five pieces of information:
+The Machine Learning experiment started in a notebook.
 
-```text
-Age
-Education
-Favorite animals
-Favorite place
-Gender
-```
+There, the data could be explored, the clustering model trained and the resulting groups analysed.
 
-The application then identifies the cluster assigned to that profile.
+But an experiment becomes more interesting when someone else can actually interact with it.
 
-The result contains:
+The trained pipeline is saved and reused by the Streamlit application.
 
-- cluster name
-- cluster description
-- number of similar users
-- percentage of participants in the cluster
-- total number of participants
-- age distribution
-- education distribution
-- favorite animals distribution
-- favorite place distribution
-- gender distribution
+A new user does not trigger the training process again.
 
-The user can also save their responses directly to the dataset.
+They simply provide their answers and receive a result based on the groups discovered during the original analysis.
+
+This creates a complete path from:
+
+**survey data → exploration → discovered groups → saved model → new user → interactive result**
 
 ---
 
-## 📊 Visualizations
+## What I found interesting
 
-The application uses **Plotly** to display the characteristics of the assigned group.
+The most interesting part of this project was seeing how two different models can play completely different roles.
 
-The following distributions are visualized:
+The clustering model is not trying to explain anything. It simply looks for structure in the data.
 
-- age
-- education level
-- favorite animals
-- favorite place
-- gender
+The LLM does something very different. It takes the characteristics of those discovered groups and turns them into descriptions that make more sense to a human.
 
-These visualizations allow the user to explore the characteristics of the group identified by the clustering model.
+Neither step would be as useful on its own.
 
----
+A cluster without an explanation can be difficult to interpret.
 
-## 🛠️ Tech Stack
+An LLM describing groups that were never discovered from the data would have nothing meaningful to explain.
 
-- Python
-- PyCaret
-- Scikit-learn
-- Pandas
-- Plotly
-- Streamlit
+Together, they create a simple pipeline from **finding patterns to making them understandable**.
 
 ---
 
-## 📁 Project Structure
+## What this project taught me
 
-```text
-find_friends_app/
-│
-├── screenshots/
-│   ├── screenshot_main.png
-│   ├── screenshot_statistics.png
-│   └── screenshot_statistics_2.png
-│
-├── app.py
-├── find_friends_clustering.ipynb
-├── welcome_survey_simple_v1.csv
-├── welcome_survey_clustering_pipeline_v1.pkl
-├── welcome_survey_cluster_names_and_descriptions_v1.json
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
+Find Friends was one of my steps from analysing data towards building Machine Learning systems.
 
-### Main Components
+It taught me that Machine Learning does not always have to answer a question with a single predicted value.
 
-- `app.py` — Streamlit application and inference logic
-- `find_friends_clustering.ipynb` — Machine Learning development and clustering analysis
-- `welcome_survey_simple_v1.csv` — survey dataset
-- `welcome_survey_clustering_pipeline_v1.pkl` — trained clustering pipeline
-- `welcome_survey_cluster_names_and_descriptions_v1.json` — cluster names and descriptions
-- `requirements.txt` — Python dependencies
-- `screenshots/` — application screenshots
-- `.gitignore` — files excluded from version control
+Sometimes the interesting result is the **structure hidden inside the data**.
+
+It also showed me that finding a pattern is only part of the problem.
+
+If the result is going to be useful to a person, you need to understand it and find a way to communicate it.
+
+In this project, that meant combining two different approaches:
+
+**Machine Learning to discover the groups.**
+
+**An LLM to help explain them.**
+
+> **Finding a pattern is only useful when you can make sense of it.**
 
 ---
 
-## 🔍 Example
+<div class="hero-buttons">
 
-### User Input
+<a href="https://find-friends-app-goldmanski.streamlit.app" class="md-button md-button--primary">Open Live Demo</a>
 
-```text
-Age: 45-54
-Education: Wyższe
-Favorite animals: Psy
-Favorite place: W górach
-Gender: Mężczyzna
-```
+<a href="https://github.com/Goldmanski/find_friends_app" class="md-button">View Source Code</a>
 
-### Result
-
-The application assigns the user to the cluster that best matches the provided profile.
-
-The application then displays the characteristics of that group, including its size, percentage of participants and visual distributions of the survey attributes.
-
----
-
-## 🚀 Installation
-
-Clone the repository:
-
-```
-git clone https://github.com/Goldmanski/find_friends_app.git
-cd find_friends_app
-```
-
-Create a virtual environment:
-
-```
-python -m venv .venv
-```
-
-### Windows
-
-```
-.venv\Scripts\activate
-```
-
-### Linux / macOS
-
-```
-source .venv/bin/activate
-```
-
-Install dependencies:
-
-```
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ Run
-
-Start the application with:
-
-```
-streamlit run app.py
-```
-
-The application will then be available through the Streamlit interface.
-
----
-
-## ☁️ Deployment
-
-The application is deployed using **Streamlit Community Cloud**.
-
-The trained clustering pipeline and supporting project files are included directly in the GitHub repository and loaded by the application at runtime.
-
----
-
-## 🎓 What This Project Demonstrates
-
-This project demonstrates the complete process of integrating an unsupervised Machine Learning model into an interactive application.
-
-The main concepts demonstrated are:
-
-- unsupervised Machine Learning
-- K-Means clustering
-- data preprocessing
-- categorical feature transformation
-- cluster analysis
-- model persistence
-- inference on new data
-- Machine Learning application development
-- interactive data visualization
-- Streamlit deployment
-
-The project connects the experimental Machine Learning workflow documented in the notebook with a production-style interactive application.
-
----
-
-## 🔮 Possible Future Improvements
-
-- similarity search between individual users
-- recommendation system
-- database integration
-- automated model retraining
-- dataset management
-- additional user attributes
-- more advanced cluster analysis
-- improved cluster descriptions
-- user authentication
-- REST API
-
----
-
-## 👤 Author
-
-Created by Eliasz Nowicki as a Machine Learning and Streamlit portfolio project.
+</div>

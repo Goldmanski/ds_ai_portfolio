@@ -1,12 +1,16 @@
 # Half Marathon Predictor
 
-## Overview
+## A prediction model with a natural-language interface
 
-Half Marathon Predictor is an AI-powered application that predicts a runner's expected half marathon finish time.
+What if you could ask a Machine Learning model for a prediction without filling in a form?
 
-The application combines a Large Language Model with a Machine Learning regression model. Instead of filling out a structured form, the user describes the runner in natural language.
+That was the idea behind Half Marathon Predictor.
 
-The system then extracts the required information, validates it and passes the structured data to the prediction model.
+Instead of asking the user to enter their age, gender and 5 km time into separate fields, the application lets them describe themselves naturally:
+
+> I am a 28-year-old male and my 5 km time is 22 minutes.
+
+The application extracts the relevant information from the message and uses it as input for a traditional Machine Learning regression model.
 
 <div class="hero-buttons">
 
@@ -18,273 +22,135 @@ The system then extracts the required information, validates it and passes the s
 
 ---
 
-## Problem
+## From running data to a prediction
 
-Traditional prediction applications usually require users to provide data through predefined input fields.
+The Machine Learning part of the project is based on race data from the Wrocław Half Marathon.
 
-This project explores a different approach:
+The model learns the relationship between a runner's **age, gender and 5 km performance** and their expected half marathon finish time.
 
-> Can a Large Language Model act as a natural-language interface for a traditional Machine Learning model?
+The interesting part of the project came afterwards.
 
-The user can describe a runner in a natural way, for example:
+I wanted the final application to feel less like a Machine Learning form and more like a conversation.
 
-> I am a 28-year-old male and my 5 km time is 22 minutes.
+This created a simple but useful separation:
 
-The application extracts the required information automatically and uses it as input for the prediction model.
+**LLM understands the runner.**
+
+**Machine Learning makes the prediction.**
+
+The language model does not predict the race time itself. It only turns an informal description into structured data that the prediction model can understand.
 
 ---
 
-## Solution
+## Why use an LLM at all?
 
-The application combines several components into one end-to-end workflow:
+A traditional prediction application might look like this:
 
 ```text
-User
-  │
-  ▼
-Natural Language Input
-  │
-  ▼
-GPT-4.1 Mini
-  +
-Instructor
-  │
-  ▼
-Structured Runner Data
-  │
-  ▼
-Pydantic Validation
-  │
-  ▼
-Regression Model
-  │
-  ▼
-Half Marathon Prediction
-  │
-  ▼
-Streamlit UI
+Age:        [ 28 ]
+
+Gender:     [ M ]
+
+5 km time:  [ 22:00 ]
+
+            ↓
+
+        Prediction
 ```
 
-The LLM is therefore not responsible for making the prediction itself.
-
-Its role is to act as a **structured data extraction layer** between the user and the Machine Learning model.
-
----
-
-## Architecture
-
-The application is divided into several logical components.
-
-### UI Layer
-
-**Streamlit** provides the user interface and handles:
-
-- natural-language input,
-- validation messages,
-- prediction requests,
-- displaying the final result.
-
-### LLM Layer
-
-**OpenAI GPT-4.1 Mini** extracts the required runner information from natural language.
-
-The extracted fields are:
-
-- gender,
-- age,
-- 5 km time.
-
-**Instructor** is used together with **Pydantic** to produce structured and validated output.
-
-### Machine Learning Layer
-
-The structured runner data is passed to a trained regression model.
-
-The model predicts the expected half marathon finish time.
-
-The trained model is stored as:
+Half Marathon Predictor takes a different approach:
 
 ```text
-models/halfmarathon_linear_regression.pkl
+"I am 28, male and run 5 km in 22 minutes."
+
+                    ↓
+
+              GPT-4.1 Mini
+
+                    ↓
+
+        Structured runner data
+
+                    ↓
+
+          Regression model
+
+                    ↓
+
+        Half marathon estimate
 ```
 
-It is loaded with **Joblib** and cached using Streamlit's `st.cache_resource`.
+This makes the LLM a **natural-language interface**, rather than the prediction engine.
 
-### Observability Layer
-
-**Langfuse** provides observability for the LLM component.
-
-It allows individual LLM interactions to be traced and inspected independently from the Machine Learning prediction layer.
+That distinction is one of the main ideas behind the project.
 
 ---
 
-## How It Works
+## Handling incomplete information
 
-The complete workflow consists of the following steps:
-
-1. The user enters a natural-language description of a runner.
-2. The application sends the input to GPT-4.1 Mini.
-3. Instructor converts the response into the structured `RunnerData` Pydantic model.
-4. The application checks whether any required information is missing.
-5. The structured runner data is passed to the regression model.
-6. The model predicts the expected half marathon finish time.
-7. The result is converted into a readable time format.
-8. The prediction is displayed in the Streamlit application.
-9. The LLM interaction is monitored through Langfuse.
-
----
-
-## Example
-
-### Complete Input
-
-I am a 28-year-old male and my 5 km time is 22 minutes.
-
-The LLM extracts:
-
-Gender: M  
-Age: 28  
-5 km time: 1320 seconds
-
-The structured data is then passed to the regression model.
-
-### Missing Information
-
-The application also handles incomplete input.
+Natural language also introduces a new problem: users do not always provide everything the model needs.
 
 For example:
 
-I am a 28-year-old male.
+> I am a 28-year-old male.
 
-The application identifies that the 5 km time is missing and asks the user to provide it.
+The application can recognise that the runner's **5 km time is missing** and ask for it before attempting the prediction.
 
-No prediction is performed until all required information is available.
+This means the LLM is not simply extracting values — it is helping the application understand whether it has enough information to continue.
 
 ---
 
-## Machine Learning
+## What I found interesting
 
-The application uses a trained regression model to estimate the half marathon finish time.
+The project combines two approaches that are often presented separately:
 
-The model receives structured runner information extracted from the natural-language input.
+**Machine Learning** is responsible for the numerical prediction.
 
-The prediction model is stored as a serialized artifact:
+**LLM technology** is responsible for making the interaction with that model more natural.
 
-```text
-halfmarathon_linear_regression.pkl
-```
+Neither component replaces the other.
 
-The project also contains the Machine Learning development notebook:
+The LLM provides flexibility at the interface level, while the regression model remains responsible for the actual prediction.
 
-```text
-half_marathon_predictor.ipynb
-```
-
-This separates the model development process from the application layer responsible for serving predictions.
+This was a useful example of how an LLM can be added to an existing Machine Learning workflow without turning the entire system into an LLM application.
 
 ---
 
 ## Observability
 
-One of the goals of the project was to make the LLM component observable.
+Because the application relies on an LLM, I also wanted to be able to see what was happening inside that part of the system.
 
-Langfuse is integrated into the application to provide visibility into individual LLM interactions.
+The project uses **Langfuse** to trace the LLM interactions and inspect the extraction process.
 
-The monitoring layer records information such as:
-
-- input messages,
-- LLM generations,
-- model information,
-- execution traces.
-
-This makes it possible to inspect the LLM extraction layer independently from the Machine Learning prediction layer.
+This makes it possible to distinguish between problems occurring in the language-processing layer and problems related to the Machine Learning prediction itself.
 
 ---
 
-## Technology Stack
+## What this project taught me
 
-<div class="tech-list">
+The most important lesson was not the prediction model itself.
 
-<span>Python</span>
-<span>Streamlit</span>
-<span>Scikit-learn</span>
-<span>OpenAI</span>
-<span>Instructor</span>
-<span>Pydantic</span>
-<span>Langfuse</span>
-<span>Pandas</span>
-<span>NumPy</span>
-<span>Joblib</span>
+It was learning how different components can have clearly defined responsibilities within one application.
 
-</div>
+The project brought together:
 
----
+- Machine Learning
+- natural-language processing
+- structured data validation
+- application development
+- observability
+- deployment
 
-## Project Structure
+The result is a small example of a broader idea:
 
-```text
-half_marathon_predictor/
-│
-├── app.py
-├── llm.py
-├── predictor.py
-├── utils.py
-├── langfuse_client.py
-├── requirements.txt
-│
-├── data/
-│   ├── halfmarathon_wroclaw_2023_final.csv
-│   └── halfmarathon_wroclaw_2024_final.csv
-│
-├── models/
-│   └── halfmarathon_linear_regression.pkl
-│
-├── screenshots/
-│   ├── app.png
-│   └── langfuse.png
-│
-├── half_marathon_predictor.ipynb
-├── .gitignore
-└── README.md
-```
-
----
-
-## Deployment
-
-The application is deployed using **Streamlit Community Cloud**.
-
-The trained Machine Learning model is included in the project repository and loaded locally by the application.
-
-Sensitive API configuration is provided through environment variables or Streamlit Secrets rather than being stored in the repository.
-
----
-
-## What This Project Demonstrates
-
-This project demonstrates how a traditional Machine Learning model can be integrated into an AI-powered application.
-
-The main concepts demonstrated are:
-
-- natural-language interfaces,
-- structured LLM outputs,
-- Pydantic validation,
-- Machine Learning inference,
-- model serving,
-- LLM observability,
-- Streamlit application development,
-- cloud deployment.
-
-The central design idea is:
-
-> **Use the LLM to understand the user, and use the Machine Learning model to make the prediction.**
+> **AI does not always need to replace an existing model. Sometimes it can make that model easier for people to use.**
 
 ---
 
 <div class="hero-buttons">
 
-<a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Open Live Demo</a>
+<a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Live Demo</a>
 
-<a href="https://github.com/Goldmanski/half_marathon_predictor" class="md-button">View Source Code</a>
+<a href="https://github.com/Goldmanski/half_marathon_predictor" class="md-button">GitHub</a>
 
 </div>
