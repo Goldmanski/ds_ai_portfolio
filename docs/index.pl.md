@@ -78,7 +78,7 @@ Zanim poprosisz model o znalezienie zależności, najpierw musisz nauczyć się 
 
 Projekty **Titanic** i **Iris** były ćwiczeniami w analizowaniu danych z różnych perspektyw — zadawaniu pytań, wizualizowaniu zależności i uczeniu się, jak przekładać obserwacje na wnioski.
 
-**Titanic** · **Iris**
+[Titanic](titanic/) · [Iris](iris/)
 
 ### Machine Learning
 
@@ -86,7 +86,7 @@ Projekty **Titanic** i **Iris** były ćwiczeniami w analizowaniu danych z róż
 
 Był to jeden z moich kroków od analizowania danych w kierunku budowania modeli, które potrafią odkrywać znajdującą się w nich strukturę.
 
-**Find Friends**
+[Find Friends](find_friends/)
 
 ### AI Engineering
 
@@ -94,7 +94,7 @@ Był to jeden z moich kroków od analizowania danych w kierunku budowania modeli
 
 Wraz z Half Marathon Predictor, Voice Recall i CVTailor reprezentuje moje rosnące zainteresowanie budowaniem użytecznych systemów wykorzystujących AI.
 
-**Half Marathon Predictor** · **Voice Recall** · **CVTailor** · **ChatLab**
+[Half Marathon Predictor](half_marathon_predictor/) · [Voice Recall](voice_recall/) · [CVTailor](cv_tailor/) · [ChatLab](chatlab/)
 
 ### Software Engineering
 
@@ -102,7 +102,7 @@ Wraz z Half Marathon Predictor, Voice Recall i CVTailor reprezentuje moje rosną
 
 Sposób organizacji kodu, miejsce przechowywania reguł biznesowych oraz sposób testowania zachowania mogą być równie ważne jak sama funkcjonalność.
 
-**Offer Generator**
+[Offer Generator](offer_generator/)
 
 ---
 

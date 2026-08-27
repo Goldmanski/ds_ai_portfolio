@@ -78,7 +78,7 @@ Antes de pedirle a un modelo que encuentre patrones, primero tienes que aprender
 
 Los proyectos **Titanic** e **Iris** fueron ejercicios para analizar datos desde diferentes perspectivas — plantear preguntas, visualizar relaciones y aprender a convertir observaciones en conclusiones.
 
-**Titanic** · **Iris**
+[Titanic](titanic/) · [Iris](iris/)
 
 ### Machine Learning
 
@@ -86,7 +86,7 @@ Los proyectos **Titanic** e **Iris** fueron ejercicios para analizar datos desde
 
 Fue uno de mis pasos desde el análisis de datos hacia la construcción de modelos capaces de descubrir estructuras dentro de los datos.
 
-**Find Friends**
+[Find Friends](find_friends/)
 
 ### AI Engineering
 
@@ -94,7 +94,7 @@ Fue uno de mis pasos desde el análisis de datos hacia la construcción de model
 
 Junto con Half Marathon Predictor, Voice Recall y CVTailor, representa mi creciente interés por construir sistemas útiles alrededor de la AI.
 
-**Half Marathon Predictor** · **Voice Recall** · **CVTailor** · **ChatLab**
+[Half Marathon Predictor](half_marathon_predictor/) · [Voice Recall](voice_recall/) · [CVTailor](cv_tailor/) · [ChatLab](chatlab/)
 
 ### Software Engineering
 
@@ -102,7 +102,7 @@ Junto con Half Marathon Predictor, Voice Recall y CVTailor, representa mi crecie
 
 Cómo se organiza el código, dónde viven las reglas de negocio y cómo se prueba el comportamiento pueden ser tan importantes como la propia funcionalidad.
 
-**Offer Generator**
+[Offer Generator](offer_generator/)
 
 ---
 

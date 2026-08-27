@@ -78,7 +78,7 @@ Before asking a model to find patterns, you first need to learn how to find them
 
 The **Titanic** and **Iris** projects were exercises in looking at data from different angles — asking questions, visualising relationships and learning to turn observations into conclusions.
 
-**Titanic** · **Iris**
+[Titanic](titanic/) · [Iris](iris/)
 
 ### Machine Learning
 
@@ -86,7 +86,7 @@ The **Titanic** and **Iris** projects were exercises in looking at data from dif
 
 It was one of my steps from analysing data towards building models that can discover structure within it.
 
-**Find Friends**
+[Find Friends](find_friends/)
 
 ### AI Engineering
 
@@ -94,7 +94,7 @@ It was one of my steps from analysing data towards building models that can disc
 
 Together with Half Marathon Predictor, Voice Recall and CVTailor, it represents my growing interest in building useful systems around AI.
 
-**Half Marathon Predictor** · **Voice Recall** · **CVTailor** · **ChatLab**
+[Half Marathon Predictor](half_marathon_predictor/) · [Voice Recall](voice_recall/) · [CVTailor](cv_tailor/) · [ChatLab](chatlab/)
 
 ### Software Engineering
 
@@ -102,7 +102,7 @@ Together with Half Marathon Predictor, Voice Recall and CVTailor, it represents 
 
 How the code is organised, where business rules live and how behaviour is tested can be just as important as the feature itself.
 
-**Offer Generator**
+[Offer Generator](offer_generator/)
 
 ---
 
