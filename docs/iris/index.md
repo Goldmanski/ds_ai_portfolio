@@ -137,7 +137,7 @@ It helps reveal which variables might be useful, where the groups overlap and wh
 
 ---
 
-## What I found interesting
+## When four measurements tell a story
 
 What makes Iris interesting is how much can be learned from such a small dataset.
 
@@ -153,7 +153,7 @@ Just with curiosity about what the data is trying to show us.
 
 ---
 
-## What this project taught me
+## From visual patterns to Machine Learning
 
 Iris was an exercise in learning how to explore a dataset before trying to make predictions from it.
 

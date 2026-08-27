@@ -12,6 +12,10 @@ The most powerful model is not necessarily the best choice for every task. Somet
 
 ChatLab started as a way to explore that trade-off in practice — by putting different models in the same environment and making their responses and costs visible.
 
+---
+
+## Explore the application
+
 <div class="hero-buttons">
 
 <a href="https://chatlab-app.streamlit.app/" class="md-button md-button--primary">Live Demo</a>
@@ -110,7 +114,7 @@ It also reinforces an idea that became increasingly important while building the
 
 ---
 
-## What I found interesting
+## The trade-off behind model selection
 
 ChatLab changed the way I think about choosing language models.
 
@@ -126,7 +130,7 @@ ChatLab became a small environment for exploring that idea firsthand.
 
 ---
 
-## What this project taught me
+## Building around the model
 
 The project started with a chatbot, but the more interesting lessons were around the chatbot itself.
 
@@ -142,10 +146,12 @@ It is about understanding the trade-offs and making a deliberate choice.
 
 ---
 
+## Explore the application
+
 <div class="hero-buttons">
 
-<a href="https://chatlab-app.streamlit.app/" class="md-button md-button--primary">Open Live Demo</a>
+<a href="https://chatlab-app.streamlit.app/" class="md-button md-button--primary">Live Demo</a>
 
-<a href="https://github.com/Goldmanski/chatlab" class="md-button">View Source Code</a>
+<a href="https://github.com/Goldmanski/chatlab" class="md-button">GitHub</a>
 
 </div>

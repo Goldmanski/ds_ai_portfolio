@@ -130,7 +130,7 @@ That distinction is easy to overlook when a chart appears to tell a convincing s
 
 ---
 
-## What I found interesting
+## From questions to patterns
 
 What makes the Titanic dataset particularly useful for learning is how quickly a simple question becomes a chain of questions.
 
@@ -158,7 +158,7 @@ That is what made this project a useful introduction to exploratory data analysi
 
 ---
 
-## What this project taught me
+## Learning to explore before predicting
 
 Titanic was an exercise in learning how to approach a dataset before trying to build a model from it.
 

@@ -12,6 +12,10 @@ Instead of asking the user to enter their age, gender and 5 km time into separat
 
 The application extracts the relevant information from the message and uses it as input for a traditional Machine Learning regression model.
 
+---
+
+## Explore the application
+
 <div class="hero-buttons">
 
 <a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Live Demo</a>
@@ -46,7 +50,6 @@ The language model does not predict the race time itself. It only turns an infor
 
 A traditional prediction application might look like this:
 
-```text
 Age:        [ 28 ]
 
 Gender:     [ M ]
@@ -56,11 +59,9 @@ Gender:     [ M ]
             ↓
 
         Prediction
-```
 
 Half Marathon Predictor takes a different approach:
 
-```text
 "I am 28, male and run 5 km in 22 minutes."
 
                     ↓
@@ -78,7 +79,6 @@ Half Marathon Predictor takes a different approach:
                     ↓
 
         Half marathon estimate
-```
 
 This makes the LLM a **natural-language interface**, rather than the prediction engine.
 
@@ -100,7 +100,7 @@ This means the LLM is not simply extracting values — it is helping the applica
 
 ---
 
-## What I found interesting
+## The boundary between AI and Machine Learning
 
 The project combines two approaches that are often presented separately:
 
@@ -126,7 +126,7 @@ This makes it possible to distinguish between problems occurring in the language
 
 ---
 
-## What this project taught me
+## Designing with clear responsibilities
 
 The most important lesson was not the prediction model itself.
 
@@ -134,18 +134,20 @@ It was learning how different components can have clearly defined responsibiliti
 
 The project brought together:
 
-- Machine Learning
-- natural-language processing
-- structured data validation
-- application development
-- observability
-- deployment
+- Machine Learning,
+- natural-language processing,
+- structured data validation,
+- application development,
+- observability,
+- deployment.
 
 The result is a small example of a broader idea:
 
 > **AI does not always need to replace an existing model. Sometimes it can make that model easier for people to use.**
 
 ---
+
+## Explore the application
 
 <div class="hero-buttons">
 

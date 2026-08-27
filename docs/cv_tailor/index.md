@@ -12,6 +12,10 @@ But there was an important boundary I wanted to keep.
 
 The language model could help decide **what to say** — but it shouldn't decide **how the final document is built**.
 
+---
+
+## Explore the application
+
 <div class="hero-buttons">
 
 <a href="https://cv-tailor-ai.streamlit.app" class="md-button md-button--primary">Live Demo</a>
@@ -110,7 +114,7 @@ It shows how generative AI can be useful **inside a larger deterministic workflo
 
 ---
 
-## What I found interesting
+## Where AI adds the most value
 
 The project made me think about where AI actually adds value.
 
@@ -126,7 +130,7 @@ The distinction is small, but it changes how the whole application is designed.
 
 ---
 
-## What this project taught me
+## Designing the boundary
 
 CVTailor was an exercise in combining two very different types of software behaviour.
 
@@ -142,10 +146,12 @@ The project therefore became less about generating a CV and more about exploring
 
 ---
 
+## Explore the application
+
 <div class="hero-buttons">
 
-<a href="https://cv-tailor-ai.streamlit.app" class="md-button md-button--primary">Open Live Demo</a>
+<a href="https://cv-tailor-ai.streamlit.app" class="md-button md-button--primary">Live Demo</a>
 
-<a href="https://github.com/Goldmanski/cv-tailor" class="md-button">View Source Code</a>
+<a href="https://github.com/Goldmanski/cv-tailor" class="md-button">GitHub</a>
 
 </div>

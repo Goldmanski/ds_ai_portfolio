@@ -82,6 +82,6 @@ If you are interested in Data Science, AI, Machine Learning or Software Engineer
 
 <a href="https://github.com/Goldmanski" class="md-button md-button--primary">GitHub</a>
 
-<a href="https://www.linkedin.com/" class="md-button">LinkedIn</a>
+<a href="https://www.linkedin.com/in/eliasz-nowicki/" class="md-button">LinkedIn</a>
 
 </div>

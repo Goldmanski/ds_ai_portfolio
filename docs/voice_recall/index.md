@@ -14,6 +14,10 @@ Voice Recall explores a simple idea:
 
 The application lets you record a voice note, turn it into text, and later search your notes using natural language.
 
+---
+
+## Explore the application
+
 <div class="hero-buttons">
 
 <a href="https://voice-recall.streamlit.app" class="md-button md-button--primary">Live Demo</a>
@@ -116,7 +120,7 @@ The important idea is that **the note and the search query are represented in th
 
 ---
 
-## What I found interesting
+## Why semantic search changes the experience
 
 The project made the idea of semantic search much more tangible.
 
@@ -126,7 +130,7 @@ That shift — from matching words to comparing meaning — is what makes this p
 
 ---
 
-## What this project taught me
+## From voice notes to semantic memory
 
 Voice Recall brought together several ideas that are becoming increasingly important in AI applications:
 
@@ -141,10 +145,12 @@ Sometimes the most useful thing it can do is help you **find something you alrea
 
 ---
 
+## Explore the application
+
 <div class="hero-buttons">
 
-<a href="https://voice-recall.streamlit.app" class="md-button md-button--primary">Open Live Demo</a>
+<a href="https://voice-recall.streamlit.app" class="md-button md-button--primary">Live Demo</a>
 
-<a href="https://github.com/Goldmanski/voice-recall" class="md-button">View Source Code</a>
+<a href="https://github.com/Goldmanski/voice-recall" class="md-button">GitHub</a>
 
 </div>

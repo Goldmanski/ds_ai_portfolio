@@ -135,7 +135,7 @@ It is the final representation of an already prepared offer.
 
 ---
 
-## What I found interesting
+## Where the business rules live
 
 The project started from something that sounds almost trivial:
 
@@ -175,7 +175,7 @@ That distinction becomes increasingly important as a simple prototype grows into
 
 ---
 
-## What this project taught me
+## From workflow to domain model
 
 Offer Generator changed the way I think about software applications.
 

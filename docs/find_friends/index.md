@@ -14,6 +14,10 @@ Find Friends explores this question using a simple welcome survey.
 
 Instead of telling the model what the "right" groups of people should look like, I let Machine Learning discover them.
 
+---
+
+## Explore the application
+
 <div class="hero-buttons">
 
 <a href="https://find-friends-app-goldmanski.streamlit.app" class="md-button md-button--primary">Live Demo</a>
@@ -138,7 +142,7 @@ This creates a complete path from:
 
 ---
 
-## What I found interesting
+## From clusters to explanations
 
 The most interesting part of this project was seeing how two different models can play completely different roles.
 
@@ -156,7 +160,7 @@ Together, they create a simple pipeline from **finding patterns to making them u
 
 ---
 
-## What this project taught me
+## Discovering structure in data
 
 Find Friends was one of my steps from analysing data towards building Machine Learning systems.
 
@@ -178,10 +182,12 @@ In this project, that meant combining two different approaches:
 
 ---
 
+## Explore the application
+
 <div class="hero-buttons">
 
-<a href="https://find-friends-app-goldmanski.streamlit.app" class="md-button md-button--primary">Open Live Demo</a>
+<a href="https://find-friends-app-goldmanski.streamlit.app" class="md-button md-button--primary">Live Demo</a>
 
-<a href="https://github.com/Goldmanski/find_friends_app" class="md-button">View Source Code</a>
+<a href="https://github.com/Goldmanski/find_friends_app" class="md-button">GitHub</a>
 
 </div>
