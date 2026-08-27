@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Portfolio projektów z obszaru Data Science, Machine Learning, AI i Software Engineering.
+        <meta name="description" content="Portfolio of projects in Data Science, Machine Learning, AI, and Software Engineering.
 ">
       
       
@@ -519,6 +519,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#explore-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explore the application
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#from-running-data-to-a-prediction" class="md-nav__link">
     <span class="md-ellipsis">
       From running data to a prediction
@@ -546,9 +555,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-i-found-interesting" class="md-nav__link">
+  <a href="#the-boundary-between-ai-and-machine-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      What I found interesting
+      The boundary between AI and Machine Learning
     </span>
   </a>
   
@@ -564,9 +573,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-this-project-taught-me" class="md-nav__link">
+  <a href="#designing-with-clear-responsibilities" class="md-nav__link">
     <span class="md-ellipsis">
-      What this project taught me
+      Designing with clear responsibilities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-the-application_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explore the application
     </span>
   </a>
   
@@ -957,6 +975,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#explore-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explore the application
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#from-running-data-to-a-prediction" class="md-nav__link">
     <span class="md-ellipsis">
       From running data to a prediction
@@ -984,9 +1011,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-i-found-interesting" class="md-nav__link">
+  <a href="#the-boundary-between-ai-and-machine-learning" class="md-nav__link">
     <span class="md-ellipsis">
-      What I found interesting
+      The boundary between AI and Machine Learning
     </span>
   </a>
   
@@ -1002,9 +1029,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-this-project-taught-me" class="md-nav__link">
+  <a href="#designing-with-clear-responsibilities" class="md-nav__link">
     <span class="md-ellipsis">
-      What this project taught me
+      Designing with clear responsibilities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-the-application_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explore the application
     </span>
   </a>
   
@@ -1038,6 +1074,8 @@
 <p>I am a 28-year-old male and my 5 km time is 22 minutes.</p>
 </blockquote>
 <p>The application extracts the relevant information from the message and uses it as input for a traditional Machine Learning regression model.</p>
+<hr />
+<h2 id="explore-the-application">Explore the application</h2>
 <div class="hero-buttons">
 
 <a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Live Demo</a>
@@ -1059,34 +1097,30 @@
 <hr />
 <h2 id="why-use-an-llm-at-all">Why use an LLM at all?</h2>
 <p>A traditional prediction application might look like this:</p>
-<pre><code class="language-text">Age:        [ 28 ]
+<p>Age:        [ 28 ]</p>
+<p>Gender:     [ M ]</p>
+<p>5 km time:  [ 22:00 ]</p>
+<pre><code>        ↓
 
-Gender:     [ M ]
-
-5 km time:  [ 22:00 ]
-
-            ↓
-
-        Prediction
+    Prediction
 </code></pre>
 <p>Half Marathon Predictor takes a different approach:</p>
-<pre><code class="language-text">&quot;I am 28, male and run 5 km in 22 minutes.&quot;
+<p>"I am 28, male and run 5 km in 22 minutes."</p>
+<pre><code>                ↓
 
-                    ↓
+          GPT-4.1 Mini
 
-              GPT-4.1 Mini
+                ↓
 
-                    ↓
+    Structured runner data
 
-        Structured runner data
+                ↓
 
-                    ↓
+      Regression model
 
-          Regression model
+                ↓
 
-                    ↓
-
-        Half marathon estimate
+    Half marathon estimate
 </code></pre>
 <p>This makes the LLM a <strong>natural-language interface</strong>, rather than the prediction engine.</p>
 <p>That distinction is one of the main ideas behind the project.</p>
@@ -1100,7 +1134,7 @@ Gender:     [ M ]
 <p>The application can recognise that the runner's <strong>5 km time is missing</strong> and ask for it before attempting the prediction.</p>
 <p>This means the LLM is not simply extracting values — it is helping the application understand whether it has enough information to continue.</p>
 <hr />
-<h2 id="what-i-found-interesting">What I found interesting</h2>
+<h2 id="the-boundary-between-ai-and-machine-learning">The boundary between AI and Machine Learning</h2>
 <p>The project combines two approaches that are often presented separately:</p>
 <p><strong>Machine Learning</strong> is responsible for the numerical prediction.</p>
 <p><strong>LLM technology</strong> is responsible for making the interaction with that model more natural.</p>
@@ -1113,23 +1147,24 @@ Gender:     [ M ]
 <p>The project uses <strong>Langfuse</strong> to trace the LLM interactions and inspect the extraction process.</p>
 <p>This makes it possible to distinguish between problems occurring in the language-processing layer and problems related to the Machine Learning prediction itself.</p>
 <hr />
-<h2 id="what-this-project-taught-me">What this project taught me</h2>
+<h2 id="designing-with-clear-responsibilities">Designing with clear responsibilities</h2>
 <p>The most important lesson was not the prediction model itself.</p>
 <p>It was learning how different components can have clearly defined responsibilities within one application.</p>
 <p>The project brought together:</p>
 <ul>
-<li>Machine Learning</li>
-<li>natural-language processing</li>
-<li>structured data validation</li>
-<li>application development</li>
-<li>observability</li>
-<li>deployment</li>
+<li>Machine Learning,</li>
+<li>natural-language processing,</li>
+<li>structured data validation,</li>
+<li>application development,</li>
+<li>observability,</li>
+<li>deployment.</li>
 </ul>
 <p>The result is a small example of a broader idea:</p>
 <blockquote>
 <p><strong>AI does not always need to replace an existing model. Sometimes it can make that model easier for people to use.</strong></p>
 </blockquote>
 <hr />
+<h2 id="explore-the-application_1">Explore the application</h2>
 <div class="hero-buttons">
 
 <a href="https://half-marathon-predictor.streamlit.app" class="md-button md-button--primary">Live Demo</a>
