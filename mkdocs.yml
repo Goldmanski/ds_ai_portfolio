@@ -30,7 +30,7 @@ extra_css:
 nav:
   - Home: index.md
 
-  - AI & LLM:
+  - AI Engineering:
       - Half Marathon Predictor: half_marathon_predictor/index.md
       - Voice Recall: voice_recall/index.md
       - CVTailor: cv_tailor/index.md
@@ -40,8 +40,8 @@ nav:
       - Find Friends: find_friends/index.md
 
   - Data Analysis:
-      - Titanic — Exploratory Data Analysis: titanic/index.md
-      - Iris — Exploratory Data Analysis: iris/index.md
+      - Titanic: titanic/index.md
+      - Iris: iris/index.md
 
   - Software Engineering:
       - Offer Generator: offer_generator/index.md

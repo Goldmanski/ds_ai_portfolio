@@ -88,7 +88,7 @@ It was one of my steps from analysing data towards building models that can disc
 
 **Find Friends**
 
-### AI & LLM
+### AI Engineering
 
 **ChatLab** explores another side of AI applications: what happens when a language model becomes part of a complete application rather than just a chatbot window?
 

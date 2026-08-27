@@ -102,7 +102,7 @@ The voice interface is therefore not just a different input method. It is part o
 
 ---
 
-## What happens behind the scenes?
+## How semantic search works
 
 There are several steps between saying something and finding it again.
 

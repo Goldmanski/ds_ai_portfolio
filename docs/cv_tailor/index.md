@@ -56,7 +56,7 @@ So I deliberately split the responsibilities.
 
 The final PDF is produced by deterministic application logic rather than by the language model.
 
-That means the same input should result in a document that follows the same rules every time.
+That means the final document follows the same structural and formatting rules every time.
 
 ---
 
