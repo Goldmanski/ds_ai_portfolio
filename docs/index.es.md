@@ -10,7 +10,7 @@ Este portfolio reúne esos experimentos.
 
 <div class="hero-buttons">
 
-<a href="#featured-projects" class="md-button md-button--primary">Explorar los proyectos</a>
+<a href="#proyectos-destacados" class="md-button md-button--primary">Explorar los proyectos</a>
 
 <a href="https://github.com/Goldmanski/ds_ai_portfolio" class="md-button">GitHub</a>
 
@@ -124,6 +124,6 @@ Esa es la dirección que quiero seguir explorando — desde el análisis de dato
 
 <div class="hero-buttons">
 
-<a href="#featured-projects" class="md-button md-button--primary">Explorar los proyectos</a>
+<a href="#proyectos-destacados" class="md-button md-button--primary">Explorar los proyectos</a>
 
 </div>

@@ -18,13 +18,13 @@ Ten projekt rozpoczął się od prostego pytania:
 
 <div class="hero-buttons">
 
-<a href="titanic_report.html" class="md-button md-button--primary">Interaktywny raport</a>
+<a href="../../titanic/titanic_report.html" class="md-button md-button--primary">Interaktywny raport</a>
 
-<a href="titanic_presentation.html" class="md-button">Prezentacja</a>
+<a href="../../titanic/titanic_presentation.html" class="md-button">Prezentacja</a>
 
-<a href="titanic_report.pdf" download class="md-button">Raport PDF</a>
+<a href="../../titanic/titanic_report.pdf" download class="md-button">Raport PDF</a>
 
-<a href="titanic_analysis.ipynb" download class="md-button">Notebook</a>
+<a href="../../titanic/titanic_analysis.ipynb" download class="md-button">Notebook</a>
 
 <a href="https://github.com/Goldmanski/ds_ai_portfolio/tree/main/docs/titanic" class="md-button">GitHub</a>
 
@@ -182,13 +182,13 @@ A przede wszystkim uważaj na to, co dane rzeczywiście pozwalają Ci stwierdzi�
 
 <div class="hero-buttons">
 
-<a href="titanic_report.html" class="md-button md-button--primary">Interaktywny raport</a>
+<a href="../../titanic/titanic_report.html" class="md-button md-button--primary">Interaktywny raport</a>
 
 <a href="titanic_presentation.html" class="md-button">Prezentacja</a>
 
-<a href="titanic_report.pdf" download class="md-button">Raport PDF</a>
+<a href="../../titanic/titanic_report.pdf" download class="md-button">Raport PDF</a>
 
-<a href="titanic_analysis.ipynb" download class="md-button">Notebook</a>
+<a href="../../titanic/titanic_analysis.ipynb" download class="md-button">Notebook</a>
 
 <a href="https://github.com/Goldmanski/ds_ai_portfolio/tree/main/docs/titanic" class="md-button">GitHub</a>
 

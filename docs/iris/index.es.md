@@ -27,13 +27,13 @@ El objetivo de este proyecto fue explorar qué pueden contarnos realmente esos n
 
 <div class="hero-buttons">
 
-<a href="iris_report.html" class="md-button md-button--primary">Informe interactivo</a>
+<a href="../../iris/iris_report.html" class="md-button md-button--primary">Informe interactivo</a>
 
-<a href="iris_presentation.html" class="md-button">Presentación</a>
+<a href="../../iris/iris_presentation.html" class="md-button">Presentación</a>
 
-<a href="iris_report.pdf" download class="md-button">Informe PDF</a>
+<a href="../../iris/iris_report.pdf" download class="md-button">Informe PDF</a>
 
-<a href="iris_analysis.ipynb" download class="md-button">Notebook</a>
+<a href="../../iris/iris_analysis.ipynb" download class="md-button">Notebook</a>
 
 <a href="https://github.com/Goldmanski/ds_ai_portfolio/tree/main/docs/iris" class="md-button">GitHub</a>
 
@@ -171,13 +171,13 @@ Antes de pedirle a un modelo que encuentre patrones, merece la pena dedicar tiem
 
 <div class="hero-buttons">
 
-<a href="iris_report.html" class="md-button md-button--primary">Informe interactivo</a>
+<a href="../../iris/iris_report.html" class="md-button md-button--primary">Informe interactivo</a>
 
-<a href="iris_presentation.html" class="md-button">Presentación</a>
+<a href="../../iris/iris_presentation.html" class="md-button">Presentación</a>
 
-<a href="iris_report.pdf" download class="md-button">Informe PDF</a>
+<a href="../../iris/iris_report.pdf" download class="md-button">Informe PDF</a>
 
-<a href="iris_analysis.ipynb" download class="md-button">Notebook</a>
+<a href="../../iris/iris_analysis.ipynb" download class="md-button">Notebook</a>
 
 <a href="https://github.com/Goldmanski/ds_ai_portfolio/tree/main/docs/iris" class="md-button">GitHub</a>
 

@@ -27,13 +27,13 @@ Celem projektu było zbadanie, co te liczby rzeczywiście mogą nam powiedzieć.
 
 <div class="hero-buttons">
 
-<a href="iris_report.html" class="md-button md-button--primary">Interaktywny raport</a>
+<a href="../../iris/iris_report.html" class="md-button md-button--primary">Interaktywny raport</a>
 
-<a href="iris_presentation.html" class="md-button">Prezentacja</a>
+<a href="../../iris/iris_presentation.html" class="md-button">Prezentacja</a>
 
-<a href="iris_report.pdf" download class="md-button">Raport PDF</a>
+<a href="../../iris/iris_report.pdf" download class="md-button">Raport PDF</a>
 
-<a href="iris_analysis.ipynb" download class="md-button">Notebook</a>
+<a href="../../iris/iris_analysis.ipynb" download class="md-button">Notebook</a>
 
 <a href="https://github.com/Goldmanski/ds_ai_portfolio/tree/main/docs/iris" class="md-button">GitHub</a>
 
@@ -171,13 +171,13 @@ Zanim poprosimy model o znalezienie wzorców, warto poświęcić czas na ich sam
 
 <div class="hero-buttons">
 
-<a href="iris_report.html" class="md-button md-button--primary">Interaktywny raport</a>
+<a href="../../iris/iris_report.html" class="md-button md-button--primary">Interaktywny raport</a>
 
-<a href="iris_presentation.html" class="md-button">Prezentacja</a>
+<a href="../../iris/iris_presentation.html" class="md-button">Prezentacja</a>
 
-<a href="iris_report.pdf" download class="md-button">Raport PDF</a>
+<a href="../../iris/iris_report.pdf" download class="md-button">Raport PDF</a>
 
-<a href="iris_analysis.ipynb" download class="md-button">Notebook</a>
+<a href="../../iris/iris_analysis.ipynb" download class="md-button">Notebook</a>
 
 <a href="https://github.com/Goldmanski/ds_ai_portfolio/tree/main/docs/iris" class="md-button">GitHub</a>
 
