@@ -72,5 +72,29 @@ document.addEventListener("DOMContentLoaded", setupLanguageSwitcher);
 if (typeof document$ !== "undefined") {
     document$.subscribe(() => {
         setupLanguageSwitcher();
+        updateSearchLanguage();
     });
+}
+
+function updateSearchLanguage() {
+    const searchInput = document.querySelector(
+        ".md-search__input"
+    );
+
+    if (!searchInput) {
+        return;
+    }
+
+    const path = window.location.pathname;
+
+    if (path.includes("/pl/")) {
+        searchInput.placeholder = "Szukaj";
+        searchInput.setAttribute("aria-label", "Szukaj");
+    } else if (path.includes("/es/")) {
+        searchInput.placeholder = "Búsqueda";
+        searchInput.setAttribute("aria-label", "Búsqueda");
+    } else {
+        searchInput.placeholder = "Search";
+        searchInput.setAttribute("aria-label", "Search");
+    }
 }
