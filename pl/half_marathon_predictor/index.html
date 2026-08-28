@@ -1103,31 +1103,47 @@
 <hr />
 <h2 id="po-co-w-ogole-uzywac-llm">Po co w ogóle używać LLM?</h2>
 <p>Tradycyjna aplikacja predykcyjna mogłaby wyglądać tak:</p>
-<p>Wiek:        [ 28 ]</p>
-<p>Płeć:        [ M ]</p>
-<p>Czas na 5 km: [ 22:00 ]</p>
-<pre><code>         ↓
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Tradycyjne podejście</label><label for="__tabbed_1_2">Half Marathon Predictor</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div class="diagram">
+<pre>
+Wiek:          [ 28 ]
+Płeć:          [ M ]
+Czas na 5 km:  [ 22:00 ]</p>
+<pre><code>             ↓
 
-     Predykcja
+         Predykcja
 </code></pre>
+<p></pre>
+</div></p>
+</div>
+<div class="tabbed-block">
 <p>Half Marathon Predictor podchodzi do tego inaczej:</p>
-<p>„Mam 28 lat, jestem mężczyzną i biegam 5 km w 22 minuty.”</p>
-<pre><code>                ↓
+<p><div class="diagram">
+<pre>
+„Mam 28 lat, jestem mężczyzną i biegam 5 km w 22 minuty.”</p>
+<pre><code>                 ↓
 
-          GPT-4.1 Mini
+           GPT-4.1 Mini
 
-                ↓
+                 ↓
 
-    Uporządkowane dane biegacza
+     Uporządkowane dane biegacza
 
-                ↓
+                 ↓
 
-      Model regresji
+           Model regresji
 
-                ↓
+                 ↓
 
-    Szacowany czas półmaratonu
+     Szacowany czas półmaratonu
 </code></pre>
+<p></pre>
+</div></p>
+</div>
+</div>
+</div>
 <p>Dzięki temu LLM pełni rolę <strong>interfejsu w języku naturalnym</strong>, a nie silnika predykcyjnego.</p>
 <p>To rozróżnienie jest jedną z głównych idei stojących za projektem.</p>
 <hr />
@@ -1232,7 +1248,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "content.code.copy", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>

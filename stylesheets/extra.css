@@ -1,5 +1,11 @@
 /* Global */
 
+/* Header */
+
+.md-header {
+    background-color: #f5dc00;
+}
+
 .md-main__inner {
     max-width: 1200px;
 }
@@ -72,4 +78,25 @@
     .project-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Content tabs */
+
+.md-typeset .tabbed-labels > label {
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+}
+
+/* Diagram inside content tabs */
+
+.md-typeset .diagram {
+    background: var(--md-code-bg-color);
+    border-radius: 0.2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.md-typeset .diagram pre {
+    margin: 0;
+    background: transparent;
 }

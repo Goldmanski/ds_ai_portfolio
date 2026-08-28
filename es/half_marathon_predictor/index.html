@@ -1103,31 +1103,47 @@
 <hr />
 <h2 id="por-que-utilizar-un-llm">¿Por qué utilizar un LLM?</h2>
 <p>Una aplicación tradicional de predicción podría tener este aspecto:</p>
-<p>Edad:        [ 28 ]</p>
-<p>Sexo:        [ M ]</p>
-<p>Tiempo en 5 km: [ 22:00 ]</p>
-<pre><code>         ↓
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Enfoque tradicional</label><label for="__tabbed_1_2">Half Marathon Predictor</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div class="diagram">
+<pre>
+Edad:           [ 28 ]
+Sexo:           [ M ]
+Tiempo en 5 km: [ 22:00 ]</p>
+<pre><code>              ↓
 
-     Predicción
+          Predicción
 </code></pre>
+<p></pre>
+</div></p>
+</div>
+<div class="tabbed-block">
 <p>Half Marathon Predictor utiliza un enfoque diferente:</p>
-<p>«Tengo 28 años, soy hombre y corro 5 km en 22 minutos.»</p>
-<pre><code>                ↓
+<p><div class="diagram">
+<pre>
+«Tengo 28 años, soy hombre y corro 5 km en 22 minutos.»</p>
+<pre><code>                 ↓
 
-          GPT-4.1 Mini
+           GPT-4.1 Mini
 
-                ↓
+                 ↓
 
-    Datos estructurados del corredor
+     Datos estructurados del corredor
 
-                ↓
+                 ↓
 
-      Modelo de regresión
+           Modelo de regresión
 
-                ↓
+                 ↓
 
-    Estimación de la media maratón
+     Estimación de la media maratón
 </code></pre>
+<p></pre>
+</div></p>
+</div>
+</div>
+</div>
 <p>De esta forma, el LLM actúa como una <strong>interfaz en lenguaje natural</strong>, no como el motor de predicción.</p>
 <p>Esta distinción es una de las ideas principales del proyecto.</p>
 <hr />
@@ -1232,7 +1248,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "content.code.copy", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>

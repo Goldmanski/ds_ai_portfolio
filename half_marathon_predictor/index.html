@@ -1103,15 +1103,26 @@
 <hr />
 <h2 id="why-use-an-llm-at-all">Why use an LLM at all?</h2>
 <p>A traditional prediction application might look like this:</p>
-<p>Age:        [ 28 ]</p>
-<p>Gender:     [ M ]</p>
-<p>5 km time:  [ 22:00 ]</p>
-<pre><code>        ↓
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Traditional approach</label><label for="__tabbed_1_2">Half Marathon Predictor</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div class="diagram">
+  <pre>
+  Age:        [ 28 ]
+  Gender:     [ M ]
+  5 km time:  [ 22:00 ]</p>
+<pre><code>          ↓
 
     Prediction
 </code></pre>
+<p></pre>
+  </div></p>
+</div>
+<div class="tabbed-block">
 <p>Half Marathon Predictor takes a different approach:</p>
-<p>"I am 28, male and run 5 km in 22 minutes."</p>
+<p><div class="diagram">
+  <pre>
+  "I am 28, male and run 5 km in 22 minutes."</p>
 <pre><code>                ↓
 
           GPT-4.1 Mini
@@ -1122,12 +1133,17 @@
 
                 ↓
 
-      Regression model
+    Regression model
 
                 ↓
 
     Half marathon estimate
 </code></pre>
+<p></pre>
+  </div></p>
+</div>
+</div>
+</div>
 <p>This makes the LLM a <strong>natural-language interface</strong>, rather than the prediction engine.</p>
 <p>That distinction is one of the main ideas behind the project.</p>
 <hr />
@@ -1232,7 +1248,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "content.code.copy", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
