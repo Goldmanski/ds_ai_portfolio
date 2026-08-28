@@ -100,3 +100,135 @@
     margin: 0;
     background: transparent;
 }
+
+/* Language selector */
+
+.md-header__option .md-select {
+    display: flex;
+    align-items: center;
+}
+
+/* Current language */
+.md-header__option .md-select > button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 0 !important;
+    color: transparent !important;
+}
+
+/* Hide Material language icon */
+.md-header__option .md-select > button svg {
+    display: none !important;
+}
+
+/* English flag */
+.md-header__option .md-select > button::before {
+    content: "🇬🇧";
+    font-size: 1.25rem;
+}
+
+/* Language options */
+.md-header__option .md-select__inner {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0.15rem !important;
+
+    position: static !important;
+    width: auto !important;
+    min-width: 0 !important;
+    height: auto !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Individual language links */
+.md-header__option .md-select__link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 2rem !important;
+    height: 2rem !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    font-size: 0 !important;
+    line-height: 1 !important;
+
+    opacity: 0.7;
+}
+
+/* Polish */
+.md-header__option .md-select__link[href*="/pl/"]::before {
+    content: "🇵🇱";
+    font-size: 1.25rem;
+}
+
+/* Spanish */
+.md-header__option .md-select__link[href*="/es/"]::before {
+    content: "🇪🇸";
+    font-size: 1.25rem;
+}
+
+/* Hover */
+.md-header__option .md-select__link:hover,
+.md-header__option .md-select > button:hover {
+    opacity: 1;
+}
+
+/* Custom language switcher */
+
+.custom-language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-right: 0.8rem;
+}
+
+.custom-language-switcher .language-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 1;
+    opacity: 0.75;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.custom-language-switcher .language-link:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Country flag emoji */
+
+.custom-language-switcher .language-link {
+    font-family:
+        "Segoe UI Emoji",
+        "Apple Color Emoji",
+        "Noto Color Emoji",
+        sans-serif !important;
+
+    font-size: 1.3rem !important;
+    line-height: 1 !important;
+}
