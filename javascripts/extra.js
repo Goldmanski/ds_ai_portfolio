@@ -67,12 +67,22 @@ function setupLanguageSwitcher() {
     languageOption.appendChild(switcher);
 }
 
-document.addEventListener("DOMContentLoaded", setupLanguageSwitcher);
+document.addEventListener("DOMContentLoaded", () => {
+    setupLanguageSwitcher();
+    updateSearchLanguage();
+});
+
+window.addEventListener("load", () => {
+    updateSearchLanguage();
+});
 
 if (typeof document$ !== "undefined") {
     document$.subscribe(() => {
         setupLanguageSwitcher();
-        updateSearchLanguage();
+
+        setTimeout(() => {
+            updateSearchLanguage();
+        }, 100);
     });
 }
 
