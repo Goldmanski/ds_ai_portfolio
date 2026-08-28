@@ -50,35 +50,45 @@ Model językowy nie przewiduje samodzielnie czasu biegu. Jego zadaniem jest jedy
 
 Tradycyjna aplikacja predykcyjna mogłaby wyglądać tak:
 
-Wiek:        [ 28 ]
+=== "Tradycyjne podejście"
 
-Płeć:        [ M ]
+    <div class="diagram">
+    <pre>
+    Wiek:          [ 28 ]
+    Płeć:          [ M ]
+    Czas na 5 km:  [ 22:00 ]
 
-Czas na 5 km: [ 22:00 ]
+                     ↓
 
-             ↓
+                 Predykcja
+    </pre>
+    </div>
 
-         Predykcja
+=== "Half Marathon Predictor"
 
-Half Marathon Predictor podchodzi do tego inaczej:
+    Half Marathon Predictor podchodzi do tego inaczej:
 
-„Mam 28 lat, jestem mężczyzną i biegam 5 km w 22 minuty.”
+    <div class="diagram">
+    <pre>
+    „Mam 28 lat, jestem mężczyzną i biegam 5 km w 22 minuty.”
 
-                    ↓
+                         ↓
 
-              GPT-4.1 Mini
+                   GPT-4.1 Mini
 
-                    ↓
+                         ↓
 
-        Uporządkowane dane biegacza
+             Uporządkowane dane biegacza
 
-                    ↓
+                         ↓
 
-          Model regresji
+                   Model regresji
 
-                    ↓
+                         ↓
 
-        Szacowany czas półmaratonu
+             Szacowany czas półmaratonu
+    </pre>
+    </div>
 
 Dzięki temu LLM pełni rolę **interfejsu w języku naturalnym**, a nie silnika predykcyjnego.
 

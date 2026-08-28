@@ -50,35 +50,45 @@ El modelo de lenguaje no predice por sí mismo el tiempo de la carrera. Solo tra
 
 Una aplicación tradicional de predicción podría tener este aspecto:
 
-Edad:        [ 28 ]
+=== "Enfoque tradicional"
 
-Sexo:        [ M ]
+    <div class="diagram">
+    <pre>
+    Edad:           [ 28 ]
+    Sexo:           [ M ]
+    Tiempo en 5 km: [ 22:00 ]
 
-Tiempo en 5 km: [ 22:00 ]
+                      ↓
 
-             ↓
+                  Predicción
+    </pre>
+    </div>
 
-         Predicción
+=== "Half Marathon Predictor"
 
-Half Marathon Predictor utiliza un enfoque diferente:
+    Half Marathon Predictor utiliza un enfoque diferente:
 
-«Tengo 28 años, soy hombre y corro 5 km en 22 minutos.»
+    <div class="diagram">
+    <pre>
+    «Tengo 28 años, soy hombre y corro 5 km en 22 minutos.»
 
-                    ↓
+                         ↓
 
-              GPT-4.1 Mini
+                   GPT-4.1 Mini
 
-                    ↓
+                         ↓
 
-        Datos estructurados del corredor
+             Datos estructurados del corredor
 
-                    ↓
+                         ↓
 
-          Modelo de regresión
+                   Modelo de regresión
 
-                    ↓
+                         ↓
 
-        Estimación de la media maratón
+             Estimación de la media maratón
+    </pre>
+    </div>
 
 De esta forma, el LLM actúa como una **interfaz en lenguaje natural**, no como el motor de predicción.
 

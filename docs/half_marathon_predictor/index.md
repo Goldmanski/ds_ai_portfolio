@@ -50,35 +50,45 @@ The language model does not predict the race time itself. It only turns an infor
 
 A traditional prediction application might look like this:
 
-Age:        [ 28 ]
+=== "Traditional approach"
 
-Gender:     [ M ]
+      <div class="diagram">
+      <pre>
+      Age:        [ 28 ]
+      Gender:     [ M ]
+      5 km time:  [ 22:00 ]
 
-5 km time:  [ 22:00 ]
+                  ↓
 
-            ↓
+            Prediction
+      </pre>
+      </div>
 
-        Prediction
+=== "Half Marathon Predictor"
 
-Half Marathon Predictor takes a different approach:
+    Half Marathon Predictor takes a different approach:
 
-"I am 28, male and run 5 km in 22 minutes."
+      <div class="diagram">
+      <pre>
+      "I am 28, male and run 5 km in 22 minutes."
 
-                    ↓
+                        ↓
 
-              GPT-4.1 Mini
+                  GPT-4.1 Mini
 
-                    ↓
+                        ↓
 
-        Structured runner data
+            Structured runner data
 
-                    ↓
+                        ↓
 
-          Regression model
+            Regression model
 
-                    ↓
+                        ↓
 
-        Half marathon estimate
+            Half marathon estimate
+      </pre>
+      </div>
 
 This makes the LLM a **natural-language interface**, rather than the prediction engine.
 
