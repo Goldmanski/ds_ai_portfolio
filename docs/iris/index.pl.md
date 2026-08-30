@@ -67,7 +67,7 @@ Kiedy jednak rozpatrujemy kilka cech jednocześnie, zaczynają pojawiać się wz
 
 To jedna z najbardziej użytecznych idei stojących za EDA:
 
-> **Zmienna, która sama w sobie wydaje się niepozorna, może stać się znacznie bardziej informacyjna, gdy spojrzymy na jej zależność od innych zmiennych.**
+> **Pojedyncza zmienna może wydawać się mało istotna → jej wartość informacyjna rośnie dopiero wtedy, gdy analizujemy ją w relacji z innymi.**
 
 ---
 
@@ -117,13 +117,13 @@ Oznacza to, że zbiór danych nie jest po prostu kolekcją trzech idealnie odizo
 
 Występują w nim zależności i nakładanie się wartości, które warto dokładniej zbadać.
 
-I właśnie tutaj EDA staje się użyteczne: **celem nie jest uproszczenie danych bardziej, niż pozwalają na to fakty, ale zrozumienie ich struktury.**
+I właśnie tutaj EDA staje się szczególnie użyteczne: **celem nie jest upraszczanie danych na siłę, ale zrozumienie ich rzeczywistej struktury.**
 
 ---
 
 ## Od eksploracji do lepszego pytania
 
-Kiedy zależności pomiędzy cechami stają się widoczne, pojawia się naturalne kolejne pytanie:
+Kiedy zależności pomiędzy cechami stają się widoczne, pojawia się kolejne pytanie:
 
 > **Czy można wykorzystać te wzorce do automatycznego rozróżniania gatunków?**
 

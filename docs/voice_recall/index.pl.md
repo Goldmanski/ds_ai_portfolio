@@ -54,13 +54,13 @@ System szuka **podobnego znaczenia**, a nie identycznego słownictwa.
 
 ## Różnica między słowami a znaczeniem
 
-Tradycyjne wyszukiwanie słów kluczowych mogłoby pytać:
+Tradycyjne wyszukiwanie słów kluczowych mogłoby wyglądać następująco:
 
 > Czy ta notatka zawiera słowo „trening”?
 
 Voice Recall zadaje inne pytanie:
 
-> Która z moich notatek jest najbardziej związana z „planami treningowymi do biegania”?
+> Która z moich notatek jest najbardziej związana z „planami treningowymi dotyczącymi biegania”?
 
 To rozróżnienie jest sednem projektu.
 

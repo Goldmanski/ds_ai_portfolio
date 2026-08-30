@@ -8,7 +8,7 @@ Kiedy jednak zaczynasz korzystać z nich w praktyce, pojawia się proste pytanie
 
 > **Który model zapewnia odpowiednią równowagę pomiędzy jakością a kosztem?**
 
-Najbardziej zaawansowany model nie zawsze jest najlepszym wyborem do każdego zadania. Czasami tańszy model jest w zupełności wystarczający. Innym razem warto zapłacić za ten bardziej zaawansowany.
+Najbardziej zaawansowany model nie zawsze jest najlepszym wyborem do każdego zadania. Czasami tańszy model jest w zupełności wystarczający. W innych przypadkach warto jednak dopłacić za model flagowy.
 
 ChatLab powstał jako sposób na praktyczne zbadanie tego kompromisu — poprzez umieszczenie różnych modeli w tym samym środowisku i pokazanie ich odpowiedzi oraz kosztów.
 

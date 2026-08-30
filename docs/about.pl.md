@@ -56,7 +56,7 @@ To właśnie te pytania łączą projekty w tym portfolio.
 
 Chcę rozwijać się w kierunku ról, w których **Data Science, AI i Software Engineering się łączą**.
 
-Szczególnie interesuje mnie budowanie systemów, w których modele nie są odizolowanymi eksperymentami, ale użytecznymi elementami większej aplikacji.
+Szczególnie interesuje mnie budowanie systemów, w których modele nie są odizolowanymi eksperymentami, ale częścią większego, użytecznego rozwiązania.
 
 Oznacza to rozumienie nie tylko tego, jak pracować z modelem, ale również wszystkiego, co znajduje się wokół niego:
 
@@ -66,7 +66,7 @@ Oznacza to rozumienie nie tylko tego, jak pracować z modelem, ale również wsz
 
 ## Portfolio, nie meta końcowa
 
-To portfolio jest migawką trwającego procesu nauki.
+To portfolio jest tylko migawką trwającego procesu nauki.
 
 Powyższe projekty nie mają sugerować, że zakończyłem naukę.
 
@@ -74,7 +74,7 @@ Wręcz przeciwnie.
 
 Każdy projekt przyniósł kolejne pytanie, ujawnił kolejne ograniczenie albo otworzył nowy kierunek do zbadania.
 
-I właśnie to jest dla mnie interesujące w technologii.
+I właśnie to jest dla mnie najbardziej interesujące w technologii.
 
 > **Im więcej się uczysz, tym ciekawsze stają się pytania.**
 

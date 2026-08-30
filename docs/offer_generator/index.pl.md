@@ -109,7 +109,7 @@ Są również **Quote Items**, które łączą produkty z ofertą.
 
 Ten sposób myślenia jest inspirowany **Domain-Driven Design** — podejściem, które zaczyna od modelowania ważnych pojęć i reguł biznesowych, zamiast rozpoczynać od interfejsu użytkownika.
 
-W przypadku małej aplikacji taka struktura może wydawać się dodatkowym narzutem.
+W przypadku małej aplikacji taka struktura może wydawać się przerostem formy nad treścią.
 
 Ułatwia jednak znacznie rozumienie znajdującej się pod spodem logiki.
 
@@ -121,7 +121,7 @@ PDF jest tym, czego użytkownik ostatecznie potrzebuje.
 
 Jego generowanie nie jest jednak celowo pierwszą rzeczą, którą robi aplikacja.
 
-Oferta musi najpierw być kompletna i poprawna.
+Oferta musi najpierw być kompletna i poprawnie zbudowana.
 
 Dopiero po potwierdzeniu wymaganych informacji i możliwości wygenerowania oferty aplikacja tworzy końcowy dokument.
 

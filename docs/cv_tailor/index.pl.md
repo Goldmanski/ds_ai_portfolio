@@ -10,7 +10,7 @@ CVTailor powstał z prostego pomysłu: pozwolić AI pomóc Ci właśnie w tej cz
 
 Ale chciałem zachować ważną granicę.
 
-Model językowy może pomóc Ci zdecydować **co powiedzieć** — ale nie powinien decydować **jak zbudowany jest końcowy dokument**.
+Model językowy może pomóc Ci zdecydować **co napisać** — ale nie powinien decydować **jak zbudowany jest końcowy dokument**.
 
 ---
 
@@ -92,7 +92,7 @@ Obejmuje to między innymi dane kontaktowe oraz kompletność dynamicznie dodawa
 
 Idea jest prosta:
 
-> **Nie pozwalaj automatyzacji ukrywać problemu, który najpierw powinien zostać rozwiązany.**
+> **Dobra automatyzacja zaczyna się od kompletnych danych.**
 
 Zamiast tworzyć wyglądające profesjonalnie, ale niekompletne CV, aplikacja zatrzymuje proces i informuje użytkownika, na co powinien zwrócić uwagę.
 
