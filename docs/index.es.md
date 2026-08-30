@@ -36,7 +36,7 @@ La parte interesante viene después. Un LLM interpreta la descripción, mientras
 
 **¿Y si pudieras buscar en tus notas basándote en lo que querías decir, en lugar de utilizar exactamente las mismas palabras?**
 
-Voice Recall convierte notas de voz en una base de conocimiento que se puede buscar.
+Voice Recall convierte tus notas de voz en información que puedes buscar.
 
 El proyecto explora una forma diferente de interactuar con la información personal: en lugar de recordar la frase exacta que escribiste, puedes buscar la idea que había detrás de ella.
 
