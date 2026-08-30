@@ -1,16 +1,16 @@
 # CVTailor
 
-## ¿Puede la AI adaptar tu CV sin tomar el control?
+## ¿Puede la IA adaptar tu CV sin tomar el control?
 
 Una candidatura de trabajo rara vez empieza desde una página en blanco.
 
 La mayoría ya tenemos experiencia, proyectos y habilidades. La parte difícil es decidir **qué elementos son más relevantes para una oportunidad concreta** y cómo presentarlos de forma clara.
 
-CVTailor nació de una idea sencilla: dejar que la AI ayude precisamente con esa parte.
+CVTailor nació de una idea sencilla: dejar que la IA ayude precisamente con esa parte.
 
 Pero había un límite importante que quería mantener.
 
-El modelo de lenguaje podía ayudar a decidir **qué decir**, pero no debería decidir **cómo se construye el documento final**.
+El modelo de lenguaje podía ayudar a decidir **qué escribir**, pero no debería decidir **cómo se construye el documento final**.
 
 ---
 
@@ -40,7 +40,7 @@ Es **cambiar el énfasis**.
 
 ---
 
-## ¿Dónde debería detenerse la AI?
+## ¿Dónde debería detenerse la IA?
 
 Esta se convirtió en una de las partes más interesantes del proyecto.
 
@@ -50,7 +50,7 @@ Pero eso también significaría dar a un sistema probabilístico el control sobr
 
 Por eso dividí deliberadamente las responsabilidades.
 
-**La AI genera y adapta el contenido.**
+**La IA genera y adapta el contenido.**
 
 **La aplicación controla el documento.**
 
@@ -92,39 +92,39 @@ Esto incluye elementos como los datos de contacto y la integridad de las seccion
 
 La idea es sencilla:
 
-> **No permitas que la automatización oculte un problema que debería solucionarse primero.**
+> **Una buena automatización empieza con datos completos.**
 
 En lugar de producir un CV con un aspecto profesional pero incompleto, la aplicación detiene el proceso e indica al usuario qué debe revisar.
 
 ---
 
-## Un pequeño ejemplo de colaboración entre una persona y la AI
+## Un pequeño ejemplo de colaboración entre una persona y la IA
 
 El flujo de trabajo puede entenderse como tres responsabilidades diferentes:
 
 **El usuario** proporciona la experiencia y decide qué es verdad.
 
-**La AI** ayuda a adaptar el mensaje a la oportunidad.
+**La IA** ayuda a adaptar el mensaje a la oportunidad.
 
 **La aplicación** garantiza que el documento final siga unas reglas predecibles.
 
 Esta división me resulta más interesante que simplemente pedirle a un LLM que «escriba un CV».
 
-Muestra cómo la AI generativa puede ser útil **dentro de un flujo de trabajo determinista más amplio** sin tener que controlar todo lo que la rodea.
+Muestra cómo la IA generativa puede ser útil **dentro de un flujo de trabajo determinista más amplio** sin tener que controlar todo lo que la rodea.
 
 ---
 
-## Dónde aporta más valor la AI
+## Dónde aporta más valor la IA
 
-El proyecto me hizo pensar en dónde aporta realmente valor la AI.
+El proyecto me hizo pensar en dónde aporta realmente valor la IA.
 
 La respuesta obvia sería:
 
-> «Deja que la AI genere el CV.»
+> «Deja que la IA genere el CV.»
 
 Pero la respuesta más interesante resultó ser:
 
-> **«Deja que la AI se encargue de la parte que requiere interpretación y mantén las partes predecibles bajo el control del software tradicional.»**
+> **«Deja que la IA se encargue de la parte que requiere interpretación y mantén las partes predecibles bajo el control del software tradicional.»**
 
 La diferencia es pequeña, pero cambia la forma en que se diseña toda la aplicación.
 
@@ -134,7 +134,7 @@ La diferencia es pequeña, pero cambia la forma en que se diseña toda la aplica
 
 CVTailor fue un ejercicio para combinar dos tipos de comportamiento de software muy diferentes.
 
-La AI generativa es flexible y probabilística.
+La IA generativa es flexible y probabilística.
 
 La generación de documentos necesita ser estructurada y predecible.
 
@@ -142,7 +142,7 @@ En lugar de tratar estas características como un problema, las utilicé para di
 
 Por eso, el proyecto terminó siendo menos una cuestión de generar un CV y más una exploración de una pregunta más amplia:
 
-**¿Dónde debería tomar decisiones la AI y dónde debería hacerse cargo el software convencional?**
+**¿Dónde debería tomar decisiones la IA y dónde debería hacerse cargo el software convencional?**
 
 ---
 

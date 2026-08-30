@@ -10,7 +10,7 @@ Recuerdo que me fascinaba pensar en lo que los modelos de IA podrían llegar a h
 
 Hoy estoy al otro lado de esa pregunta.
 
-Antes me fascinaban las posibilidades que podía alcanzar la IA. Hoy, con la misma fascinación, estoy aprendiendo a crearla y a explorar de qué es realmente capaz.
+Antes me fascinaban las posibilidades que podía alcanzar la IA. Hoy, con la misma fascinación, estoy aprendiendo a construir con ella y a explorar de qué es realmente capaz.
 
 Con el tiempo, esa curiosidad se convirtió en una dirección clara: **Data Science, AI Engineering y Software Engineering.**
 
@@ -44,7 +44,7 @@ Me interesa lo que ocurre después del análisis.
 
 ¿Cómo puede un LLM trabajar junto con Machine Learning tradicional?
 
-¿Cómo debería interactuar la AI con software determinista?
+¿Cómo debería interactuar la IA con software determinista?
 
 ¿Cómo puede un sistema seguir siendo comprensible y mantenible a medida que se vuelve más complejo?
 
@@ -54,7 +54,7 @@ Estas preguntas son las que conectan los proyectos de este portfolio.
 
 ## Hacia dónde quiero avanzar
 
-Quiero desarrollarme hacia roles en los que **Data Science, AI y Software Engineering se encuentren**.
+Quiero desarrollarme hacia roles en los que **Data Science, IA y Software Engineering se encuentren**.
 
 Me interesa especialmente construir sistemas en los que los modelos no sean experimentos aislados, sino componentes útiles de una aplicación más grande.
 
@@ -82,7 +82,7 @@ Y eso es precisamente lo que me resulta interesante de la tecnología.
 
 ## Hablemos
 
-Si te interesan Data Science, AI, Machine Learning o Software Engineering, no dudes en ponerte en contacto conmigo.
+Si te interesan Data Science, IA, Machine Learning o Software Engineering, no dudes en ponerte en contacto conmigo.
 
 <div class="hero-buttons">
 

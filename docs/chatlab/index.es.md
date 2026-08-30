@@ -110,7 +110,7 @@ Esto permite mirar más allá de la respuesta final y comprender la interacción
 
 También refuerza una idea que se volvió cada vez más importante mientras construía el proyecto:
 
-> **Si quieres construir aplicaciones de AI útiles, necesitas entender qué ocurre cuando el modelo no se comporta como esperabas.**
+> **Si quieres construir aplicaciones de IA útiles, necesitas entender qué ocurre cuando el modelo no se comporta como esperabas.**
 
 ---
 

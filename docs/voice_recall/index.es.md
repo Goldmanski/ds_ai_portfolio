@@ -54,7 +54,7 @@ El sistema busca **un significado similar**, no un vocabulario idéntico.
 
 ## La diferencia entre palabras y significado
 
-Una búsqueda tradicional por palabras clave podría preguntar:
+Una búsqueda tradicional por palabras clave podría funcionar así:
 
 > ¿Contiene esta nota la palabra «entrenamiento»?
 
@@ -132,14 +132,14 @@ Ese cambio — de buscar coincidencias entre palabras a comparar significados �
 
 ## De las notas de voz a la memoria semántica
 
-Voice Recall reunió varias ideas que están adquiriendo cada vez más importancia en las aplicaciones de AI:
+Voice Recall reunió varias ideas que están adquiriendo cada vez más importancia en las aplicaciones de IA:
 
 - convertir información humana no estructurada en datos utilizables,
 - representar el texto según su significado semántico,
 - buscar información mediante similitud,
-- combinar varios componentes de AI en un único flujo de trabajo.
+- combinar varios componentes de IA en un único flujo de trabajo.
 
-Más importante aún, el proyecto me mostró que una aplicación de AI no tiene necesariamente que generar algo nuevo.
+Más importante aún, el proyecto me mostró que una aplicación de IA no tiene necesariamente que generar algo nuevo.
 
 A veces, lo más útil que puede hacer es ayudarte a **encontrar algo que ya sabías.**
 

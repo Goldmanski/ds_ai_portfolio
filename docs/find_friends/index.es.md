@@ -118,7 +118,7 @@ Esto crea una división interesante de responsabilidades:
 
 La aplicación puede presentar entonces el resultado como algo que una persona puede entender realmente, en lugar de mostrar simplemente un número de cluster.
 
-Es un pequeño ejemplo de dos enfoques diferentes de AI trabajando juntos: uno encuentra la estructura en los datos y el otro ayuda a convertir esa estructura en una explicación comprensible.
+Es un pequeño ejemplo de dos enfoques diferentes de IA trabajando juntos: uno encuentra la estructura en los datos y el otro ayuda a convertir esa estructura en una explicación comprensible.
 
 ---
 
