@@ -1,8 +1,8 @@
-# Data Science & AI
+# Data Science & IA
 
 ## Construir explorando
 
-Estoy desarrollando mis habilidades en **Data Science, Machine Learning, AI y Software Engineering**, convirtiendo preguntas e ideas en proyectos funcionales.
+Estoy desarrollando mis habilidades en **Data Science, Machine Learning, IA y Software Engineering**, convirtiendo preguntas e ideas en proyectos funcionales.
 
 Me gustan los proyectos que comienzan con una pregunta sencilla y poco a poco se convierten en algo más interesante — ya sea descubriendo patrones inesperados en un conjunto de datos, enseñando a una aplicación a comprender el lenguaje natural o encontrando una mejor forma de interactuar con un modelo.
 
@@ -58,11 +58,11 @@ El proyecto se convirtió en una oportunidad para explorar cómo la estructura d
 
 ### CVTailor
 
-**¿Puede la AI ayudar a adaptar un CV sin dar a un LLM el control total sobre el documento final?**
+**¿Puede la IA ayudar a adaptar un CV sin dar a un LLM el control total sobre el documento final?**
 
-CVTailor explora el límite entre la AI generativa y el software determinista.
+CVTailor explora el límite entre la IA generativa y el software determinista.
 
-La AI ayuda a preparar el contenido, mientras que la aplicación sigue siendo responsable de cómo se construye el documento final.
+La IA ayuda a preparar el contenido, mientras que la aplicación sigue siendo responsable de cómo se construye el documento final.
 
 [Explorar el proyecto →](cv_tailor/)
 
@@ -90,9 +90,9 @@ Fue uno de mis pasos desde el análisis de datos hacia la construcción de model
 
 ### AI Engineering
 
-**ChatLab** explora otro aspecto de las aplicaciones de AI: ¿qué ocurre cuando un modelo de lenguaje se convierte en parte de una aplicación completa y no solo en una ventana de chatbot?
+**ChatLab** explora otro aspecto de las aplicaciones de IA: ¿qué ocurre cuando un modelo de lenguaje se convierte en parte de una aplicación completa y no solo en una ventana de chatbot?
 
-Junto con Half Marathon Predictor, Voice Recall y CVTailor, representa mi creciente interés por construir sistemas útiles alrededor de la AI.
+Junto con Half Marathon Predictor, Voice Recall y CVTailor, representa mi creciente interés por construir sistemas útiles alrededor de la IA.
 
 [Half Marathon Predictor](half_marathon_predictor/) · [Voice Recall](voice_recall/) · [CVTailor](cv_tailor/) · [ChatLab](chatlab/)
 
@@ -118,7 +118,7 @@ Pero todos vuelven a la misma idea:
 
 **tomar algo desordenado o difícil de utilizar y construir un sistema que facilite su comprensión o uso.**
 
-Esa es la dirección que quiero seguir explorando — desde el análisis de datos, pasando por Machine Learning y AI, hasta la construcción de aplicaciones completas a su alrededor.
+Esa es la dirección que quiero seguir explorando — desde el análisis de datos, pasando por Machine Learning y IA, hasta la construcción de aplicaciones completas a su alrededor.
 
 ---
 

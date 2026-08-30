@@ -110,7 +110,7 @@ Esto significa que el LLM no solo extrae valores — también ayuda a la aplicac
 
 ---
 
-## La frontera entre AI y Machine Learning
+## La frontera entre IA y Machine Learning
 
 El proyecto combina dos enfoques que a menudo se presentan por separado:
 
@@ -153,7 +153,7 @@ El proyecto reúne:
 
 El resultado es un pequeño ejemplo de una idea más amplia:
 
-> **La AI no siempre tiene que sustituir a un modelo existente. A veces puede simplemente hacer que ese modelo sea más fácil de utilizar para las personas.**
+> **La IA no siempre tiene que sustituir a un modelo existente. A veces puede simplemente hacer que ese modelo sea más fácil de utilizar para las personas.**
 
 ---
 
