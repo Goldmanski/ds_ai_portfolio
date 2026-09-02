@@ -1,6 +1,6 @@
 # Offer Generator
 
-## Co zrobić, gdy tworzenie ofert biznesowych zajmuje zbyt dużo czasu?
+## Jak odwzorować rzeczywisty proces biznesowy w strukturze aplikacji?
 
 Klient prosi o ofertę.
 
