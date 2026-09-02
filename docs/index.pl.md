@@ -4,7 +4,7 @@
 
 Rozwijam swoje umiejętności w **Data Science, Machine Learning, AI i Software Engineering**, zamieniając pytania i pomysły w działające projekty.
 
-Lubię projekty, które zaczynają się od prostego pytania i stopniowo stają się czymś bardziej interesującym — czy chodzi o odkrywanie nieoczekiwanych zależności w danych, nauczenie aplikacji rozumienia języka naturalnego, czy znalezienie lepszego sposobu interakcji z modelem.
+Celuję w projekty, które zaczynają się od prostego pytania i stopniowo stają się czymś bardziej interesującym — czy chodzi o odkrywanie nieoczekiwanych zależności w danych, nauczenie aplikacji rozumienia języka naturalnego, czy znalezienie lepszego sposobu interakcji z modelem.
 
 To portfolio jest zbiorem tych eksperymentów.
 

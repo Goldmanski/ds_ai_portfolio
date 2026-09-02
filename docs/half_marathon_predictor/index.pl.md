@@ -10,7 +10,7 @@ Zamiast prosić użytkownika o podanie wieku, płci i czasu na 5 km w osobnych p
 
 > Mam 28 lat, jestem mężczyzną i mój czas na 5 km to 22 minuty.
 
-Aplikacja wyodrębnia odpowiednie informacje z wiadomości i wykorzystuje je jako dane wejściowe dla tradycyjnego modelu regresji Machine Learning.
+Aplikacja wyodrębnia odpowiednie informacje z wiadomości i wykorzystuje je jako dane wejściowe dla tradycyjnego modelu regresji uczenia maszynowego.
 
 ---
 
